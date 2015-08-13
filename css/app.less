@@ -1,0 +1,242 @@
+@import url("fonts.less");
+@import url("mixin.less");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: @font-regular;
+    color: @color;
+    font-size: 16px;
+}
+
+a {
+    color: @color;
+    text-decoration: none;
+}
+
+.b-wrapper {
+
+    &__nav {
+        background: #61615c url('../images/self.jpg') 100% 100% no-repeat;
+        .display-flex;
+        .justify-content(center);
+        .align-items(center);
+        padding: 166px 0 238px;
+
+        @media @tablet {
+            padding: 232px 0 171px;
+        }
+
+        @media @mobile {
+            .flex-column;
+            .align-items(stretch);
+            padding: 0;
+        }
+    }
+
+    &__disn {
+        background: #61615c url('../images/blur.jpg') no-repeat;
+    }
+}
+
+.b-logo {
+    background: #000;
+    display: inline-block;
+    min-height: 307px;
+    .flex(0 0 327px);
+
+    &_image {
+        display: block;
+        line-height: 0;
+        font-size: 0;
+        margin: 0 auto;
+        padding: 43px 0 30px;
+        max-width: 109px;
+    }
+
+    @media @mobile {
+        display: block;
+        min-height: auto;
+        .flex(0 0 100%);
+    }
+}
+
+.b-navigation {
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    padding: 10px 10px 42px;
+    text-align: left;
+    min-height: 307px;
+    .flex(0 0 286px);
+
+    @media @mobile {
+        display: block;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.27);
+        .flex(0 0 100%);
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        top: 10px;
+        border: 1px solid  transparent;
+        border-left-color: #545454;
+        border-right-color: #545454;
+        border-top-color: @color;
+        border-bottom-color: @color;
+        z-index: 0;
+    }
+
+    &_icon {
+        display: block;
+        width: 22px;
+        height: 12px;
+        border: 1px solid  @color;
+        margin: 30px auto;
+        opacity: .7;
+
+
+        &:before,
+        &:after {
+            background: @color;
+            display: block;
+            content: '';
+        }
+
+        &:before {
+            width: 2px;
+            height: 17px;
+            margin: -3px auto 0;
+        }
+
+        &:after {
+            width: 28px;
+            height: 2px;
+            margin: -9px 0 0 -3px;
+        }
+    }
+
+    &_link {
+        display: block;
+        position: relative;
+        font-family: @font-ex-light;
+        font-size: 18px;
+        padding: 0 0 0 25px;
+        z-index: 1;
+        height: 26px;
+        line-height: 26px;
+
+        &:hover {
+            font-family: @font-bold;
+        }
+    }
+}
+
+.b-advantages {
+    padding: 30px;
+
+    &_title {
+        color: @color-orange;
+        text-transform: uppercase;
+        font-family: @font-bold;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    &_white {
+        color: #fff;
+    }
+
+    &_small {
+        display: block;
+        text-transform: lowercase;
+        white-space: nowrap;
+    }
+
+    &_underlink {
+        width: 85%;
+        display: inline-block;
+        text-align: center;
+        margin: 0 5px;
+        position: relative;
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            border-top: 3px solid #c2945e;
+            position: absolute;
+            top: 14px;
+            width: 46%;
+        }
+
+        &:before {
+            left: 0;
+        }
+
+        &:after {
+            right: 0;
+        }
+
+        .b-ui-icon__arrow {
+            top: 15px;
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    &_text {
+        font-family: @font-ex-light;
+        font-size: 16px;
+        color: #fff;
+        margin: 24px 0;
+    }
+
+    &_link {
+        font-family: @font-bold;
+        font-size: 18px;
+        color: #fff;
+        border: 3px solid #fff;
+        line-height: 54px;
+        text-align: center;
+        display: block;
+        max-width: 243px;
+        text-transform: uppercase;
+        margin: 0 auto;
+        height: 55px;
+    }
+
+}
+
+.b-ui {
+
+    &-icon {
+        display: inline-block;
+        position: relative;
+
+        &:after {
+            content: "";
+            background: url('../images/sprite.png') no-repeat;
+            left: 50%;
+            top: 50%;
+            position: absolute;
+        }
+
+
+        &__arrow {
+
+            &:after {
+                background-position: 0 0;   
+                height: 9px;
+                width: 8px;
+                margin: -4px 0 0 -4px;
+            }
+        }
+    }
+}

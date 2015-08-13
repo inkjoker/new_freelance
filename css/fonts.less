@@ -1,0 +1,27 @@
+.include-custom-font(@family: arial, @weight: normal, @style: normal){
+    @font-face{
+        font-family: @family;
+        src:url('fonts/@{family}.eot');
+        src:url('fonts/@{family}.eot?#iefix') format('embedded-opentype'),
+            url('fonts/@{family}.woff') format('woff'),
+            url('fonts/@{family}.ttf') format('truetype'),
+            url('fonts/@{family}.svg#icon') format('svg');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
+
+.include-custom-font('Circe-ExtraLight', normal, normal);
+.include-custom-font('Circe-Light', normal, normal);
+.include-custom-font('Circe-Regular', normal, normal);
+.include-custom-font('Circe-Thin', normal, normal);
+.include-custom-font('Circe-Bold', normal, normal);
+.include-custom-font('Circe-ExtraBold', normal, normal);
+
+
+@font-ex-light : 'Circe-ExtraLight';
+@font-light : 'Circe-Light';
+@font-regular : 'Circe-Regular';
+@font-thin : 'Circe-Thin';
+@font-bold : 'Circe-Bold';
+@font-ex-bold : 'Circe-ExtraBold';

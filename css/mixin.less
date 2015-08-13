@@ -1,0 +1,216 @@
+@color : #000;
+@color-orange : #c2945e;
+
+@highdensity: ~"screen and (-webkit-min-device-pixel-ratio: 1.5)",
+              ~"screen and (min--moz-device-pixel-ratio: 1.5)",
+              ~"screen and (-o-min-device-pixel-ratio: 3/2)",
+              ~"screen and (min-device-pixel-ratio: 1.5)";
+@mobile:      ~"screen and (max-width: 529px)";
+@tablet:      ~"screen and (min-width: 530px) and (max-width: 949px)";
+@desktop:     ~"screen and (min-width: 950px) and (max-width: 1128px)";
+@desktop-xl:  ~"screen and (min-width: 1129px)";
+
+
+.display-flex {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.inline-flexbox {
+	// 2009 spec
+	display: -moz-box;
+	display: -ms-box;
+	display: -o-box;
+	display: box;
+	display: -webkit-inline-box;
+	// tweener -ms- spec
+	display: -ms-inline-flexbox;
+	// 2013 spec
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+}
+
+.flex(@param: 1 1 100%){
+	-webkit-box-flex: @param;      /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-flex: @param;         /* OLD - Firefox 19- */
+	-webkit-flex: @param;          /* Chrome */
+	-ms-flex: @param;              /* IE 10 */
+	flex: @param;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.flex-aling(@aling: left) {
+	-ms-aling-items: @aling;
+	aling-items: @aling;
+}
+
+.flex-wrap(@wrap: wrap) {
+	-webkit-flex-wrap: @wrap;
+	-ms-flex-wrap: @wrap;
+	flex-wrap: @wrap;
+}
+
+.flex-order(@order: 1) {
+	-webkit-box-ordinal-group: @order;   /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-ordinal-group: @order;      /* OLD - Firefox 19- */
+	-ms-flex-order: @order;              /* TWEENER - IE 10 */
+	-webkit-order: @order;               /* NEW - Chrome */
+	order: @order;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.flex-direction(@flex-direction) {
+	-ms-flex-direction:@flex-direction;
+	flex-direction:@flex-direction;
+}
+
+.flex-column {
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-o-box-orient: vertical;
+	box-orient: vertical;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.justify-content(@justify-method) when (@justify-method = start) {
+	//2009
+	-webkit-box-pack: @justify-method;
+	-moz-box-pack: @justify-method;
+	-ms-box-pack: @justify-method;
+	-o-box-pack: @justify-method;
+	box-pack: @justify-method;
+	//tweener -ms-
+	-ms-flex-pack: @justify-method;
+	// current spec
+	-webkit-justify-content: flex-start;
+	-moz-justify-content: flex-start;
+	-ms-justify-content: flex-start;
+	-o-justify-content: flex-start;
+	justify-content: flex-start;
+}
+
+.justify-content(@justify-method) when (@justify-method = end) {
+	// 2009 spec
+	-webkit-box-pack: @justify-method;
+	-moz-box-pack: @justify-method;
+	-ms-box-pack: @justify-method;
+	-o-box-pack: @justify-method;
+	box-pack: @justify-method;
+	// tweener -ms- spec
+	-ms-flex-pack: @justify-method;
+	// 2013 spec
+	-webkit-justify-content: flex-end;
+	-moz-justify-content: flex-end;
+	-ms-justify-content: flex-end;
+	-o-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+.justify-content(@justify-method) when (@justify-method = center) {
+	// 2009 spec
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	// tweener -ms- spec
+	-ms-flex-pack: center;
+	// 2013 spec
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+}
+
+.justify-content(@justify-method) when (@justify-method = space-between) {
+	// 2009 spec
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	// tweener -ms- spec
+	-ms-flex-pack: justify;
+	// 2013 spec
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.justify-content(@justify-method) when (@justify-method = space-around) {
+	// 2009 spec has no equivalent
+	// tweener -ms- spec
+	-ms-flex-pack: distribute;
+	// 2013 spec
+	-webkit-justify-content: space-around;
+	-moz-justify-content: space-around;
+	-ms-justify-content: space-around;
+	-o-justify-content: space-around;
+	justify-content: space-around;
+}
+
+.align-items(@align-item-method) when (@align-item-method = start) {
+	// 2009 spec
+	-webkit-box-align: start;
+	-moz-box-align: start;
+	-ms-box-align: start;
+	-o-box-align: start;
+	box-align: start;
+	// tweener -ms- spec
+	-ms-flex-align: start;
+	// 2013 spec
+	-webkit-align-items: flex-start;
+	-moz-align-items: flex-start;
+	-ms-align-items: flex-start;
+	-o-align-items: flex-start;
+	align-items: flex-start;
+}
+
+.align-items(@align-item-method) when (@align-item-method = end) {
+	// 2009 spec
+	-webkit-box-align: end;
+	-moz-box-align: end;
+	-ms-box-align: end;
+	-o-box-align: end;
+	box-align: end;
+	// tweener -ms- spec
+	-ms-flex-align: end;
+	// 2013 spec
+	-webkit-align-items: flex-end;
+	-moz-align-items: flex-end;
+	-ms-align-items: flex-end;
+	-o-align-items: flex-end;
+	align-items: flex-end;
+}
+
+// for center, baseline, and stretch, which are the same in all specs
+.align-items(@align-item-method) when
+(@align-item-method = center),
+(@align-item-method = baseline),
+(@align-item-method = stretch) {
+	// 2009 spec
+	-webkit-box-align: @align-item-method;
+	-moz-box-align: @align-item-method;
+	-ms-box-align: @align-item-method;
+	-o-box-align: @align-item-method;
+	box-align: @align-item-method;
+	// tweener -ms- spec
+	-ms-flex-align: @align-item-method;
+	// 2013 spec
+	-webkit-align-items: @align-item-method;
+	-moz-align-items: @align-item-method;
+	-ms-align-items: @align-item-method;
+	-o-align-items: @align-item-method;
+	align-items: @align-item-method;
+}
+.align-self(@align: auto) {
+  -webkit-align-self: @align;
+     -moz-align-self: @align;
+      -ms-align-self: @align;
+          align-self: @align;
+}
