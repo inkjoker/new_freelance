@@ -16,10 +16,122 @@ a {
     text-decoration: none;
 }
 
+b {
+    font-family: @font-bold;
+}
+
+.b-ui {
+
+    &-icon {
+        display: inline-block;
+        position: relative;
+
+        &:after {
+            content: "";
+            background: url('../images/sprite.png') no-repeat;
+            left: 50%;
+            top: 50%;
+            position: absolute;
+        }
+
+
+        &__arrow {
+
+            &:after {
+                background-position: 0 0;   
+                height: 9px;
+                width: 8px;
+                margin: -4px 0 0 -4px;
+            }
+        }
+
+        &__ctrl {  
+            height: 17px;
+            width: 30px;
+
+            &:after {
+                background-position: 0 -59px;   
+                height: 17px;
+                width: 30px;
+                margin: -8px 0 0 -15px;
+            }            
+        }
+
+
+        &__sign {
+
+            &-w {
+                width: 28px;
+                height: 15px;
+
+                &:after {
+                    background-position: 0 -14px;   
+                    height: 33px;
+                    width: 28px;
+                    margin: -14px 0 0 -16px;
+                }
+            }
+            
+            &-b {
+                width: 28px;
+                height: 15px;
+
+                &:after {
+                    background-position: -33px -14px;
+                    height: 33px;
+                    width: 39px;
+                    margin: -14px 0 0 -16px;
+                }
+            }
+        }
+    }
+
+    &-ctrl {
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid transparent;
+        line-height: 1;
+
+        &__white {   
+            position: relative;
+            padding: 6px 9px;
+            border: 4px solid @color;
+            background: #fff;
+            font-size: 16px;
+        }
+    }
+}
+
 .b-wrapper {
 
+    &_fixed {
+        padding: 5px;
+        background: white;
+        top: 50%;
+        left: -35px;
+        position: fixed;
+        z-index: 100;
+        transform: rotate(90deg);
+
+
+        .b-ui-ctrl {
+            text-transform: uppercase;
+            width: 100px;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .b-ui-icon {
+            transform: rotate(-90deg);
+            position: absolute;
+            top: 2px;
+            left: -5px;
+        }
+    }
+
     &__nav {
-        background: #61615c url('../images/self.jpg') 100% 100% no-repeat;
+        background: #61615c url('../images/self.jpg') no-repeat;
+        background-size: cover;
         .display-flex;
         .justify-content(center);
         .align-items(center);
@@ -38,6 +150,11 @@ a {
 
     &__disn {
         background: #61615c url('../images/blur.jpg') no-repeat;
+    }
+
+    &__portf {
+        background: #61615c url('../images/intr.jpg') no-repeat;
+        background-size: cover;
     }
 }
 
@@ -118,7 +235,7 @@ a {
         &:after {
             width: 28px;
             height: 2px;
-            margin: -9px 0 0 -3px;
+            margin: -10px 0 0 -4px;
         }
     }
 
@@ -210,33 +327,96 @@ a {
         text-transform: uppercase;
         margin: 0 auto;
         height: 55px;
-    }
 
+        .b-ui-icon__sign-w {
+            left : 14px;
+        }
+    }
 }
 
-.b-ui {
+.b-protfolio {
+    padding: 30px 9px 9px;
 
-    &-icon {
-        display: inline-block;
-        position: relative;
+    @media @mobile {
+        text-align: center;
+    }
 
-        &:after {
-            content: "";
-            background: url('../images/sprite.png') no-repeat;
-            left: 50%;
-            top: 50%;
-            position: absolute;
+    &_title {
+        text-transform: uppercase;
+        font-family: @font-bold;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    &_list {
+        padding: 0;
+        list-style: none;
+        margin:0;
+        font-family: @font-ex-light;
+        font-size: 14px;
+
+        b {
+            font-family: @font-ex-bold;
+            font-size: 19px;
         }
 
+        @media @mobile {
+           margin-bottom: 243px;
+        }
+    }
 
-        &__arrow {
+    .b-table {
+        background: #fff;
+        text-align: right;
 
-            &:after {
-                background-position: 0 0;   
-                height: 9px;
-                width: 8px;
-                margin: -4px 0 0 -4px;
+
+        .b-table_td {
+            padding: 10px 15px;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 35px;
+            height: 35px;
+
+            &:last-child {
+                width: 35px;
+            }
+
+            .b-ui-icon__sign-b {
+                top: 4px;
+                left: 2px;
             }
         }
+
+
+        .b-table_row {
+
+            &:last-child {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.b-table {
+    display: table;
+    border: 1px solid @color;
+    border-collapse: collapse;
+    width: 100%;
+
+    &_wrapper {
+        background: #fff;
+        box-shadow: 0 0 1px rgba(255, 255, 255, 0.8);
+        padding : 9px;
+    }
+
+
+    &_row {
+        display: table-row;
+    }
+
+    &_td {
+        display: table-cell;
+        border: 1px solid @color;
+        vertical-align: middle;
     }
 }
