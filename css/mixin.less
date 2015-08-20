@@ -1,5 +1,7 @@
 @color : #000;
 @color-orange : #c2945e;
+@color-brown : #635a49;
+@color-brown-d: #282216;
 
 @highdensity: ~"screen and (-webkit-min-device-pixel-ratio: 1.5)",
               ~"screen and (min--moz-device-pixel-ratio: 1.5)",
@@ -213,4 +215,10 @@
      -moz-align-self: @align;
       -ms-align-self: @align;
           align-self: @align;
+}
+.flex-wrap(@wrap: nowrap) {
+  -webkit-flex-wrap: @wrap;
+     -moz-flex-wrap: @wrap;
+      -ms-flex-wrap: @wrap;
+          flex-wrap: @wrap;
 }
