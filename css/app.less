@@ -207,6 +207,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .b-wrapper {
+    
+    @media @desktop {
+        max-width: 1109px;
+        margin: 0 auto;
+    }
+    @media @desktop-xl {
+        max-width: 1109px;
+        margin: 0 auto;
+    }
 
     &_fixed {
         padding: 5px;
@@ -265,6 +274,14 @@ h1, h2, h3, h4, h5 {
             }
         }
 
+        @media @desktop {
+            padding: 232px 0 171px;
+        }
+
+        @media @desktop-xl {
+            padding: 232px 0 171px;
+        }
+
         @media @tablet {
             padding: 232px 0 171px;
         }
@@ -283,6 +300,14 @@ h1, h2, h3, h4, h5 {
     &__disn {
         background: #61615c url('../images/blur.jpg') no-repeat;
     
+        @media @desktop {
+            padding: 115px 0 60px;
+        }
+
+        @media @desktop-xl {
+            padding: 115px 0 60px;
+        }
+
         @media @tablet {
             padding: 115px 0 60px;
         }
@@ -330,6 +355,14 @@ h1, h2, h3, h4, h5 {
     &__form {
         background: #635a49;
         padding: 31px 44px 0;
+
+        @media @desktop {
+            padding-top: 64px;
+        }
+
+        @media @desktop-xl {
+            padding-top: 64px;
+        }
 
         @media @tablet {
             padding-top: 64px;
@@ -475,10 +508,19 @@ h1, h2, h3, h4, h5 {
 
 .b-advantages {
     padding: 30px;
+    margin: 0 auto;
+
+    
+    @media @desktop {
+        max-width: 882px;
+    }
+
+    @media @desktop-xl {
+        max-width: 882px;
+    }
 
     @media @tablet {
         max-width: 625px;
-        margin: 0 auto;
     }
 
     &_title {
@@ -488,8 +530,23 @@ h1, h2, h3, h4, h5 {
         font-size: 20px;
         line-height: 25px;
         margin: 0;
-        
+    
+        @media @desktop {
+            font-size: 69px;
+            line-height: 117px;
+            text-align: justify;
+            word-spacing: 39px;
+            letter-spacing: 11px;
+        }
 
+        @media @desktop-xl {
+            font-size: 69px;
+            line-height: 117px;
+            text-align: justify;
+            word-spacing: 39px;
+            letter-spacing: 11px;
+        }
+        
         @media @tablet {
             font-size: 50px;
             line-height: 85px;
@@ -544,6 +601,38 @@ h1, h2, h3, h4, h5 {
             right: 0;
         }
 
+        @media @desktop {
+            font-size: 69px;
+            width: 60%;
+            position: relative;
+            top: -11px;
+
+            &:before,
+            &:after {
+                top: 11px;
+            }
+
+            .b-ui-icon__arrow {
+                top: 12px;
+            }
+        }
+
+        @media @desktop-xl {
+            font-size: 24px;
+            width: 60%;
+            position: relative;
+            top: -11px;
+
+            &:before,
+            &:after {
+                top: 11px;
+            }
+
+            .b-ui-icon__arrow {
+                top: 12px;
+            }
+        }
+
         @media @tablet {
             word-spacing: normal;
             letter-spacing: normal;
@@ -570,6 +659,27 @@ h1, h2, h3, h4, h5 {
         line-height: 16px;
         color: #fff;
         margin: 24px 0;
+
+    
+        @media @desktop {
+            font-size: 14px;
+            line-height: 21px;
+            margin-top: 45px;
+            max-width: 450px;
+            width: 49%;
+            float: left;
+            margin-left: 45px;
+        }
+
+        @media @desktop-xl {
+            font-size: 14px;
+            line-height: 21px;
+            margin-top: 45px;
+            max-width: 450px;
+            width: 49%;
+            float: left;
+            margin-left: 45px;
+        }
 
         @media @tablet {
             font-size: 14px;
@@ -598,6 +708,20 @@ h1, h2, h3, h4, h5 {
             left : 14px;
         }
 
+
+    
+        @media @desktop {
+            float: right;
+            padding: 0 20px 0 15px;
+            margin-top: 99px;
+        }
+
+        @media @desktop-xl {
+            float: right;
+            padding: 0 20px 0 15px;
+            margin-top: 99px;
+        }
+
         @media @tablet {
             float: right;
             padding: 0 20px 0 15px;
@@ -613,7 +737,15 @@ h1, h2, h3, h4, h5 {
     padding: 13px 15px 95px;
     position: relative;
 
+    @media @desktop {
+        min-height: 539px;
+        max-width: 882px;
+    }
 
+    @media @desktop-xl {
+        min-height: 539px;
+        max-width: 882px;
+    }
 
     @media @tablet {
         min-height: 467px;
@@ -655,6 +787,16 @@ h1, h2, h3, h4, h5 {
             }
         }
 
+    
+        @media @desktop {
+            text-align: center;
+            max-width: 170px;
+        }
+
+        @media @desktop-xl {
+            text-align: center;
+            max-width: 170px;
+        }
 
         @media @tablet {
             text-align: center;
@@ -663,6 +805,18 @@ h1, h2, h3, h4, h5 {
     }
 
     > b {
+
+        @media @desktop {
+            display: block;
+            text-align: center;
+            max-width: 170px;
+        }
+
+        @media @desktop-xl {
+            display: block;
+            text-align: center;
+            max-width: 170px;
+        }
 
         @media @tablet {
             display: block;
@@ -687,6 +841,18 @@ h1, h2, h3, h4, h5 {
             font-size: 19px;
         }
 
+
+    
+        @media @desktop {
+            text-align: center;
+            max-width: 170px;
+        }
+
+        @media @desktop-xl {
+            text-align: center;
+            max-width: 170px;
+        }
+
         @media @tablet {
             text-align: center;
             max-width: 170px;
@@ -702,6 +868,18 @@ h1, h2, h3, h4, h5 {
         text-align: right;
 
         &_wrapper {
+
+            @media @desktop {
+                position: absolute;
+                right: 0;
+                bottom: -45px;
+            }
+
+            @media @desktop-xl {
+                position: absolute;
+                right: 0;
+                bottom: -45px;
+            }
 
             @media @tablet {
                 position: absolute;
@@ -815,10 +993,18 @@ h1, h2, h3, h4, h5 {
     padding: 0 17px;
     position: relative;
     overflow: hidden;
+    margin: 0 auto;
+
+    @media @desktop {
+        max-width: 882px;
+    }
+
+    @media @desktop-xl {
+        max-width: 882px;
+    }
 
     @media @tablet {
         max-width: 625px;
-        margin: 0 auto;
     }
 
     @media @mobile {
@@ -904,14 +1090,47 @@ h1, h2, h3, h4, h5 {
 
 .b-user {
     position: relative;
+    margin: 0 auto;
+
+    @media @desktop {
+        max-width: 882px;
+        .display-flex;
+        .flex-column;
+        .justify-content(space-between);
+    }
+
+    @media @desktop-xl {
+        max-width: 882px;
+        .display-flex;
+        .flex-column;
+        .justify-content(space-between);
+    }
 
     @media @tablet {
         max-width: 625px;
-        margin: 0 auto;
     }
 
     &_info {
         .display-flex;
+
+        @media @desktop {
+            max-width: 450px;
+        }
+
+        @media @desktop-xl {
+            max-width: 450px;
+        }
+
+        &:nth-child(odd) {
+
+            @media @desktop {
+                margin-left: 50%;
+            }
+
+            @media @desktop-xl {
+                margin-left: 50%;
+            }
+        }
 
         @media @mobile {
             .flex-column;
@@ -920,7 +1139,6 @@ h1, h2, h3, h4, h5 {
     }
 
     &_unit {
-
 
         @media @tablet {
             margin-bottom: 25px;
@@ -1000,6 +1218,13 @@ h1, h2, h3, h4, h5 {
             bottom: 10px;
         }
 
+        @media @desktop {
+            margin-top: 35px;
+        }
+
+        @media @desktop-xl {
+            margin-top: 35px;
+        }
 
         @media @tablet {
             margin-top: 45px;
@@ -1027,6 +1252,35 @@ h1, h2, h3, h4, h5 {
             border-style: solid;
             border-width: 24px 0 0 24px;
             border-color: transparent transparent transparent #fff;
+        }
+
+
+        @media @desktop {
+            border-width:  0 22px 22px 0;
+            border-color: transparent #000 transparent transparent;
+            top: 46px;
+            left: -9px;
+
+            &:before {
+                border-width:  0 24px 24px 0;
+                border-color: transparent #fff transparent transparent;
+                top: 2px;
+                left: 4px;
+            }
+        }
+
+        @media @desktop-xl {
+            border-width:  0 22px 22px 0;
+            border-color: transparent #000 transparent transparent;
+            top: 46px;
+            left: -9px;
+
+            &:before {
+                border-width:  0 24px 24px 0;
+                border-color: transparent #fff transparent transparent;
+                top: 2px;
+                left: 4px;
+            }
         }
 
         @media @tablet {
@@ -1057,6 +1311,18 @@ h1, h2, h3, h4, h5 {
         }
 
 
+        @media @desktop {
+            position: absolute;
+            left: 25%;
+            bottom: 0;
+        }
+
+        @media @desktop-xl {
+            position: absolute;
+            left: 25%;
+            bottom: 0;
+        }
+
         @media @tablet {
             position: absolute;
             right: 0;
@@ -1067,11 +1333,43 @@ h1, h2, h3, h4, h5 {
 
 .b-form {
     clear: both;
+    margin: 0 auto;
+
+    @media @desktop {
+        .display-flex;
+        .justify-content(space-between);
+        .flex-wrap(wrap);
+        max-width: 882px;
+
+        > div {
+            .flex(0 0 50%);
+
+            &:first-child {
+                padding-right: 28px;
+            }
+        }
+    }
+
+    @media @desktop-xl {
+        .display-flex;
+        .justify-content(space-between);
+        .flex-wrap(wrap);
+        max-width: 882px;
+
+        > div {
+            .flex(0 0 50%);
+
+            &:first-child {
+                padding-right: 28px;
+            }
+        }
+    }
 
     @media @tablet {
         .display-flex;
         .justify-content(space-between);
         .flex-wrap(wrap);
+        max-width: 662px;
 
         > div {
             .flex(0 0 50%);
@@ -1088,6 +1386,16 @@ h1, h2, h3, h4, h5 {
         margin:  0 0 30px;
         line-height: 21px;
         font-weight: normal;
+    
+        @media @desktop {
+            width: 50%;
+            float: right;
+        }
+
+        @media @desktop-xl {
+            width: 50%;
+            float: right;
+        }
 
         @media @tablet {
             width: 50%;
@@ -1115,7 +1423,7 @@ h1, h2, h3, h4, h5 {
         padding: 0 10px;
 
         &__text {
-            min-height: 141px;
+            min-height: 169px;
             resize: vertical;
         }
     }
@@ -1142,6 +1450,20 @@ h1, h2, h3, h4, h5 {
 }
 
 .b-company {
+    margin: 0 auto;
+    
+    @media @desktop {
+        max-width: 882px;
+    }
+
+    @media @desktop-xl {
+        max-width: 882px;
+   
+    }
+
+    @media @tablet {
+        max-width: 662px;
+    }
 
     &_address {
         font-style: normal;
@@ -1150,6 +1472,21 @@ h1, h2, h3, h4, h5 {
         font-size: 15px;
         margin-bottom: 34px;
         line-height: 27px;
+    
+        @media @desktop {
+
+            br {
+                display: none;
+            }
+        }
+
+        @media @desktop-xl {
+
+            br {
+                display: none;
+            }
+       
+        }
 
         @media @tablet {
 
@@ -1164,6 +1501,13 @@ h1, h2, h3, h4, h5 {
         font-family: @font-bold;
         font-size: 18px;
 
+        @media @desktop {
+            margin: 0 135px;   
+        }
+
+        @media @desktop-xl {
+            margin: 0 135px;       
+        }
 
         @media @tablet {
             margin: 0 15px;
@@ -1194,12 +1538,23 @@ h1, h2, h3, h4, h5 {
         }
 
 
+        @media @desktop {
+            font-family: @font-thin; 
+            text-align: center;
+            display: block;
+        }
+
+        @media @desktop-xl {
+            font-family: @font-thin;    
+            text-align: center; 
+            display: block;
+        }
+
         @media @tablet {
             font-family: @font-thin;
         }
     }
 }
-
 .b-about {
     position: relative;
 

@@ -238,6 +238,18 @@ h5 {
   background: #bb8416;
   border-radius: 5px;
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-wrapper {
+    max-width: 1109px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-wrapper {
+    max-width: 1109px;
+    margin: 0 auto;
+  }
+}
 .b-wrapper_fixed {
   padding: 5px;
   background: white;
@@ -316,6 +328,16 @@ h5 {
   top: 5px;
   border: 1px solid black;
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-wrapper__nav {
+    padding: 232px 0 171px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-wrapper__nav {
+    padding: 232px 0 171px;
+  }
+}
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-wrapper__nav {
     padding: 232px 0 171px;
@@ -352,6 +374,16 @@ h5 {
 }
 .b-wrapper__disn {
   background: #61615c url('../images/blur.jpg') no-repeat;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-wrapper__disn {
+    padding: 115px 0 60px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-wrapper__disn {
+    padding: 115px 0 60px;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-wrapper__disn {
@@ -417,6 +449,16 @@ h5 {
 .b-wrapper__form {
   background: #635a49;
   padding: 31px 44px 0;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-wrapper__form {
+    padding-top: 64px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-wrapper__form {
+    padding-top: 64px;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-wrapper__form {
@@ -586,11 +628,21 @@ h5 {
 }
 .b-advantages {
   padding: 30px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-advantages {
+    max-width: 882px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-advantages {
+    max-width: 882px;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-advantages {
     max-width: 625px;
-    margin: 0 auto;
   }
 }
 .b-advantages_title {
@@ -600,6 +652,24 @@ h5 {
   font-size: 20px;
   line-height: 25px;
   margin: 0;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-advantages_title {
+    font-size: 69px;
+    line-height: 117px;
+    text-align: justify;
+    word-spacing: 39px;
+    letter-spacing: 11px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-advantages_title {
+    font-size: 69px;
+    line-height: 117px;
+    text-align: justify;
+    word-spacing: 39px;
+    letter-spacing: 11px;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-advantages_title {
@@ -650,6 +720,36 @@ h5 {
   position: absolute;
   right: 0;
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-advantages_underlink {
+    font-size: 69px;
+    width: 60%;
+    position: relative;
+    top: -11px;
+  }
+  .b-advantages_underlink:before,
+  .b-advantages_underlink:after {
+    top: 11px;
+  }
+  .b-advantages_underlink .b-ui-icon__arrow {
+    top: 12px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-advantages_underlink {
+    font-size: 24px;
+    width: 60%;
+    position: relative;
+    top: -11px;
+  }
+  .b-advantages_underlink:before,
+  .b-advantages_underlink:after {
+    top: 11px;
+  }
+  .b-advantages_underlink .b-ui-icon__arrow {
+    top: 12px;
+  }
+}
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-advantages_underlink {
     word-spacing: normal;
@@ -674,6 +774,28 @@ h5 {
   line-height: 16px;
   color: white;
   margin: 24px 0;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-advantages_text {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 45px;
+    max-width: 450px;
+    width: 49%;
+    float: left;
+    margin-left: 45px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-advantages_text {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 45px;
+    max-width: 450px;
+    width: 49%;
+    float: left;
+    margin-left: 45px;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-advantages_text {
@@ -701,6 +823,20 @@ h5 {
 .b-advantages_link .b-ui-icon__sign-w {
   left: 14px;
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-advantages_link {
+    float: right;
+    padding: 0 20px 0 15px;
+    margin-top: 99px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-advantages_link {
+    float: right;
+    padding: 0 20px 0 15px;
+    margin-top: 99px;
+  }
+}
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-advantages_link {
     float: right;
@@ -714,6 +850,18 @@ h5 {
   margin: 0 auto;
   padding: 13px 15px 95px;
   position: relative;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-protfolio {
+    min-height: 539px;
+    max-width: 882px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-protfolio {
+    min-height: 539px;
+    max-width: 882px;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-protfolio {
@@ -757,8 +905,34 @@ h5 {
   left: -3px;
   right: -3px;
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-protfolio_title {
+    text-align: center;
+    max-width: 170px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-protfolio_title {
+    text-align: center;
+    max-width: 170px;
+  }
+}
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-protfolio_title {
+    text-align: center;
+    max-width: 170px;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-protfolio > b {
+    display: block;
+    text-align: center;
+    max-width: 170px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-protfolio > b {
+    display: block;
     text-align: center;
     max-width: 170px;
   }
@@ -784,6 +958,18 @@ h5 {
   font-family: 'Circe-ExtraBold';
   font-size: 19px;
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-protfolio_list {
+    text-align: center;
+    max-width: 170px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-protfolio_list {
+    text-align: center;
+    max-width: 170px;
+  }
+}
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-protfolio_list {
     text-align: center;
@@ -798,6 +984,20 @@ h5 {
 .b-protfolio .b-table {
   background: white;
   text-align: right;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-protfolio .b-table_wrapper {
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-protfolio .b-table_wrapper {
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-protfolio .b-table_wrapper {
@@ -915,11 +1115,21 @@ h5 {
   padding: 0 17px;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-slider {
+    max-width: 882px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-slider {
+    max-width: 882px;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-slider {
     max-width: 625px;
-    margin: 0 auto;
   }
 }
 @media screen and (max-width: 529px) {
@@ -1013,11 +1223,79 @@ h5 {
 }
 .b-user {
   position: relative;
+  margin: 0 auto;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-user {
+    max-width: 882px;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-user {
+    max-width: 882px;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-user {
     max-width: 625px;
-    margin: 0 auto;
   }
 }
 .b-user_info {
@@ -1032,6 +1310,26 @@ h5 {
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-user_info {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-user_info {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-user_info:nth-child(odd) {
+    margin-left: 50%;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-user_info:nth-child(odd) {
+    margin-left: 50%;
+  }
 }
 @media screen and (max-width: 529px) {
   .b-user_info {
@@ -1121,6 +1419,16 @@ h5 {
   right: 10px;
   bottom: 10px;
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-user_comment {
+    margin-top: 35px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-user_comment {
+    margin-top: 35px;
+  }
+}
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-user_comment {
     margin-top: 45px;
@@ -1148,6 +1456,34 @@ h5 {
   border-width: 24px 0 0 24px;
   border-color: transparent transparent transparent white;
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-user_arrow {
+    border-width: 0 22px 22px 0;
+    border-color: transparent black transparent transparent;
+    top: 46px;
+    left: -9px;
+  }
+  .b-user_arrow:before {
+    border-width: 0 24px 24px 0;
+    border-color: transparent white transparent transparent;
+    top: 2px;
+    left: 4px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-user_arrow {
+    border-width: 0 22px 22px 0;
+    border-color: transparent black transparent transparent;
+    top: 46px;
+    left: -9px;
+  }
+  .b-user_arrow:before {
+    border-width: 0 24px 24px 0;
+    border-color: transparent white transparent transparent;
+    top: 2px;
+    left: 4px;
+  }
+}
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-user_arrow {
     border-width: 0 22px 22px 0;
@@ -1173,6 +1509,20 @@ h5 {
   line-height: 0;
   display: inline-block;
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-user_count {
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-user_count {
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+  }
+}
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-user_count {
     position: absolute;
@@ -1182,6 +1532,95 @@ h5 {
 }
 .b-form {
   clear: both;
+  margin: 0 auto;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-form {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    max-width: 882px;
+  }
+  .b-form > div {
+    -webkit-box-flex: 0 0 50%;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 0 0 50%;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 0 0 50%;
+    /* Chrome */
+    -ms-flex: 0 0 50%;
+    /* IE 10 */
+    flex: 0 0 50%;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  }
+  .b-form > div:first-child {
+    padding-right: 28px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-form {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    max-width: 882px;
+  }
+  .b-form > div {
+    -webkit-box-flex: 0 0 50%;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 0 0 50%;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 0 0 50%;
+    /* Chrome */
+    -ms-flex: 0 0 50%;
+    /* IE 10 */
+    flex: 0 0 50%;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  }
+  .b-form > div:first-child {
+    padding-right: 28px;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-form {
@@ -1208,6 +1647,7 @@ h5 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -moz-flex-wrap: wrap;
+    max-width: 662px;
   }
   .b-form > div {
     -webkit-box-flex: 0 0 50%;
@@ -1233,6 +1673,18 @@ h5 {
   line-height: 21px;
   font-weight: normal;
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-form_title {
+    width: 50%;
+    float: right;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-form_title {
+    width: 50%;
+    float: right;
+  }
+}
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-form_title {
     width: 50%;
@@ -1257,7 +1709,7 @@ h5 {
   padding: 0 10px;
 }
 .b-form_input__text {
-  min-height: 141px;
+  min-height: 169px;
   resize: vertical;
 }
 .b-form_label {
@@ -1278,6 +1730,24 @@ h5 {
   line-height: 1;
   margin: 23px 0;
 }
+.b-company {
+  margin: 0 auto;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-company {
+    max-width: 882px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-company {
+    max-width: 882px;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 949px) {
+  .b-company {
+    max-width: 662px;
+  }
+}
 .b-company_address {
   font-style: normal;
   color: white;
@@ -1285,6 +1755,16 @@ h5 {
   font-size: 15px;
   margin-bottom: 34px;
   line-height: 27px;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-company_address br {
+    display: none;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-company_address br {
+    display: none;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-company_address br {
@@ -1295,6 +1775,16 @@ h5 {
   color: white;
   font-family: 'Circe-Bold';
   font-size: 18px;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-company_phone {
+    margin: 0 135px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-company_phone {
+    margin: 0 135px;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-company_phone {
@@ -1319,6 +1809,20 @@ h5 {
   font-style: normal;
   position: relative;
   top: -2px;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-company_copy {
+    font-family: 'Circe-Thin';
+    text-align: center;
+    display: block;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-company_copy {
+    font-family: 'Circe-Thin';
+    text-align: center;
+    display: block;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-company_copy {
