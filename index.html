@@ -20,7 +20,10 @@
 	<section class="b-wrapper b-wrapper__nav">
 
 		<a class="b-logo" href="/">
-			<img class="b-logo_image" src="images/logo.png" alt="design logo">
+			<span>
+				<img class="b-logo_image" src="images/logo.png" alt="design logo">
+				<p class="b-logo_text">Производственное <br> подразделение <br> для профессионалов <br> в сфере дизайна <br> и архитектуры</p>
+			</span>
 		</a>
 
 		<nav class="b-navigation">
@@ -37,9 +40,11 @@
 
 		</nav>
 
+		<a class="b-ui-ctrl" href="#"><span class="b-ui-icon b-ui-icon__arrow-d"></span></a>
+
 	</section>
 
-	<section class="b-wrapper b-wrapper__disn">
+	<section class="b-wrapper b-wrapper__disn g-clearfix">
 
 		<div class="b-advantages">
 
@@ -75,7 +80,7 @@
 							<b>Галерея  примеров работ</b>
 						</div>
 						<div class="b-table_td">
-							<span class="b-ui-icon b-ui-icon__sign-b"></span>
+							<a href="portfolio.html" title="Галерея работ"><span class="b-ui-icon b-ui-icon__sign-b"></span></a>
 						</div>
 					</div>
 					<div class="b-table_row">
@@ -94,7 +99,7 @@
 	<section class="b-wrapper b-wrapper__excl">
 
 		<a name="h.opt2" class="g-absolute"></a>
-		<h2 class="b-excl_title"><span>Эксклюзивные <br> вещи</span></h2>
+		<h2 class="b-excl_title"><span>Эксклюзивные вещи</span></h2>
 		
 
 		<div class="b-slider">
@@ -180,20 +185,30 @@
 
 		<form class="b-form" action="/" method="">
 
-			<fieldset class="b-form_unit">
-				<label class="b-form_label" for="user_name">Имя</label>
-				<input id="user_name" name="user_name" class="b-form_input" type="text" value="">
-			</fieldset>
+			<div>
+				<fieldset class="b-form_unit">
+					<label class="b-form_label" for="user_name">Имя</label>
+					<input id="user_name" name="user_name" class="b-form_input" type="text" value="">
+				</fieldset>
 
-			<fieldset class="b-form_unit">
-				<label class="b-form_label" for="email">Электронная почта</label>
-				<input id="email" name="email" class="b-form_input" type="tel" value="">
-			</fieldset>
+				<fieldset class="b-form_unit">
+					<label class="b-form_label" for="email">Электронная почта</label>
+					<input id="email" name="email" class="b-form_input" type="tel" value="">
+				</fieldset>
 
-			<fieldset class="b-form_unit">
-				<label class="b-form_label" for="userName">Телефон</label>
-				<input id="userName" class="b-form_input" type="tel" value="">
-			</fieldset>
+				<fieldset class="b-form_unit">
+					<label class="b-form_label" for="userName">Телефон</label>
+					<input id="userName" class="b-form_input" type="tel" value="">
+				</fieldset>
+				
+			</div>
+
+			<div>
+				<fieldset class="b-form_unit b-form_unit__text">
+					<label class="b-form_label" for="userName">Комментарий</label>
+					<textarea class="b-form_input b-form_input__text" name="comment" id="text"></textarea>
+				</fieldset>
+			</div>
 
 			<fieldset class="b-form_unit b-form_unit__ctrl">
 				<input class="b-ui-ctrl b-ui-ctrl__big b-ui-ctrl__orange" type="submit" value="Отправить заявку">
