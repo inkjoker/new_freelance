@@ -1233,20 +1233,10 @@ h5 {
   list-style: none;
   width: 90%;
   margin: 0 auto;
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
-  .b-slider_viewport {
+  .b-slider_viewport .b-slider_unit {
+    position: relative;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1258,36 +1248,33 @@ h5 {
     -o-justify-content: space-around;
     justify-content: space-around;
   }
-  .b-slider_viewport .b-slider_unit {
-    position: relative;
-  }
-  .b-slider_viewport .b-slider_unit:nth-child(1) {
+  .b-slider_viewport .b-slider_items:nth-child(1) {
     margin-top: 125px;
     max-height: 120px;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(1) img {
+  .b-slider_viewport .b-slider_items:nth-child(1) img {
     padding: 10px 10px 0;
     background: #edede6;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(1) p {
+  .b-slider_viewport .b-slider_items:nth-child(1) p {
     position: absolute;
     right: -157px;
     top: 194px;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(2) p {
+  .b-slider_viewport .b-slider_items:nth-child(2) p {
     max-width: 300px;
     margin: 0 auto -25px;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(2) img {
+  .b-slider_viewport .b-slider_items:nth-child(2) img {
     margin-bottom: 155px;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(3) p {
+  .b-slider_viewport .b-slider_items:nth-child(3) p {
     max-width: 330px;
     margin: -25px auto 0;
   }
 }
 @media screen and (min-width: 1129px) {
-  .b-slider_viewport {
+  .b-slider_viewport .b-slider_unit {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1299,36 +1286,36 @@ h5 {
     -o-justify-content: space-around;
     justify-content: space-around;
   }
-  .b-slider_viewport .b-slider_unit {
+  .b-slider_viewport .b-slider_items {
     position: relative;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(1) {
+  .b-slider_viewport .b-slider_items:nth-child(1) {
     margin-top: 125px;
     max-height: 120px;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(1) img {
+  .b-slider_viewport .b-slider_items:nth-child(1) img {
     padding: 10px 10px 0;
     background: #edede6;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(1) p {
+  .b-slider_viewport .b-slider_items:nth-child(1) p {
     position: absolute;
     right: -157px;
     top: 194px;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(2) p {
+  .b-slider_viewport .b-slider_items:nth-child(2) p {
     max-width: 300px;
     margin: 0 auto -25px;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(2) img {
+  .b-slider_viewport .b-slider_items:nth-child(2) img {
     margin-bottom: 155px;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(3) p {
+  .b-slider_viewport .b-slider_items:nth-child(3) p {
     max-width: 330px;
     margin: -25px auto 0;
   }
 }
 @media screen and (max-width: 529px) {
-  .b-slider_viewport {
+  .b-slider_viewport .b-slider_unit {
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     -ms-box-orient: vertical;
@@ -1340,22 +1327,33 @@ h5 {
     -o-flex-direction: column;
     flex-direction: column;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(1) {
+  .b-slider_viewport .b-slider_items:nth-child(1) {
     order: 2;
     margin-top: -125px;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(1) img {
+  .b-slider_viewport .b-slider_items:nth-child(1) img {
     padding: 10px 10px 0;
     background: #edede6;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(2) {
+  .b-slider_viewport .b-slider_items:nth-child(2) {
     order: 1;
   }
-  .b-slider_viewport .b-slider_unit:nth-child(3) {
+  .b-slider_viewport .b-slider_items:nth-child(3) {
     order: 3;
   }
 }
 .b-slider_unit {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
   text-align: center;
   line-height: 1;
 }
