@@ -403,18 +403,22 @@ h5 {
 .b-wrapper__portfolio {
   background: #61615c url('../images/portfolio.jpg') no-repeat;
   background-size: cover;
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-
   height: 100%;
+}
+@media screen and (max-width: 529px) {
+  .b-wrapper__portfolio {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  }
 }
 .b-wrapper__about {
   background: #61615c url('../images/about.jpg') no-repeat;
@@ -432,6 +436,16 @@ h5 {
 
   height: 100%;
   padding: 37px 25px;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-wrapper__about {
+    padding: 37px 113px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-wrapper__about {
+    padding: 37px 113px;
+  }
 }
 .b-wrapper__excl {
   background: #edede6;
@@ -851,6 +865,9 @@ h5 {
   padding: 13px 15px 95px;
   position: relative;
 }
+.b-wrapper__portfolio .b-protfolio {
+  background: none;
+}
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-protfolio {
     min-height: 539px;
@@ -1006,6 +1023,21 @@ h5 {
     bottom: -45px;
   }
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-protfolio .b-table_wrapper__page {
+    bottom: 10px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-protfolio .b-table_wrapper__page {
+    bottom: 10px;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 949px) {
+  .b-protfolio .b-table_wrapper__page {
+    bottom: 10px;
+  }
+}
 .b-protfolio .b-table .b-table_td {
   padding: 10px 15px;
   text-transform: uppercase;
@@ -1023,50 +1055,26 @@ h5 {
 .b-protfolio .b-table .b-table_row:last-child {
   font-size: 12px;
 }
-.b-protfolio__page {
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -ms-box-orient: vertical;
-  -o-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -ms-box-align: center;
-  -o-box-align: center;
-  box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-}
 .b-protfolio__page .b-table_wrapper {
   max-width: 441px;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-protfolio__page .b-table_wrapper {
+    width: 470px;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-protfolio__page .b-table_wrapper {
+    width: 470px;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 949px) {
+  .b-protfolio__page .b-table_wrapper {
+    width: 470px;
+    max-width: 100%;
+  }
 }
 .b-protfolio__page .b-table_td {
   text-align: center;
@@ -1079,6 +1087,65 @@ h5 {
 }
 .b-protfolio__page .b-table_td:nth-child(3) {
   max-width: 64px;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-protfolio__page {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-protfolio__page {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 949px) {
+  .b-protfolio__page {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 529px) {
+  .b-protfolio__page {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+  }
 }
 .b-table {
   display: table;
@@ -2073,6 +2140,28 @@ h5 {
 .b-about_title span {
   color: white;
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-about_title {
+    font-family: 'Circe-Bold';
+    font-size: 69px;
+    letter-spacing: 20px;
+    line-height: 66px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-about_title {
+    font-family: 'Circe-Bold';
+    font-size: 69px;
+    letter-spacing: 22px;
+    line-height: 145px;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 949px) {
+  .b-about_title {
+    font-family: 'Circe-Bold';
+    font-size: 69px;
+  }
+}
 .b-about_list {
   list-style-type: decimal-leading-zero;
   color: #c2945e;
@@ -2093,6 +2182,47 @@ h5 {
   font-family: 'Circe-ExtraLight';
   font-size: 17px;
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-about_unit:nth-child(1),
+  .b-about_unit:nth-child(2) {
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-about_unit:nth-child(1),
+  .b-about_unit:nth-child(2) {
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 949px) {
+  .b-about_unit:nth-child(1),
+  .b-about_unit:nth-child(2) {
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 949px) {
+  .b-about_unit:nth-child(4) {
+    margin-left: 50%;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-about_unit {
+    float: left;
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-about_unit {
+    float: left;
+    width: 33%;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 949px) {
+  .b-about_unit {
+    float: left;
+    width: 50%;
+  }
+}
 .b-about .b-advantages_link {
   width: 150px;
   margin: 0;
@@ -2101,6 +2231,27 @@ h5 {
 }
 .b-about .b-advantages_link .b-ui-icon__sign-w {
   left: -7px;
+}
+@media screen and (min-width: 1129px) {
+  .b-about .b-navigation_icon {
+    right: 25px;
+    position: absolute;
+    top: 25px;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-about .b-navigation_icon {
+    right: 25px;
+    position: absolute;
+    top: 25px;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 949px) {
+  .b-about .b-navigation_icon {
+    right: 25px;
+    position: absolute;
+    top: 25px;
+  }
 }
 @media screen and (max-width: 529px) {
   .b-about .b-navigation_icon {

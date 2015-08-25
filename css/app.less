@@ -324,8 +324,11 @@ h1, h2, h3, h4, h5 {
     &__portfolio {
         background: #61615c url('../images/portfolio.jpg') no-repeat;
         background-size: cover;
-        .display-flex;
         height: 100%;
+
+        @media @mobile {
+            .display-flex;
+        }
     }
 
     &__about {
@@ -334,6 +337,14 @@ h1, h2, h3, h4, h5 {
         .display-flex;
         height: 100%;
         padding: 37px 25px;
+
+        @media @desktop {
+            padding: 37px 113px;
+        }
+
+        @media @desktop-xl {
+            padding: 37px 113px;
+        }
     }
 
     &__excl {
@@ -735,6 +746,10 @@ h1, h2, h3, h4, h5 {
     padding: 13px 15px 95px;
     position: relative;
 
+    .b-wrapper__portfolio & {
+        background: none;
+    }
+
     @media @desktop {
         min-height: 539px;
         max-width: 882px;
@@ -884,6 +899,23 @@ h1, h2, h3, h4, h5 {
                 right: 0;
                 bottom: -45px;
             }
+
+
+            &__page {
+
+
+                @media @desktop {
+                    bottom: 10px;
+                }
+
+                @media @desktop-xl {
+                    bottom: 10px;
+                }
+
+                @media @tablet {
+                    bottom: 10px;
+                }
+            }
         }
 
 
@@ -914,15 +946,27 @@ h1, h2, h3, h4, h5 {
     }
 
     &__page {
-        .display-flex;
-        .flex-column;
-        .justify-content(space-between);
-        .align-items(center);
 
         .b-table {
 
             &_wrapper {
                 max-width: 441px;
+
+
+                @media @desktop {
+                    width: 470px;
+                    max-width: 100%;
+                }
+
+                @media @desktop-xl {
+                    width: 470px;
+                    max-width: 100%;
+                }
+
+                @media @tablet {
+                    width: 470px;
+                    max-width: 100%;
+                }
             }
 
             &_td {
@@ -942,6 +986,27 @@ h1, h2, h3, h4, h5 {
                     }
                 }
             }
+        }
+
+
+        @media @desktop {
+            height: 100%;
+        }
+
+        @media @desktop-xl {
+            height: 100%;
+        }
+
+        @media @tablet {
+            height: 100%;
+        }
+
+
+        @media @mobile {
+            .display-flex;
+            .flex-column;
+            .justify-content(space-between);
+            .align-items(center);
         }
     }
 }
@@ -1092,7 +1157,7 @@ h1, h2, h3, h4, h5 {
         @media @desktop-xl {
             .flex-wrap(wrap);
             .justify-content(space-around);
-            
+
             .b-slider_unit {
                 position: relative;
 
@@ -1759,6 +1824,25 @@ h1, h2, h3, h4, h5 {
         span {
             color: #fff;
         }
+        
+        @media @desktop {
+            font-family: @font-bold;
+            font-size: 69px;
+            letter-spacing: 20px;
+            line-height: 66px;
+        }
+
+        @media @desktop-xl {
+            font-family: @font-bold;
+            font-size: 69px;
+            letter-spacing: 22px;
+            line-height: 145px;
+        }
+
+        @media @tablet {
+            font-family: @font-bold;
+            font-size: 69px;
+        }
     }
 
     &_list {
@@ -1784,6 +1868,50 @@ h1, h2, h3, h4, h5 {
         }
     }
 
+    &_unit {        
+
+        &:nth-child {
+
+            &(1),
+            &(2) {
+                
+                @media @desktop {
+                    padding-right: 50px;
+                }
+
+                @media @desktop-xl {
+                    padding-right: 50px;
+                }
+
+                @media @tablet {
+                    padding-right: 50px;
+                }
+            }
+
+            &(4) {
+
+                @media @tablet {
+                    margin-left: 50%;
+                }
+            }
+        }
+        
+        @media @desktop {
+            float: left;
+            width: 33%;
+        }
+
+        @media @desktop-xl {
+            float: left;
+            width: 33%;
+        }
+
+        @media @tablet {
+            float: left;
+            width: 50%;
+        }
+    }
+
     .b-advantages_link {
         width: 150px;
         margin: 0;
@@ -1797,6 +1925,23 @@ h1, h2, h3, h4, h5 {
 
     .b-navigation_icon {
 
+        @media  @desktop-xl {   
+            right: 25px;
+            position: absolute;
+            top: 25px;
+        }
+
+        @media  @desktop-xl {   
+            right: 25px;
+            position: absolute;
+            top: 25px;
+        }
+
+        @media @tablet {   
+            right: 25px;
+            position: absolute;
+            top: 25px;
+        }
 
         @media @mobile {
             position: absolute;
