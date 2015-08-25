@@ -54,9 +54,12 @@ h1, h2, h3, h4, h5 {
 .b-page {
     padding: 0;
     margin: 0;
-    
-    @media @mobile {
-        padding: 0 3px;
+
+    &__main {
+
+        @media @mobile {
+            padding: 0 3px;
+        }
     }
 }
 
@@ -322,8 +325,6 @@ h1, h2, h3, h4, h5 {
     }
 
     &__portfolio {
-        background: #61615c url('../images/portfolio.jpg') no-repeat;
-        background-size: cover;
         height: 100%;
 
         @media @mobile {
@@ -743,8 +744,8 @@ h1, h2, h3, h4, h5 {
     background: url('../images/intr.jpg') no-repeat;
     max-width: 625px;
     margin: 0 auto;
-    padding: 13px 15px 95px;
     position: relative;
+    width: 100%;
 
     .b-wrapper__portfolio & {
         background: none;
@@ -752,12 +753,12 @@ h1, h2, h3, h4, h5 {
 
     @media @desktop {
         min-height: 539px;
-        max-width: 882px;
+        max-width: 1109px;
     }
 
     @media @desktop-xl {
         min-height: 539px;
-        max-width: 882px;
+        max-width: 1109px;
     }
 
     @media @tablet {
@@ -766,7 +767,6 @@ h1, h2, h3, h4, h5 {
 
     @media @mobile {
         text-align: center;
-        padding: 30px 9px 9px;
     }
 
     &_title {
@@ -774,6 +774,8 @@ h1, h2, h3, h4, h5 {
         font-family: @font-bold;
         font-size: 25px;
         margin: 0;
+        position: relative;
+        z-index: 1;
 
         &__orange {
             color: @color-orange;
@@ -804,16 +806,29 @@ h1, h2, h3, h4, h5 {
         @media @desktop {
             text-align: center;
             max-width: 170px;
+            position: absolute;
+            left: 25px;
+            top: 25px;
         }
 
         @media @desktop-xl {
             text-align: center;
             max-width: 170px;
+            position: absolute;
+            left: 25px;
+            top: 25px;
         }
 
         @media @tablet {
             text-align: center;
             max-width: 170px;
+            position: absolute;
+            left: 25px;
+            top: 25px;
+        }
+
+        @media @mobile {
+            margin-top: 25px;
         }
     }
 
@@ -854,8 +869,6 @@ h1, h2, h3, h4, h5 {
             font-size: 19px;
         }
 
-
-    
         @media @desktop {
             text-align: center;
             max-width: 170px;
@@ -876,11 +889,45 @@ h1, h2, h3, h4, h5 {
         }
     }
 
+
+    .bx-wrapper {
+    
+        @media @desktop {
+            background: rgba(0, 0, 0, 0.59);
+            height: 100%;
+            .display-flex;
+            .align-items(center);
+        }
+
+        @media @desktop-xl {
+            background: rgba(0, 0, 0, 0.59);
+            height: 100%;
+            .display-flex;
+            .align-items(center);
+        }
+
+        @media @tablet {
+            background: rgba(0, 0, 0, 0.59);
+            height: 100%;
+            .display-flex;
+            .align-items(center);
+        }
+
+        @media @mobile {
+            position: absolute;
+    top: 0;
+        left: 0;
+        right: 0;
+        }
+    }
+
     .b-table {
         background: #fff;
         text-align: right;
 
         &_wrapper {
+            position: relative;
+            z-index: 1;
 
             @media @desktop {
                 position: absolute;
@@ -915,6 +962,12 @@ h1, h2, h3, h4, h5 {
                 @media @tablet {
                     bottom: 10px;
                 }
+
+                @media @mobile {
+                    position: absolute;
+                    bottom: 0;
+                    margin: 10px;
+                }
             }
         }
 
@@ -926,8 +979,13 @@ h1, h2, h3, h4, h5 {
             line-height: 35px;
             height: 35px;
 
+            &:first-child {
+                cursor: pointer;
+            }
+
             &:last-child {
                 width: 35px;
+                cursor: pointer;
             }
 
             .b-ui-icon__sign-b {
@@ -1003,10 +1061,6 @@ h1, h2, h3, h4, h5 {
 
 
         @media @mobile {
-            .display-flex;
-            .flex-column;
-            .justify-content(space-between);
-            .align-items(center);
         }
     }
 }
