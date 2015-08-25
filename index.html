@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/app.css">
+	<script type="text/javascript" src="js/vendor/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/vendor/bxslider/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body class="b-page b-page__main">
 	
@@ -108,35 +111,85 @@
 				<span class="b-ui-icon b-ui-icon_arrow b-ui-icon_arrow__left"></span>
 			</span>
 
-			<ul class="b-slider_viewport">
+			<ul class="b-slider_viewport slider1">
 
-				<li class="b-slider_unit">
-					<div class="b-slider_items">
-						<img class="b-slider_image" src="images/slide-1.jpg"alt="slide">
+				<li class="slide">
+					<div class="b-slider_unit ">
+						
+						<div class="b-slider_items">
+							<img class="b-slider_image" src="images/slide-1.jpg"alt="slide">
 
-						<p class="b-slider_text">3D текстура — «Базальт» <br> текстура — Базальт</p>
-					</div>
-					<div class="b-slider_items">
-						<p class="b-slider_text">3D текстура — «Базальт» <br> текстура — Базальт</p>
+							<p class="b-slider_text">3D текстура — «Базальт» <br> текстура — Базальт</p>
+						</div>
+						<div class="b-slider_items">
+							<p class="b-slider_text">3D текстура — «Базальт» <br> текстура — Базальт</p>
 
-						<img class="b-slider_image" src="images/slide-2.jpg" alt="slide">
-					</div>
-					<div class="b-slider_items">
-						<img class="b-slider_image" src="images/slide-3.jpg"alt="slide">
+							<img class="b-slider_image" src="images/slide-2.jpg" alt="slide">
+						</div>
+						<div class="b-slider_items">
+							<img class="b-slider_image" src="images/slide-3.jpg"alt="slide">
 
-						<p class="b-slider_text">Минимальный размер секции <br> под книги 10х15х10</p>
+							<p class="b-slider_text">Минимальный размер секции <br> под книги 10х15х10</p>
+						</div>
 					</div>
 				</li>
+				<li class="slide">
+					<div class="b-slider_unit ">
+						
+						<div class="b-slider_items">
+							<img class="b-slider_image" src="images/slide-1.jpg"alt="slide">
+
+							<p class="b-slider_text">3D текстура — «Базальт» <br> текстура — Базальт</p>
+						</div>
+						<div class="b-slider_items">
+							<p class="b-slider_text">3D текстура — «Базальт» <br> текстура — Базальт</p>
+
+							<img class="b-slider_image" src="images/slide-2.jpg" alt="slide">
+						</div>
+						<div class="b-slider_items">
+							<img class="b-slider_image" src="images/slide-3.jpg"alt="slide">
+
+							<p class="b-slider_text">Минимальный размер секции <br> под книги 10х15х10</p>
+						</div>
+					</div>
+				</li>
+
+				<li class="slide">
+					<div class="b-slider_unit ">
+						
+						<div class="b-slider_items">
+							<img class="b-slider_image" src="images/slide-1.jpg"alt="slide">
+
+							<p class="b-slider_text">3D текстура — «Базальт» <br> текстура — Базальт</p>
+						</div>
+						<div class="b-slider_items">
+							<p class="b-slider_text">3D текстура — «Базальт» <br> текстура — Базальт</p>
+
+							<img class="b-slider_image" src="images/slide-2.jpg" alt="slide">
+						</div>
+						<div class="b-slider_items">
+							<img class="b-slider_image" src="images/slide-3.jpg"alt="slide">
+
+							<p class="b-slider_text">Минимальный размер секции <br> под книги 10х15х10</p>
+						</div>
+					</div>
+				</li>
+
 			</ul>
 
 			<span class="b-slider_ctrl b-slider_ctrl__right">
 				<span class="b-ui-icon b-ui-icon_arrow b-ui-icon_arrow__right"></span>
 			</span>
 
+			<div class="outside">
+			  <h3>This div is outside of the slider</h3>
+			  <p><span id="slider-prev"></span> | <span id="slider-next"></span></p>
+			</div>
+
 			<div class="b-table_wrapper b-table_wrapper__slider">
 
 				<div class="b-table">
-					<div class="b-table_row">
+					<div class="b-table_row outside">
 						<div class="b-table_td">
 							<span class="b-ui-icon b-ui-icon__sign-b b-ui-icon__sign-b-l"></span>
 						</div>
