@@ -121,6 +121,7 @@ h5 {
   clear: both;
 }
 .b-page {
+  background: #edede6;
   padding: 0;
   margin: 0;
 }
@@ -860,21 +861,29 @@ h5 {
   background: url('../images/intr.jpg') no-repeat;
   max-width: 625px;
   margin: 0 auto;
+  padding: 10px;
   position: relative;
   width: 100%;
 }
 .b-wrapper__portfolio .b-protfolio {
   background: none;
+  padding: 0px;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-protfolio {
     min-height: 539px;
+  }
+  .b-wrapper__portfolio .b-protfolio {
+    background: none;
     max-width: 1109px;
   }
 }
 @media screen and (min-width: 1129px) {
   .b-protfolio {
     min-height: 539px;
+  }
+  .b-wrapper__portfolio .b-protfolio {
+    background: none;
     max-width: 1109px;
   }
 }
@@ -922,7 +931,7 @@ h5 {
   right: -3px;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
-  .b-protfolio_title {
+  .b-protfolio_title__orange {
     text-align: center;
     max-width: 170px;
     position: absolute;
@@ -931,7 +940,7 @@ h5 {
   }
 }
 @media screen and (min-width: 1129px) {
-  .b-protfolio_title {
+  .b-protfolio_title__orange {
     text-align: center;
     max-width: 170px;
     position: absolute;
@@ -940,7 +949,7 @@ h5 {
   }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
-  .b-protfolio_title {
+  .b-protfolio_title__orange {
     text-align: center;
     max-width: 170px;
     position: absolute;
@@ -949,7 +958,7 @@ h5 {
   }
 }
 @media screen and (max-width: 529px) {
-  .b-protfolio_title {
+  .b-protfolio_title__orange {
     margin-top: 25px;
   }
 }
@@ -1013,7 +1022,6 @@ h5 {
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-protfolio .bx-wrapper {
-    background: rgba(0, 0, 0, 0.59);
     height: 100%;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
@@ -1041,7 +1049,6 @@ h5 {
 }
 @media screen and (min-width: 1129px) {
   .b-protfolio .bx-wrapper {
-    background: rgba(0, 0, 0, 0.59);
     height: 100%;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
@@ -1069,7 +1076,6 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-protfolio .bx-wrapper {
-    background: rgba(0, 0, 0, 0.59);
     height: 100%;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
@@ -1110,27 +1116,28 @@ h5 {
 .b-protfolio .b-table_wrapper {
   position: relative;
   z-index: 1;
+  right: -45px;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-protfolio .b-table_wrapper {
     position: absolute;
-    right: 0;
     bottom: -45px;
   }
 }
 @media screen and (min-width: 1129px) {
   .b-protfolio .b-table_wrapper {
     position: absolute;
-    right: 0;
     bottom: -45px;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-protfolio .b-table_wrapper {
     position: absolute;
-    right: 0;
     bottom: -45px;
   }
+}
+.b-protfolio .b-table_wrapper__page {
+  right: 10px;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-protfolio .b-table_wrapper__page {

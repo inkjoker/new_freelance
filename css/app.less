@@ -52,6 +52,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .b-page {
+    background: #edede6;
     padding: 0;
     margin: 0;
 
@@ -744,21 +745,31 @@ h1, h2, h3, h4, h5 {
     background: url('../images/intr.jpg') no-repeat;
     max-width: 625px;
     margin: 0 auto;
+    padding: 10px;
     position: relative;
     width: 100%;
 
     .b-wrapper__portfolio & {
         background: none;
+        padding: 0px;
     }
 
     @media @desktop {
         min-height: 539px;
-        max-width: 1109px;
+
+        .b-wrapper__portfolio & {
+            background: none;
+            max-width: 1109px;
+        }
     }
 
     @media @desktop-xl {
         min-height: 539px;
-        max-width: 1109px;
+        
+        .b-wrapper__portfolio & {
+            background: none;
+            max-width: 1109px;
+        }
     }
 
     @media @tablet {
@@ -800,35 +811,35 @@ h1, h2, h3, h4, h5 {
                 left: -3px;
                 right: -3px;
             }
-        }
 
-    
-        @media @desktop {
-            text-align: center;
-            max-width: 170px;
-            position: absolute;
-            left: 25px;
-            top: 25px;
-        }
+        
+            @media @desktop {
+                text-align: center;
+                max-width: 170px;
+                position: absolute;
+                left: 25px;
+                top: 25px;
+            }
 
-        @media @desktop-xl {
-            text-align: center;
-            max-width: 170px;
-            position: absolute;
-            left: 25px;
-            top: 25px;
-        }
+            @media @desktop-xl {
+                text-align: center;
+                max-width: 170px;
+                position: absolute;
+                left: 25px;
+                top: 25px;
+            }
 
-        @media @tablet {
-            text-align: center;
-            max-width: 170px;
-            position: absolute;
-            left: 25px;
-            top: 25px;
-        }
+            @media @tablet {
+                text-align: center;
+                max-width: 170px;
+                position: absolute;
+                left: 25px;
+                top: 25px;
+            }
 
-        @media @mobile {
-            margin-top: 25px;
+            @media @mobile {
+                margin-top: 25px;
+            }
         }
     }
 
@@ -893,21 +904,18 @@ h1, h2, h3, h4, h5 {
     .bx-wrapper {
     
         @media @desktop {
-            background: rgba(0, 0, 0, 0.59);
             height: 100%;
             .display-flex;
             .align-items(center);
         }
 
         @media @desktop-xl {
-            background: rgba(0, 0, 0, 0.59);
             height: 100%;
             .display-flex;
             .align-items(center);
         }
 
         @media @tablet {
-            background: rgba(0, 0, 0, 0.59);
             height: 100%;
             .display-flex;
             .align-items(center);
@@ -928,27 +936,26 @@ h1, h2, h3, h4, h5 {
         &_wrapper {
             position: relative;
             z-index: 1;
+            right: -45px;
 
             @media @desktop {
                 position: absolute;
-                right: 0;
                 bottom: -45px;
             }
 
             @media @desktop-xl {
                 position: absolute;
-                right: 0;
                 bottom: -45px;
             }
 
             @media @tablet {
                 position: absolute;
-                right: 0;
                 bottom: -45px;
             }
 
 
             &__page {
+                right: 10px;
 
 
                 @media @desktop {
