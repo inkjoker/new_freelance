@@ -86,6 +86,7 @@ html {
   min-height: 100%;
   height: 100%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 body {
   font-family: 'Circe-Regular';
@@ -120,10 +121,38 @@ h5 {
   display: block;
   clear: both;
 }
+.g-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .b-page {
   background: #edede6;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+}
+.b-page__main {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 @media screen and (max-width: 529px) {
   .b-page__main {
@@ -217,6 +246,7 @@ h5 {
   margin: -14px 0 0 -16px;
 }
 .b-ui-ctrl {
+  display: inline-block;
   cursor: pointer;
   background: transparent;
   border: 1px solid transparent;
@@ -239,16 +269,24 @@ h5 {
   background: #bb8416;
   border-radius: 5px;
 }
-@media screen and (min-width: 950px) and (max-width: 1128px) {
-  .b-wrapper {
-    max-width: 1109px;
-    margin: 0 auto;
-  }
+.b-wrapper {
+  -webkit-box-flex: 0 0 100%;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 0 0 100%;
+  /* OLD - Firefox 19- */
+  -webkit-flex: 0 0 100%;
+  /* Chrome */
+  -ms-flex: 0 0 100%;
+  /* IE 10 */
+  flex: 0 0 100%;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  position: relative;
+  overflow: hidden;
 }
-@media screen and (min-width: 1129px) {
+@media screen and (max-width: 529px) {
   .b-wrapper {
-    max-width: 1109px;
-    margin: 0 auto;
+    padding: 10px;
   }
 }
 .b-wrapper_fixed {
@@ -305,7 +343,6 @@ h5 {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
-  padding: 166px 0 238px;
   position: relative;
 }
 .b-wrapper__nav > .b-ui-ctrl {
@@ -328,21 +365,6 @@ h5 {
   bottom: 5px;
   top: 5px;
   border: 1px solid black;
-}
-@media screen and (min-width: 950px) and (max-width: 1128px) {
-  .b-wrapper__nav {
-    padding: 232px 0 171px;
-  }
-}
-@media screen and (min-width: 1129px) {
-  .b-wrapper__nav {
-    padding: 232px 0 171px;
-  }
-}
-@media screen and (min-width: 530px) and (max-width: 949px) {
-  .b-wrapper__nav {
-    padding: 232px 0 171px;
-  }
 }
 @media screen and (max-width: 529px) {
   .b-wrapper__nav {
@@ -376,33 +398,39 @@ h5 {
 .b-wrapper__disn {
   background: #61615c url('../images/blur.jpg') no-repeat;
 }
-@media screen and (min-width: 950px) and (max-width: 1128px) {
-  .b-wrapper__disn {
-    padding: 115px 0 60px;
-  }
-}
-@media screen and (min-width: 1129px) {
-  .b-wrapper__disn {
-    padding: 115px 0 60px;
-  }
-}
-@media screen and (min-width: 530px) and (max-width: 949px) {
-  .b-wrapper__disn {
-    padding: 115px 0 60px;
-  }
-}
 .b-wrapper__portf {
   background: #edede6;
   background-size: cover;
-  padding: 90px 0 95px;
-}
-@media screen and (max-width: 529px) {
-  .b-wrapper__portf {
-    padding: 0;
-  }
-}
-.b-wrapper__portfolio {
-  height: 100%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  padding: 0;
 }
 @media screen and (max-width: 529px) {
   .b-wrapper__portfolio {
@@ -434,21 +462,9 @@ h5 {
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
   height: 100%;
-  padding: 37px 25px;
-}
-@media screen and (min-width: 950px) and (max-width: 1128px) {
-  .b-wrapper__about {
-    padding: 37px 113px;
-  }
-}
-@media screen and (min-width: 1129px) {
-  .b-wrapper__about {
-    padding: 37px 113px;
-  }
 }
 .b-wrapper__excl {
   background: #edede6;
-  padding: 10px;
 }
 @media screen and (max-width: 529px) {
   .b-wrapper__excl {
@@ -457,31 +473,56 @@ h5 {
 }
 .b-wrapper__user {
   background: white;
-  padding: 24px;
 }
 .b-wrapper__form {
   background: #635a49;
-  padding: 31px 44px 0;
+  -webkit-box-flex: 0 0 90%;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 0 0 90%;
+  /* OLD - Firefox 19- */
+  -webkit-flex: 0 0 90%;
+  /* Chrome */
+  -ms-flex: 0 0 90%;
+  /* IE 10 */
+  flex: 0 0 90%;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-wrapper__form {
-    padding-top: 64px;
+    padding-top: 8%;
   }
 }
 @media screen and (min-width: 1129px) {
   .b-wrapper__form {
-    padding-top: 64px;
+    padding-top: 8%;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-wrapper__form {
-    padding-top: 64px;
+    padding-top: 8%;
   }
 }
 .b-wrapper__footer {
+  -webkit-box-flex: 0 0 10%;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 0 0 10%;
+  /* OLD - Firefox 19- */
+  -webkit-flex: 0 0 10%;
+  /* Chrome */
+  -ms-flex: 0 0 10%;
+  /* IE 10 */
+  flex: 0 0 10%;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
   background: #282216;
   box-shadow: inset 0 2px 12px rgba(0, 0, 0, 0.27);
-  padding: 25px 44px;
+  padding: 25px 0;
+}
+@media screen and (max-width: 529px) {
+  .b-wrapper__footer {
+    padding: 5px;
+  }
 }
 .b-logo {
   background: white;
@@ -527,15 +568,15 @@ h5 {
   .b-logo {
     display: block;
     min-height: 100%;
-    -webkit-box-flex: 0 0 100%;
+    -webkit-box-flex: 0 0 30%;
     /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-flex: 0 0 100%;
+    -moz-box-flex: 0 0 30%;
     /* OLD - Firefox 19- */
-    -webkit-flex: 0 0 100%;
+    -webkit-flex: 0 0 30%;
     /* Chrome */
-    -ms-flex: 0 0 100%;
+    -ms-flex: 0 0 30%;
     /* IE 10 */
-    flex: 0 0 100%;
+    flex: 0 0 30%;
     /* NEW, Spec - Opera 12.1, Firefox 20+ */
   
     padding: 0;
@@ -567,15 +608,15 @@ h5 {
   .b-navigation {
     display: block;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.27);
-    -webkit-box-flex: 0 0 100%;
+    -webkit-box-flex: 1 0 70%;
     /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-flex: 0 0 100%;
+    -moz-box-flex: 1 0 70%;
     /* OLD - Firefox 19- */
-    -webkit-flex: 0 0 100%;
+    -webkit-flex: 1 0 70%;
     /* Chrome */
-    -ms-flex: 0 0 100%;
+    -ms-flex: 1 0 70%;
     /* IE 10 */
-    flex: 0 0 100%;
+    flex: 1 0 70%;
     /* NEW, Spec - Opera 12.1, Firefox 20+ */
   
   }
@@ -895,6 +936,17 @@ h5 {
 @media screen and (max-width: 529px) {
   .b-protfolio {
     text-align: center;
+    -webkit-box-flex: 1 0 100%;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 100%;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 100%;
+    /* Chrome */
+    -ms-flex: 1 0 100%;
+    /* IE 10 */
+    flex: 1 0 100%;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
   }
 }
 .b-protfolio_title {
@@ -1184,24 +1236,35 @@ h5 {
 .b-protfolio .b-table_wrapper {
   position: relative;
   z-index: 1;
-  right: -45px;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-protfolio .b-table_wrapper {
     position: absolute;
     bottom: -45px;
+    right: -45px;
   }
 }
 @media screen and (min-width: 1129px) {
   .b-protfolio .b-table_wrapper {
     position: absolute;
     bottom: -45px;
+    right: -45px;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-protfolio .b-table_wrapper {
     position: absolute;
     bottom: -45px;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 529px) {
+  .b-protfolio .b-table_wrapper {
+    z-index: 1;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
   }
 }
 .b-protfolio .b-table_wrapper__page {
@@ -1388,6 +1451,11 @@ h5 {
   width: 90%;
   margin: 0 auto;
 }
+.b-slider_viewport:after {
+  display: block;
+  content: '';
+  clear: both;
+}
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-slider_viewport .b-slider_unit {
     position: relative;
@@ -1527,6 +1595,7 @@ h5 {
   max-width: 100%;
   font-size: 0;
   line-height: 0;
+  max-height: 350px;
   margin: auto;
 }
 .b-slider_text {
@@ -1688,6 +1757,7 @@ h5 {
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
+  margin-top: 24px;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-user_info__h {
@@ -1731,7 +1801,6 @@ h5 {
     -ms-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
@@ -1795,28 +1864,28 @@ h5 {
     margin-bottom: 25px;
   }
   .b-user_unit:first-child {
-    -webkit-box-flex: 0 1 30%;
+    -webkit-box-flex: 0 1 35%;
     /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-flex: 0 1 30%;
+    -moz-box-flex: 0 1 35%;
     /* OLD - Firefox 19- */
-    -webkit-flex: 0 1 30%;
+    -webkit-flex: 0 1 35%;
     /* Chrome */
-    -ms-flex: 0 1 30%;
+    -ms-flex: 0 1 35%;
     /* IE 10 */
-    flex: 0 1 30%;
+    flex: 0 1 35%;
     /* NEW, Spec - Opera 12.1, Firefox 20+ */
   
   }
   .b-user_unit:last-child {
-    -webkit-box-flex: 0 1 70%;
+    -webkit-box-flex: 0 1 65%;
     /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-flex: 0 1 70%;
+    -moz-box-flex: 0 1 65%;
     /* OLD - Firefox 19- */
-    -webkit-flex: 0 1 70%;
+    -webkit-flex: 0 1 65%;
     /* Chrome */
-    -ms-flex: 0 1 70%;
+    -ms-flex: 0 1 65%;
     /* IE 10 */
-    flex: 0 1 70%;
+    flex: 0 1 65%;
     /* NEW, Spec - Opera 12.1, Firefox 20+ */
   
   }
@@ -2165,6 +2234,11 @@ h5 {
     float: right;
   }
 }
+@media screen and (max-width: 529px) {
+  .b-form_title {
+    margin-bottom: 10px;
+  }
+}
 .b-form_unit {
   border: none;
   width: 100%;
@@ -2175,6 +2249,11 @@ h5 {
   text-align: center;
   padding-top: 20px;
   margin: 0;
+}
+@media screen and (max-width: 529px) {
+  .b-form_unit__ctrl {
+    padding-top: 10px;
+  }
 }
 .b-form_input {
   width: 100%;
@@ -2227,7 +2306,7 @@ h5 {
   color: white;
   font-family: 'Circe-Thin';
   font-size: 15px;
-  margin-bottom: 34px;
+  margin-bottom: 3px;
   line-height: 27px;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {

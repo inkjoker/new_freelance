@@ -10,6 +10,7 @@ html {
     min-height: 100%;
     height: 100%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {
@@ -51,12 +52,20 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+.g-absolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 .b-page {
     background: #edede6;
     padding: 0;
     margin: 0;
+    .display-flex;
 
     &__main {
+        .flex-column;
 
         @media @mobile {
             padding: 0 3px;
@@ -181,6 +190,7 @@ h1, h2, h3, h4, h5 {
     }
 
     &-ctrl {
+    	display: inline-block;
         cursor: pointer;
         background: transparent;
         border: 1px solid transparent;
@@ -209,14 +219,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .b-wrapper {
-    
-    @media @desktop {
-        max-width: 1109px;
-        margin: 0 auto;
-    }
-    @media @desktop-xl {
-        max-width: 1109px;
-        margin: 0 auto;
+	.flex(0 0 100%);
+	position: relative;
+	overflow: hidden;
+
+
+    @media @mobile {
+       padding: 10px;
     }
 
     &_fixed {
@@ -250,7 +259,6 @@ h1, h2, h3, h4, h5 {
         .display-flex;
         .justify-content(center);
         .align-items(center);
-        padding: 166px 0 238px;
         position: relative;
 
         > .b-ui-ctrl {
@@ -276,17 +284,6 @@ h1, h2, h3, h4, h5 {
             }
         }
 
-        @media @desktop {
-            padding: 232px 0 171px;
-        }
-
-        @media @desktop-xl {
-            padding: 232px 0 171px;
-        }
-
-        @media @tablet {
-            padding: 232px 0 171px;
-        }
 
         @media @mobile {
             .flex-column;
@@ -301,32 +298,18 @@ h1, h2, h3, h4, h5 {
 
     &__disn {
         background: #61615c url('../images/blur.jpg') no-repeat;
-    
-        @media @desktop {
-            padding: 115px 0 60px;
-        }
-
-        @media @desktop-xl {
-            padding: 115px 0 60px;
-        }
-
-        @media @tablet {
-            padding: 115px 0 60px;
-        }
     }
 
     &__portf {
         background: #edede6;
         background-size: cover;
-        padding: 90px 0 95px;
-
-        @media @mobile {
-            padding: 0;
-        }
+        .display-flex;
+        .flex-column;
+        .justify-content(center);
+        padding: 0;
     }
 
     &__portfolio {
-        height: 100%;
 
         @media @mobile {
             .display-flex;
@@ -338,20 +321,10 @@ h1, h2, h3, h4, h5 {
         background-size: cover;
         .display-flex;
         height: 100%;
-        padding: 37px 25px;
-
-        @media @desktop {
-            padding: 37px 113px;
-        }
-
-        @media @desktop-xl {
-            padding: 37px 113px;
-        }
     }
 
     &__excl {
         background: #edede6;
-        padding: 10px;
 
         @media @mobile {
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.27);
@@ -360,30 +333,34 @@ h1, h2, h3, h4, h5 {
 
     &__user {
         background: #fff;
-        padding: 24px;
     }
 
     &__form {
         background: #635a49;
-        padding: 31px 44px 0;
+        .flex(0 0 90%);
 
         @media @desktop {
-            padding-top: 64px;
+            padding-top: 8%;
         }
 
         @media @desktop-xl {
-            padding-top: 64px;
+            padding-top: 8%;
         }
 
         @media @tablet {
-            padding-top: 64px;
+            padding-top: 8%;
         }
     }
 
     &__footer {
+        .flex(0 0 10%);
         background: #282216;
         box-shadow: inset 0 2px 12px rgba(0, 0, 0, 0.27);
-        padding: 25px 44px;
+        padding: 25px 0;
+
+        @media @mobile {
+        	padding: 5px;
+        }
     }
 }
 
@@ -423,7 +400,7 @@ h1, h2, h3, h4, h5 {
     @media @mobile {
         display: block;
    		min-height: 100%;
-        .flex(0 0 100%);
+        .flex(0 0 30%);
         padding: 0;
 
         p {
@@ -444,7 +421,7 @@ h1, h2, h3, h4, h5 {
     @media @mobile {
         display: block;
         box-shadow: 0 2px 12px rgba(0, 0, 0, 0.27);
-        .flex(0 0 100%);
+        .flex(1 0 70%);
     }
 
     &:before {
@@ -778,6 +755,7 @@ h1, h2, h3, h4, h5 {
 
     @media @mobile {
         text-align: center;
+        .flex(1 0 100%);
     }
 
     &_title {
@@ -900,7 +878,6 @@ h1, h2, h3, h4, h5 {
         }
     }
 
-
     .bx-wrapper {
         
         img {
@@ -953,22 +930,31 @@ h1, h2, h3, h4, h5 {
         &_wrapper {
             position: relative;
             z-index: 1;
-            right: -45px;
-
             @media @desktop {
                 position: absolute;
                 bottom: -45px;
+            	right: -45px;
             }
 
             @media @desktop-xl {
                 position: absolute;
                 bottom: -45px;
+            	right: -45px;
             }
 
             @media @tablet {
                 position: absolute;
                 bottom: -45px;
+            	right: 0px;
             }
+
+			@media @mobile{
+				z-index: 1;
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
+				right: 10px;
+			}
 
 
             &__page {
@@ -1182,6 +1168,12 @@ h1, h2, h3, h4, h5 {
         width: 90%;
         margin: 0 auto;
 
+        &:after {
+        	display: block;
+        	content: '';
+        	clear: both;
+        }
+
         @media @desktop {
 
             .b-slider_unit {
@@ -1332,6 +1324,7 @@ h1, h2, h3, h4, h5 {
         max-width: 100%;     
         font-size: 0;
         line-height: 0;
+        max-height: 350px;
         margin: auto;
     }
 
@@ -1431,6 +1424,7 @@ h1, h2, h3, h4, h5 {
 
     &_info {
         .display-flex;
+        margin-top: 24px;
 
         &__h {
 
@@ -1464,7 +1458,6 @@ h1, h2, h3, h4, h5 {
 
         @media @mobile {
             .flex-column;
-            margin-bottom: 40px; 
         }
     }
 
@@ -1495,10 +1488,10 @@ h1, h2, h3, h4, h5 {
             margin-bottom: 25px;
 
 	    	&:first-child {
-	    		.flex(0 1 30%);
+	    		.flex(0 1 35%);
 	    	}
 	    	&:last-child {
-	    		.flex(0 1 70%);
+	    		.flex(0 1 65%);
 	    	}
         }
 
@@ -1761,6 +1754,11 @@ h1, h2, h3, h4, h5 {
             width: 50%;
             float: right;
         }
+
+
+	    @media @mobile {
+	       margin-bottom: 10px;
+	    }
     }
 
     &_unit {
@@ -1773,6 +1771,12 @@ h1, h2, h3, h4, h5 {
             text-align: center;
             padding-top: 20px;
             margin: 0;
+
+
+
+		    @media @mobile {
+		       padding-top: 10px;
+		    }
         }
     }
 
@@ -1830,7 +1834,7 @@ h1, h2, h3, h4, h5 {
         color: #fff;
         font-family: @font-thin;
         font-size: 15px;
-        margin-bottom: 34px;
+        margin-bottom: 3px;
         line-height: 27px;
     
         @media @desktop {
