@@ -64,7 +64,7 @@ $(document).ready(function(){
 		++index;
 		$(this).attr('href', '#h.opt' + (index - 1));
 
-		if (index == 4) {
+		if ((index - 1) == 4) {
 
 			$(this).hide();
 		};

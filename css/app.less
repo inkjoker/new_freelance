@@ -228,6 +228,11 @@ h1, h2, h3, h4, h5 {
             width: 232px;
             height: 54px;
             line-height: 54px;
+
+            @media @mobile {
+				height: 34px;
+				line-height: 30px;
+            }
         }
 
         &__white {   
@@ -364,7 +369,7 @@ h1, h2, h3, h4, h5 {
         }
 
         @media @tablet {
-            padding-top: 8%;
+            padding-top: 4%;
         }
     }
 
@@ -766,7 +771,7 @@ h1, h2, h3, h4, h5 {
     }
 
     @media @tablet {
-        min-height: 467px;
+        .flex(1 0 100%);
     }
 
     @media @mobile {
@@ -960,7 +965,7 @@ h1, h2, h3, h4, h5 {
 
             @media @tablet {
                 position: absolute;
-                bottom: -45px;
+                bottom: 0px;
             	right: 0px;
             }
 
@@ -1018,6 +1023,11 @@ h1, h2, h3, h4, h5 {
             .b-ui-icon__sign-b {
                 top: 4px;
                 left: 2px;
+            }
+
+            @media @mobile {
+            	padding: 10px 5px;
+            	font-size: 12px;
             }
         }
 
@@ -1129,7 +1139,7 @@ h1, h2, h3, h4, h5 {
         text-transform: uppercase;
         font-family: @font-bold;
         font-size: 25px;
-        margin: 25px auto;  
+        margin: 15px auto;  
         max-width: 350px;
 
         span {
@@ -1560,6 +1570,10 @@ h1, h2, h3, h4, h5 {
         &:hover {
             text-decoration: none;
         }
+
+        @media @mobile {
+        	margin-top: 12px;
+        }
     }
 
     &_comment {
@@ -1580,7 +1594,8 @@ h1, h2, h3, h4, h5 {
         }
 
         @media @tablet {
-            margin-top: 45px;
+            margin-top: 25px;
+            padding: 15px;
         }
     }
 
@@ -1723,6 +1738,7 @@ h1, h2, h3, h4, h5 {
         .justify-content(space-between);
         .flex-wrap(wrap);
         max-width: 662px;
+        padding: 0 10px;
 
         > div {
             .flex(0 0 50%);
@@ -1751,13 +1767,15 @@ h1, h2, h3, h4, h5 {
         }
 
         @media @tablet {
-            width: 50%;
-            float: right;
+            margin: 0 10px;
         }
 
 
 	    @media @mobile {
-	       margin-bottom: 10px;
+	    	font-size: 16px;
+			margin-bottom: 10px;
+			font-size: 14px;
+			line-height: 14px;
 	    }
     }
 
@@ -1773,9 +1791,12 @@ h1, h2, h3, h4, h5 {
             margin: 0;
 
 
+		    @media @tablet {
+		       padding-top: 10px;
+		    }
 
 		    @media @mobile {
-		       padding-top: 10px;
+		       padding-top: 5px;
 		    }
         }
     }
@@ -1798,6 +1819,12 @@ h1, h2, h3, h4, h5 {
         line-height: 1;
         margin-bottom: 8px;
         display: inline-block;
+
+
+	    @media @mobile {
+			font-size: 12px;
+			line-height: 12px;
+	    }
     }
 
     &_helper {
