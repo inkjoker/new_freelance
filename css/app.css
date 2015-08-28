@@ -1361,6 +1361,7 @@ h5 {
   font-size: 14px;
   line-height: 35px;
   height: 35px;
+  position: relative;
 }
 .b-protfolio .b-table .b-table_td:first-child {
   cursor: pointer;
