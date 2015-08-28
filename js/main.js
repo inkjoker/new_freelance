@@ -62,7 +62,7 @@ $(document).ready(function(){
 	$('#nextScreen').click(function(e){
 
 		++index;
-		$(this).attr('href', '#h.opt' + index);
+		$(this).attr('href', '#h.opt' + (index - 1));
 
 		if (index == 4) {
 
