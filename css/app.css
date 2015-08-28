@@ -485,6 +485,16 @@ h5 {
   justify-content: center;
   height: 100%;
 }
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-wrapper__about {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 949px) {
+  .b-wrapper__about {
+    padding: 10px;
+  }
+}
 .b-wrapper__excl {
   background: #edede6;
 }
@@ -2407,6 +2417,16 @@ h5 {
 .b-about {
   position: relative;
   height: 70%;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-about {
+    height: 80%;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 949px) {
+  .b-about {
+    height: 90%;
+  }
 }
 @media screen and (max-width: 529px) {
   .b-about {

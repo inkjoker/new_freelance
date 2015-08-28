@@ -325,6 +325,15 @@ h1, h2, h3, h4, h5 {
         .align-items(center);
         .justify-content(center);
         height: 100%;
+
+
+        @media @desktop {
+            padding: 10px;
+        }
+
+        @media @tablet {
+            padding: 10px;
+        }
     }
 
     &__excl {
@@ -1927,6 +1936,14 @@ h1, h2, h3, h4, h5 {
 .b-about {
     position: relative;
     height: 70%;
+
+    @media @desktop {
+        height: 80%;
+    }
+
+    @media @tablet {
+    	height: 90%;
+    }
 
     @media @mobile {
     	height: 100%;
