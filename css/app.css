@@ -128,7 +128,7 @@ h5 {
 }
 #nextScreen {
   position: fixed;
-  margin: -15px 0 0 -15px;
+  margin: -39px 0 0 -39px;
   left: 50%;
   bottom: 20px;
   background: rgba(0, 0, 0, 0.08);
@@ -150,7 +150,7 @@ h5 {
 }
 @media screen and (max-width: 529px) {
   #nextScreen {
-    display: none;
+    display: none !important;
   }
 }
 .b-page {
