@@ -126,6 +126,33 @@ h5 {
   top: 0;
   left: 0;
 }
+#nextScreen {
+  position: fixed;
+  margin: -15px 0 0 -15px;
+  left: 50%;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.08);
+  width: 78px;
+  height: 78px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 102px;
+  z-index: 3;
+}
+#nextScreen:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  top: 5px;
+  border: 1px solid black;
+}
+@media screen and (max-width: 529px) {
+  #nextScreen {
+    display: none;
+  }
+}
 .b-page {
   background: #edede6;
   padding: 0;
@@ -345,27 +372,6 @@ h5 {
   align-items: center;
   position: relative;
 }
-.b-wrapper__nav > .b-ui-ctrl {
-  background: rgba(0, 0, 0, 0.08);
-  position: absolute;
-  bottom: 20px;
-  width: 78px;
-  height: 78px;
-  left: 50%;
-  margin: 0 0 0 -39px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 102px;
-}
-.b-wrapper__nav > .b-ui-ctrl:before {
-  content: '';
-  position: absolute;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  top: 5px;
-  border: 1px solid black;
-}
 @media screen and (max-width: 529px) {
   .b-wrapper__nav {
     -webkit-box-orient: vertical;
@@ -390,9 +396,6 @@ h5 {
     -o-align-items: stretch;
     align-items: stretch;
     padding: 0;
-  }
-  .b-wrapper__nav > .b-ui-ctrl {
-    display: none;
   }
 }
 .b-wrapper__disn {
@@ -461,6 +464,25 @@ h5 {
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  -o-box-align: center;
+  box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
   height: 100%;
 }
 .b-wrapper__excl {
@@ -2384,6 +2406,12 @@ h5 {
 }
 .b-about {
   position: relative;
+  height: 70%;
+}
+@media screen and (max-width: 529px) {
+  .b-about {
+    height: 100%;
+  }
 }
 .b-about_title {
   position: relative;
