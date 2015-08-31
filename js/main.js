@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-	var index = 0;
+	var index = 0,
+		keyUp = 38,
+		keyDown = 40;
 
 	var sliderFirst = $('.slider1').bxSlider({
 		minSlides: 1,
@@ -71,6 +73,38 @@ $(document).ready(function(){
 
 		scrollToAnchor(this, e);
 	});
+
+	document.onkeydown = checkKey;
+	document.onkeypress = checkKey;
+
+	function checkKey(e) {
+		var e = e || window.event;
+
+		if (e.keyCode == 38) {
+
+			if (index == 1) {
+
+				$('#menuTop').click();
+
+			} else if(index != 0) {
+
+				--index;
+				--index;
+				$('#nextScreen').show().attr('href', '#h.opt' + index).click();
+
+			};
+		    
+		} else if (e.keyCode == 40) {
+
+			if (index != 5) {
+
+				$('#nextScreen').click();
+
+			};
+		    
+		};
+
+	}
 
 	function scrollToAnchor(scope, e) {
 
