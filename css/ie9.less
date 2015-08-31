@@ -1,0 +1,74 @@
+@import url("fonts.less");
+@import url("mixin.less");
+
+
+.b-wrapper {
+
+    &__nav {
+        text-align: center;
+        font-size: 0;
+        line-height: 0;
+        padding: 150px 0;
+    }
+}
+
+.b-logo {
+    width: 286px;
+}
+
+
+.b-navigation {
+    position: relative;
+    top: -6px;
+    min-height: 308px;
+    width: 286px;
+}
+
+
+.b-protfolio {
+    .b-table_wrapper{
+        bottom: 0;
+    }
+}
+
+
+.b-slider {
+
+    &_items {
+        max-width: 33.333% !important;
+        margin: 0 !important;
+        float: left;
+        height: 100% !important;
+        max-height: 100%;
+    }
+
+    &_text {
+        display: none;
+    }
+}
+
+
+.b-user {
+    overflow-y: scroll;
+
+    &_info {
+
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+    &_unit {
+        float: left;
+        width: 48%;
+    }
+}
+
+.b-form {
+    > div {
+        float: left;
+        width: 48%;
+    }
+}

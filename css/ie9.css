@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Circe-ExtraLight';
+  src: url('fonts/Circe-ExtraLight.eot');
+  src: url('fonts/Circe-ExtraLight.eot?#iefix') format('embedded-opentype'), url('fonts/Circe-ExtraLight.woff') format('woff'), url('fonts/Circe-ExtraLight.ttf') format('truetype'), url('fonts/Circe-ExtraLight.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe-Light';
+  src: url('fonts/Circe-Light.eot');
+  src: url('fonts/Circe-Light.eot?#iefix') format('embedded-opentype'), url('fonts/Circe-Light.woff') format('woff'), url('fonts/Circe-Light.ttf') format('truetype'), url('fonts/Circe-Light.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe-Regular';
+  src: url('fonts/Circe-Regular.eot');
+  src: url('fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Circe-Regular.woff') format('woff'), url('fonts/Circe-Regular.ttf') format('truetype'), url('fonts/Circe-Regular.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe-Thin';
+  src: url('fonts/Circe-Thin.eot');
+  src: url('fonts/Circe-Thin.eot?#iefix') format('embedded-opentype'), url('fonts/Circe-Thin.woff') format('woff'), url('fonts/Circe-Thin.ttf') format('truetype'), url('fonts/Circe-Thin.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe-Bold';
+  src: url('fonts/Circe-Bold.eot');
+  src: url('fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Circe-Bold.woff') format('woff'), url('fonts/Circe-Bold.ttf') format('truetype'), url('fonts/Circe-Bold.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe-ExtraBold';
+  src: url('fonts/Circe-ExtraBold.eot');
+  src: url('fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'), url('fonts/Circe-ExtraBold.woff') format('woff'), url('fonts/Circe-ExtraBold.ttf') format('truetype'), url('fonts/Circe-ExtraBold.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.display-flex {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+}
+.inline-flexbox {
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+  display: box;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+}
+.flex-column {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+.b-wrapper__nav {
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  padding: 150px 0;
+}
+.b-logo {
+  width: 286px;
+}
+.b-navigation {
+  position: relative;
+  top: -6px;
+  min-height: 308px;
+  width: 286px;
+}
+.b-protfolio .b-table_wrapper {
+  bottom: 0;
+}
+.b-slider_items {
+  max-width: 33.333% !important;
+  margin: 0 !important;
+  float: left;
+  height: 100% !important;
+  max-height: 100%;
+}
+.b-slider_text {
+  display: none;
+}
+.b-user {
+  overflow-y: scroll;
+}
+.b-user_info:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.b-user_unit {
+  float: left;
+  width: 48%;
+}
+.b-form > div {
+  float: left;
+  width: 48%;
+}
