@@ -81,6 +81,10 @@ h1, h2, h3, h4, h5 {
         border:  1px solid @color;
     }
 
+    &:hover {
+        background: rgba(0, 0, 0, 0.4);    
+    }
+
     @media @mobile-xl {
 		display: none !important;
     }
@@ -799,6 +803,10 @@ h1, h2, h3, h4, h5 {
         }
 
 
+        &:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
     
         @media @desktop {
             float: right;
@@ -997,10 +1005,13 @@ h1, h2, h3, h4, h5 {
         }
 
         .slide {
-            .display-flex;
-            .justify-content(center);
-            .align-items(center);
             height: 100%;
+
+            @media @mobile {
+                .display-flex;
+                .justify-content(center);
+                .align-items(center);
+            }
         }
 
         @media @desktop {
@@ -1130,7 +1141,23 @@ h1, h2, h3, h4, h5 {
     }
 
     &__page {
-        max-width: 100%;
+
+        @media @mobile {
+            .flex(1 0 100%);
+        }
+
+        .bx-wrapper img {
+
+            @media @desktop {
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            @media @desktop-xl {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
 
         .b-table {
 
@@ -1221,6 +1248,13 @@ h1, h2, h3, h4, h5 {
         border: 1px solid @color;
         vertical-align: middle;
         line-height: 1;
+
+        &__ctrl {
+            
+            &:hover {
+                background: rgba(0, 0, 0, 0.3);
+            }
+        }
     }
 }
 
@@ -2224,6 +2258,10 @@ h1, h2, h3, h4, h5 {
 
         .b-ui-icon__sign-w {
             left: -7px;
+        }
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.5);
         }
     }
 
