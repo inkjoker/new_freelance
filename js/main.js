@@ -2,7 +2,8 @@ $(document).ready(function(){
 
 	var index = 0,
 		keyUp = 38,
-		keyDown = 40;
+		keyDown = 40,
+		animateComplite = true;
 
 	var sliderFirst = $('.slider1').bxSlider({
 		minSlides: 1,
@@ -74,6 +75,44 @@ $(document).ready(function(){
 		scrollToAnchor(this, e);
 	});
 
+	var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
+
+	$(window).bind(mousewheelevt, function(e){
+
+	    var evt = window.event || e //equalize event object     
+	    evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible               
+	    var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
+
+		if (animateComplite) {
+		    if(delta > 0) {
+
+
+				if (index == 1) {
+
+					$('#menuTop').click();
+
+				} else if(index != 0) {
+
+					--index;
+					--index;
+					$('#nextScreen').show().attr('href', '#h.opt' + index).click();
+
+				};
+
+		       
+		    } else {
+
+
+				if (index != 5) {
+
+					$('#nextScreen').click();
+
+				};
+
+		    } 
+		}
+	});
+
 	document.onkeydown = checkKey;
 	document.onkeypress = checkKey;
 
@@ -110,11 +149,21 @@ $(document).ready(function(){
 
 		var name = $(scope).attr('href').replace(/\#/g, "");
 
-        $('html, body').stop().animate({
+		if (animateComplite) {
 
-            scrollTop: $("a[name='" + name + "']").offset().top
+			animateComplite = false;
 
-        }, 1000);
+
+	        $('html, body').stop().animate({
+
+	            scrollTop: $("a[name='" + name + "']").offset().top
+
+	        }, 1000, function() {
+
+				animateComplite = true;
+
+			});
+		}
 
         e.preventDefault();
 	}

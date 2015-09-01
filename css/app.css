@@ -2120,6 +2120,7 @@ h5 {
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-user_unit:first-child {
+    max-width: 42%;
     -webkit-box-flex: 0 1 42%;
     /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 0 1 42%;
@@ -2133,6 +2134,7 @@ h5 {
   
   }
   .b-user_unit:last-child {
+    max-width: 58%;
     -webkit-box-flex: 0 1 58%;
     /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 0 1 58%;
@@ -2148,6 +2150,7 @@ h5 {
 }
 @media screen and (min-width: 1129px) {
   .b-user_unit:first-child {
+    max-width: 42%;
     -webkit-box-flex: 0 1 42%;
     /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 0 1 42%;
@@ -2161,6 +2164,7 @@ h5 {
   
   }
   .b-user_unit:last-child {
+    max-width: 58%;
     -webkit-box-flex: 0 1 58%;
     /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 0 1 58%;
@@ -2179,6 +2183,7 @@ h5 {
     margin-bottom: 25px;
   }
   .b-user_unit:first-child {
+    max-width: 35%;
     -webkit-box-flex: 0 1 35%;
     /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 0 1 35%;
@@ -2192,6 +2197,7 @@ h5 {
   
   }
   .b-user_unit:last-child {
+    max-width: 65%;
     -webkit-box-flex: 0 1 65%;
     /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 0 1 65%;
