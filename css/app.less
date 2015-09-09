@@ -316,6 +316,7 @@ h1, h2, h3, h4, h5 {
         .display-flex;
         .justify-content(center);
         .align-items(center);
+        .flex-column;
     }
 
     &__portf {
@@ -373,8 +374,9 @@ h1, h2, h3, h4, h5 {
     &__excl {
         background: #edede6;
         .display-flex;
-        .flex-column;
         .justify-content(center);
+        .align-items(center);
+        .flex-column;
 
         @media @mobile {
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.27);
@@ -383,38 +385,31 @@ h1, h2, h3, h4, h5 {
 
     &__user {
         background: #fff;
+        .flex(1 0 auto);
 
         @media @desktop {
-            padding-top: 5%;
+            padding: 5% 0;
         }
 
         @media @desktop-xl {
-            padding-top: 5%;
+            padding: 5% 0;
         }
-
-
-        @media @tablet {
-        	overflow-y:scroll; 
-        }
-
-	    @media @mobile {
-        	overflow-y:scroll; 
-	    }
     }
 
     &__form {
         background: #635a49;
-        .flex(0 0 90%);
+        .flex(0 0 auto);
         .display-flex;
         .flex-column;
         .justify-content(center);
+        .align-items(center);
 
         @media @desktop {
-            padding-top: 8%;
+            padding-top: 5%;
         }
 
         @media @desktop-xl {
-            padding-top: 8%;
+            padding-top: 5%;
         }
 
         @media @tablet {
@@ -427,10 +422,18 @@ h1, h2, h3, h4, h5 {
     }
 
     &__footer {
-        .flex(0 0 10%);
+        .flex(0 0 auto);
         background: #282216;
         box-shadow: inset 0 2px 12px rgba(0, 0, 0, 0.27);
         padding: 25px 0;
+
+        @media @desktop {
+            padding: 50px 0;
+        }
+
+        @media @desktop-xl {
+            padding: 50px 0;
+        }
 
 	    @media @mobile-xl {
         	padding: 5px;
@@ -1008,6 +1011,8 @@ h1, h2, h3, h4, h5 {
         
         .slider1 {
             height: 100%;
+            .flex(1 0 100%);
+            .flex-direction(row);
             .display-flex;
             .justify-content(center);
             .align-items(start);
@@ -1089,10 +1094,12 @@ h1, h2, h3, h4, h5 {
 
 
                 @media @desktop {
+                    position: fixed;
                     bottom: 10px;
                 }
 
                 @media @desktop-xl {
+                    position: fixed;
                     bottom: 10px;
                 }
 
@@ -1364,7 +1371,7 @@ h1, h2, h3, h4, h5 {
 
                         p {
                             max-width: 330px;
-                            margin: -25px auto 0;
+                            margin: -25px 40px 0;
                         }
                     }
                 }
@@ -1419,7 +1426,7 @@ h1, h2, h3, h4, h5 {
 
                         p {
                             max-width: 330px;
-                            margin: -25px auto 0;
+                            margin: -25px 40px 0;
                         }
                     }
                 }
@@ -1904,6 +1911,7 @@ h1, h2, h3, h4, h5 {
 .b-form {
     clear: both;
     margin: 0 auto;
+    width: 100%;
 
     @media @desktop {
         .display-flex;
@@ -1912,11 +1920,7 @@ h1, h2, h3, h4, h5 {
         max-width: 882px;
 
         > div {
-            .flex(0 0 50%);
-
-            &:first-child {
-                padding-right: 28px;
-            }
+            .flex(0 0 49%);
         }
     }
 
@@ -1927,11 +1931,7 @@ h1, h2, h3, h4, h5 {
         max-width: 882px;
 
         > div {
-            .flex(0 0 50%);
-
-            &:first-child {
-                padding-right: 28px;
-            }
+            .flex(0 0 49%);
         }
     }
 
@@ -1962,17 +1962,23 @@ h1, h2, h3, h4, h5 {
             width: 50%;
             float: right;
             max-width: 882px;
+            margin-left: 50%;
         }
 
         @media @desktop-xl {
             width: 50%;
             float: right;
             max-width: 882px;
+            margin-left: 50%;
         }
 
         @media @tablet {
             margin-bottom: 5px;
             max-width: 662px;
+
+            br {
+                display: none;
+            }
         }
 
         @media @mobile-xl {
@@ -1980,6 +1986,10 @@ h1, h2, h3, h4, h5 {
 			margin-bottom: 10px;
 			font-size: 14px;
 			line-height: 14px;
+
+            br {
+                display: none;
+            }
 		}
 
 	    @media @mobile {
@@ -1987,6 +1997,10 @@ h1, h2, h3, h4, h5 {
 			margin-bottom: 10px;
 			font-size: 14px;
 			line-height: 14px;
+
+            br {
+                display: none;
+            }
 	    }
     }
 
@@ -2092,6 +2106,7 @@ h1, h2, h3, h4, h5 {
         line-height: 27px;
     
         @media @desktop {
+            margin-bottom: 26px;
 
             br {
                 display: none;
@@ -2099,6 +2114,7 @@ h1, h2, h3, h4, h5 {
         }
 
         @media @desktop-xl {
+            margin-bottom: 26px;
 
             br {
                 display: none;

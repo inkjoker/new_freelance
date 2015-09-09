@@ -443,6 +443,16 @@ h5 {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .b-wrapper__portf {
   background: #edede6;
@@ -636,6 +646,25 @@ h5 {
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  -o-box-align: center;
+  box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   -ms-box-orient: vertical;
@@ -646,14 +675,6 @@ h5 {
   -ms-flex-direction: column;
   -o-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
 }
 @media screen and (max-width: 529px) {
   .b-wrapper__excl {
@@ -662,38 +683,39 @@ h5 {
 }
 .b-wrapper__user {
   background: white;
+  -webkit-box-flex: 1 0 auto;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1 0 auto;
+  /* OLD - Firefox 19- */
+  -webkit-flex: 1 0 auto;
+  /* Chrome */
+  -ms-flex: 1 0 auto;
+  /* IE 10 */
+  flex: 1 0 auto;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-wrapper__user {
-    padding-top: 5%;
+    padding: 5% 0;
   }
 }
 @media screen and (min-width: 1129px) {
   .b-wrapper__user {
-    padding-top: 5%;
-  }
-}
-@media screen and (min-width: 530px) and (max-width: 949px) {
-  .b-wrapper__user {
-    overflow-y: scroll;
-  }
-}
-@media screen and (max-width: 529px) {
-  .b-wrapper__user {
-    overflow-y: scroll;
+    padding: 5% 0;
   }
 }
 .b-wrapper__form {
   background: #635a49;
-  -webkit-box-flex: 0 0 90%;
+  -webkit-box-flex: 0 0 auto;
   /* OLD - iOS 6-, Safari 3.1-6 */
-  -moz-box-flex: 0 0 90%;
+  -moz-box-flex: 0 0 auto;
   /* OLD - Firefox 19- */
-  -webkit-flex: 0 0 90%;
+  -webkit-flex: 0 0 auto;
   /* Chrome */
-  -ms-flex: 0 0 90%;
+  -ms-flex: 0 0 auto;
   /* IE 10 */
-  flex: 0 0 90%;
+  flex: 0 0 auto;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
   display: -webkit-box;
@@ -722,15 +744,26 @@ h5 {
   -ms-justify-content: center;
   -o-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  -o-box-align: center;
+  box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-wrapper__form {
-    padding-top: 8%;
+    padding-top: 5%;
   }
 }
 @media screen and (min-width: 1129px) {
   .b-wrapper__form {
-    padding-top: 8%;
+    padding-top: 5%;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
@@ -744,20 +777,30 @@ h5 {
   }
 }
 .b-wrapper__footer {
-  -webkit-box-flex: 0 0 10%;
+  -webkit-box-flex: 0 0 auto;
   /* OLD - iOS 6-, Safari 3.1-6 */
-  -moz-box-flex: 0 0 10%;
+  -moz-box-flex: 0 0 auto;
   /* OLD - Firefox 19- */
-  -webkit-flex: 0 0 10%;
+  -webkit-flex: 0 0 auto;
   /* Chrome */
-  -ms-flex: 0 0 10%;
+  -ms-flex: 0 0 auto;
   /* IE 10 */
-  flex: 0 0 10%;
+  flex: 0 0 auto;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
   background: #282216;
   box-shadow: inset 0 2px 12px rgba(0, 0, 0, 0.27);
   padding: 25px 0;
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-wrapper__footer {
+    padding: 50px 0;
+  }
+}
+@media screen and (min-width: 1129px) {
+  .b-wrapper__footer {
+    padding: 50px 0;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-wrapper__footer {
@@ -1410,8 +1453,20 @@ h5 {
 }
 .b-protfolio .bx-wrapper .slider1 {
   height: 100%;
-  display: -webkit-box;
+  -webkit-box-flex: 1 0 100%;
   /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1 0 100%;
+  /* OLD - Firefox 19- */
+  -webkit-flex: 1 0 100%;
+  /* Chrome */
+  -ms-flex: 1 0 100%;
+  /* IE 10 */
+  flex: 1 0 100%;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
   display: -moz-box;
   /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;
@@ -1419,8 +1474,6 @@ h5 {
   display: -webkit-flex;
   /* NEW - Chrome */
   display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -ms-flex-pack: center;
@@ -1610,11 +1663,13 @@ h5 {
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-protfolio .b-table_wrapper__page {
+    position: fixed;
     bottom: 10px;
   }
 }
 @media screen and (min-width: 1129px) {
   .b-protfolio .b-table_wrapper__page {
+    position: fixed;
     bottom: 10px;
   }
 }
@@ -1870,7 +1925,7 @@ h5 {
   }
   .b-slider_viewport .b-slider_items:nth-child(3) p {
     max-width: 330px;
-    margin: -25px auto 0;
+    margin: -25px 40px 0;
   }
 }
 @media screen and (min-width: 1129px) {
@@ -1924,7 +1979,7 @@ h5 {
   }
   .b-slider_viewport .b-slider_items:nth-child(3) p {
     max-width: 330px;
-    margin: -25px auto 0;
+    margin: -25px 40px 0;
   }
 }
 @media screen and (max-width: 529px) {
@@ -2528,6 +2583,7 @@ h5 {
 .b-form {
   clear: both;
   margin: 0 auto;
+  width: 100%;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-form {
@@ -2557,20 +2613,17 @@ h5 {
     max-width: 882px;
   }
   .b-form > div {
-    -webkit-box-flex: 0 0 50%;
+    -webkit-box-flex: 0 0 49%;
     /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-flex: 0 0 50%;
+    -moz-box-flex: 0 0 49%;
     /* OLD - Firefox 19- */
-    -webkit-flex: 0 0 50%;
+    -webkit-flex: 0 0 49%;
     /* Chrome */
-    -ms-flex: 0 0 50%;
+    -ms-flex: 0 0 49%;
     /* IE 10 */
-    flex: 0 0 50%;
+    flex: 0 0 49%;
     /* NEW, Spec - Opera 12.1, Firefox 20+ */
   
-  }
-  .b-form > div:first-child {
-    padding-right: 28px;
   }
 }
 @media screen and (min-width: 1129px) {
@@ -2601,20 +2654,17 @@ h5 {
     max-width: 882px;
   }
   .b-form > div {
-    -webkit-box-flex: 0 0 50%;
+    -webkit-box-flex: 0 0 49%;
     /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-flex: 0 0 50%;
+    -moz-box-flex: 0 0 49%;
     /* OLD - Firefox 19- */
-    -webkit-flex: 0 0 50%;
+    -webkit-flex: 0 0 49%;
     /* Chrome */
-    -ms-flex: 0 0 50%;
+    -ms-flex: 0 0 49%;
     /* IE 10 */
-    flex: 0 0 50%;
+    flex: 0 0 49%;
     /* NEW, Spec - Opera 12.1, Firefox 20+ */
   
-  }
-  .b-form > div:first-child {
-    padding-right: 28px;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
@@ -2674,6 +2724,7 @@ h5 {
     width: 50%;
     float: right;
     max-width: 882px;
+    margin-left: 50%;
   }
 }
 @media screen and (min-width: 1129px) {
@@ -2681,12 +2732,16 @@ h5 {
     width: 50%;
     float: right;
     max-width: 882px;
+    margin-left: 50%;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-form_title {
     margin-bottom: 5px;
     max-width: 662px;
+  }
+  .b-form_title br {
+    display: none;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
@@ -2696,6 +2751,9 @@ h5 {
     font-size: 14px;
     line-height: 14px;
   }
+  .b-form_title br {
+    display: none;
+  }
 }
 @media screen and (max-width: 529px) {
   .b-form_title {
@@ -2703,6 +2761,9 @@ h5 {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 14px;
+  }
+  .b-form_title br {
+    display: none;
   }
 }
 .b-form_unit {
@@ -2803,11 +2864,17 @@ h5 {
   line-height: 27px;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-company_address {
+    margin-bottom: 26px;
+  }
   .b-company_address br {
     display: none;
   }
 }
 @media screen and (min-width: 1129px) {
+  .b-company_address {
+    margin-bottom: 26px;
+  }
   .b-company_address br {
     display: none;
   }
