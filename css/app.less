@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     vertical-align: middle;
     line-height: 102px;
-	z-index: 3;
+	z-index: 6;
 
     &:before {
         content: '';
@@ -297,16 +297,9 @@ h1, h2, h3, h4, h5 {
     &__nav {
         background: #61615c url('../images/self.jpg') no-repeat;
         background-size: cover;
-        .display-flex;
-        .justify-content(center);
-        .align-items(center);
         position: relative;
 
-
-
         @media @mobile {
-            .flex-column;
-            .align-items(stretch);
             padding: 0;
         }
     }
@@ -480,8 +473,8 @@ h1, h2, h3, h4, h5 {
 
     @media @mobile {
         display: block;
-   		min-height: 100%;
         .flex(0 0 30%);
+        min-height: auto;
         padding: 0;
 
         p {
@@ -498,6 +491,32 @@ h1, h2, h3, h4, h5 {
     text-align: left;
     min-height: 307px;
     .flex(0 0 286px);
+
+    &_fixed {
+        .justify-content(center);
+        .align-items(center);
+        position: fixed;
+        display: none;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 5;
+
+        &.visible {
+            .display-flex;
+
+        }
+
+
+        @media @mobile {
+            .flex-column;
+            .justify-content(space-between);
+            .align-items(stretch);
+            padding: 0;
+        }
+
+    }
 
     @media @mobile {
         display: block;
