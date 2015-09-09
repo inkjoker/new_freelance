@@ -231,6 +231,8 @@
 		<form class="b-form" action="/" method="">
 
 			<div>
+				<input type="hidden" id="emailCompany" value="info@ r-design.ru">
+				<input type="hidden" id="subject" value="Feed back.">
 				<fieldset class="b-form_unit">
 					<label class="b-form_label" for="user_name">Имя</label>
 					<input id="user_name" name="user_name" class="b-form_input" type="text" value="">
@@ -238,12 +240,12 @@
 
 				<fieldset class="b-form_unit">
 					<label class="b-form_label" for="email">Электронная почта</label>
-					<input id="email" name="email" class="b-form_input" type="tel" value="">
+					<input id="user_email" name="email" class="b-form_input" type="tel" value="">
 				</fieldset>
 
 				<fieldset class="b-form_unit">
 					<label class="b-form_label" for="userName">Телефон</label>
-					<input id="userName" class="b-form_input" type="tel" value="">
+					<input id="user_phone" class="b-form_input" type="tel" value="">
 				</fieldset>
 				
 			</div>
@@ -251,12 +253,12 @@
 			<div>
 				<fieldset class="b-form_unit b-form_unit__text">
 					<label class="b-form_label" for="userName">Комментарий</label>
-					<textarea class="b-form_input b-form_input__text" name="comment" id="text"></textarea>
+					<textarea  id="user_text" class="b-form_input b-form_input__text" name="comment"></textarea>
 				</fieldset>
 			</div>
 
 			<fieldset class="b-form_unit b-form_unit__ctrl">
-				<input class="b-ui-ctrl b-ui-ctrl__big b-ui-ctrl__orange" type="submit" value="Отправить заявку">
+				<input id="sendEmail" class="b-ui-ctrl b-ui-ctrl__big b-ui-ctrl__orange" type="submit" value="Отправить заявку">
 			<fieldset class="b-form_unit">
 
 			<em class="b-form_helper">уже отправили: <span>164</span> человек</em>
