@@ -944,6 +944,7 @@ h5 {
     -ms-align-items: flex-start;
     -o-align-items: flex-start;
     align-items: flex-start;
+    padding-left: 25px;
   }
 }
 .b-navigation:before {
