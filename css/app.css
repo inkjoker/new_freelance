@@ -84,8 +84,8 @@
 }
 html {
   min-height: 100%;
-  height: 100%;
   box-sizing: border-box;
+  height: 100%;
 }
 body {
   font-family: 'Circe-Regular';
@@ -327,6 +327,17 @@ h5 {
 @media screen and (max-width: 529px) {
   .b-wrapper {
     padding: 10px;
+    -webkit-box-flex: 1 0 auto;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 auto;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 auto;
+    /* Chrome */
+    -ms-flex: 1 0 auto;
+    /* IE 10 */
+    flex: 1 0 auto;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
   }
 }
 .b-wrapper_fixed {
@@ -336,6 +347,8 @@ h5 {
   left: -35px;
   position: fixed;
   z-index: 100;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .b-wrapper_fixed .b-ui-ctrl {
@@ -437,6 +450,16 @@ h5 {
   justify-content: center;
   padding: 0;
 }
+@media screen and (min-width: 530px) and (max-width: 660px) {
+  .b-wrapper__portf {
+    padding: 5px 15px;
+  }
+}
+@media screen and (max-width: 529px) {
+  .b-wrapper__portf {
+    padding: 5px 15px;
+  }
+}
 .b-wrapper__portfolio {
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
@@ -496,7 +519,7 @@ h5 {
   }
 }
 .b-wrapper__about {
-  background: #61615c url('../images/about.jpg') no-repeat;
+  background: #766a56 url('../images/about.jpg') no-repeat;
   background-size: cover;
   height: 100%;
   display: -webkit-box;
@@ -582,6 +605,40 @@ h5 {
     justify-content: center;
   }
 }
+@media screen and (min-width: 530px) and (max-width: 660px) {
+  .b-wrapper__about {
+    padding: 5px 15px;
+    overflow: visible;
+    -webkit-box-flex: 1 0 100%;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 100%;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 100%;
+    /* Chrome */
+    -ms-flex: 1 0 100%;
+    /* IE 10 */
+    flex: 1 0 100%;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  }
+}
+@media screen and (max-width: 529px) {
+  .b-wrapper__about {
+    padding: 5px 15px;
+    overflow: visible;
+    -webkit-box-flex: 1 0 100%;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 100%;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 100%;
+    /* Chrome */
+    -ms-flex: 1 0 100%;
+    /* IE 10 */
+    flex: 1 0 100%;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  }
+}
 .b-wrapper__excl {
   background: #edede6;
   display: -webkit-box;
@@ -625,8 +682,14 @@ h5 {
   -o-flex-direction: column;
   flex-direction: column;
 }
+@media screen and (min-width: 530px) and (max-width: 660px) {
+  .b-wrapper__excl {
+    padding: 5px 15px;
+  }
+}
 @media screen and (max-width: 529px) {
   .b-wrapper__excl {
+    padding: 5px 15px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.27);
   }
 }
@@ -652,6 +715,16 @@ h5 {
 @media screen and (min-width: 1129px) {
   .b-wrapper__user {
     padding: 5% 0;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 660px) {
+  .b-wrapper__user {
+    padding: 5px 15px;
+  }
+}
+@media screen and (max-width: 529px) {
+  .b-wrapper__user {
+    padding: 5px 15px;
   }
 }
 .b-wrapper__form {
@@ -725,6 +798,16 @@ h5 {
     padding-top: 5px;
   }
 }
+@media screen and (min-width: 530px) and (max-width: 660px) {
+  .b-wrapper__form {
+    padding: 5px 15px;
+  }
+}
+@media screen and (max-width: 529px) {
+  .b-wrapper__form {
+    padding: 5px 15px;
+  }
+}
 .b-wrapper__footer {
   -webkit-box-flex: 0 0 auto;
   /* OLD - iOS 6-, Safari 3.1-6 */
@@ -753,27 +836,27 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-wrapper__footer {
-    padding: 5px;
+    padding: 5px 15px;
   }
 }
 @media screen and (max-width: 529px) {
   .b-wrapper__footer {
-    padding: 5px;
+    padding: 5px 15px;
   }
 }
 .b-logo {
   background: white;
   display: inline-block;
   min-height: 307px;
-  -webkit-box-flex: 0 0 327px;
+  -webkit-box-flex: 0 0 310px;
   /* OLD - iOS 6-, Safari 3.1-6 */
-  -moz-box-flex: 0 0 327px;
+  -moz-box-flex: 0 0 310px;
   /* OLD - Firefox 19- */
-  -webkit-flex: 0 0 327px;
+  -webkit-flex: 0 0 310px;
   /* Chrome */
-  -ms-flex: 0 0 327px;
+  -ms-flex: 0 0 310px;
   /* IE 10 */
-  flex: 0 0 327px;
+  flex: 0 0 310px;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
   padding: 10px 5px 10px 10px;
@@ -868,6 +951,9 @@ h5 {
   top: 0;
   bottom: 0;
   z-index: 5;
+}
+.b-navigation_fixed.overlay {
+  background: rgba(0, 0, 0, 0.5);
 }
 .b-navigation_fixed.visible {
   display: -webkit-box;
@@ -1134,21 +1220,6 @@ h5 {
   position: absolute;
   right: 0;
 }
-@media screen and (min-width: 950px) and (max-width: 1128px) {
-  .b-advantages_underlink {
-    font-size: 69px;
-    width: 60%;
-    position: relative;
-    top: -11px;
-  }
-  .b-advantages_underlink:before,
-  .b-advantages_underlink:after {
-    top: 11px;
-  }
-  .b-advantages_underlink .b-ui-icon__arrow {
-    top: 12px;
-  }
-}
 @media screen and (min-width: 1129px) {
   .b-advantages_underlink {
     font-size: 24px;
@@ -1162,6 +1233,22 @@ h5 {
   }
   .b-advantages_underlink .b-ui-icon__arrow {
     top: 12px;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-advantages_underlink {
+    font-size: 69px;
+    width: 60%;
+    position: relative;
+    top: 0px;
+  }
+  .b-advantages_underlink:before,
+  .b-advantages_underlink:after {
+    top: 38px;
+    width: 44%;
+  }
+  .b-advantages_underlink .b-ui-icon__arrow {
+    top: 39px;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
@@ -1637,12 +1724,20 @@ h5 {
     align-items: center;
   }
 }
+@media screen and (min-width: 530px) and (max-width: 660px) {
+  .b-protfolio .bx-wrapper img {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 529px) {
   .b-protfolio .bx-wrapper {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+  }
+  .b-protfolio .bx-wrapper img {
+    width: 100%;
   }
 }
 .b-protfolio .b-table {
@@ -1787,7 +1882,7 @@ h5 {
   }
 }
 .b-protfolio__page .b-table_td {
-  text-align: center;
+  text-align: left;
 }
 .b-protfolio__page .b-table_td:nth-child(1) {
   max-width: 64px;
@@ -1798,6 +1893,9 @@ h5 {
 }
 .b-protfolio__page .b-table_td:nth-child(3) {
   max-width: 64px;
+}
+.b-protfolio__page .b-table_td__ctrl {
+  text-align: center;
 }
 .b-table {
   display: table;
@@ -1847,6 +1945,15 @@ h5 {
 }
 .b-table_td__ctrl:hover {
   background: rgba(0, 0, 0, 0.3);
+}
+.b-table_td-tr {
+  line-height: 2;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+.b-table_td-tr:last-child {
+  display: none;
+  border-top: 1px solid black;
 }
 .b-excl_title {
   text-transform: uppercase;
@@ -3003,6 +3110,7 @@ h5 {
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-about {
     height: 90%;
+    max-width: 646px;
   }
 }
 @media screen and (max-width: 529px) {
@@ -3021,20 +3129,23 @@ h5 {
 .b-about_title span {
   color: white;
 }
-@media screen and (min-width: 950px) and (max-width: 1128px) {
-  .b-about_title {
-    font-family: 'Circe-Bold';
-    font-size: 69px;
-    letter-spacing: 20px;
-    line-height: 66px;
-  }
-}
 @media screen and (min-width: 1129px) {
   .b-about_title {
     font-family: 'Circe-Bold';
     font-size: 69px;
     letter-spacing: 22px;
     line-height: 145px;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1128px) {
+  .b-about_title {
+    font-family: 'Circe-Bold';
+    font-size: 49px;
+    letter-spacing: 20px;
+    line-height: 46px;
+  }
+  .b-about_title span:nth-child(1) {
+    display: block;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
@@ -3053,7 +3164,7 @@ h5 {
   color: #c2945e;
   font-family: 'Circe-ExtraBold';
   font-size: 12px;
-  margin: 40px 0;
+  margin: 40px 0 75px;
   padding: 0 0 0 22px;
 }
 .b-about_list h3 {
@@ -3138,11 +3249,11 @@ h5 {
     top: 25px;
   }
 }
-@media screen and (min-width: 1129px) {
+@media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-about .b-navigation_icon {
     right: 25px;
     position: absolute;
-    top: 25px;
+    top: -25px;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
@@ -3154,7 +3265,7 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-about .b-navigation_icon {
-    top: -40px;
+    top: -30px;
   }
 }
 @media screen and (max-width: 529px) {
