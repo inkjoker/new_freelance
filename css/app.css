@@ -1613,6 +1613,10 @@ h5 {
 }
 .b-protfolio .bx-wrapper .slide {
   height: 100%;
+  text-align: center;
+}
+.b-protfolio .bx-wrapper .slide img {
+  display: inline-block;
 }
 @media screen and (max-width: 529px) {
   .b-protfolio .bx-wrapper .slide {
