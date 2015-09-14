@@ -1479,7 +1479,7 @@ h5 {
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-protfolio_title__orange {
     text-align: center;
-    max-width: 170px;
+    max-width: 185px;
     position: absolute;
     left: 25px;
     top: 25px;
@@ -1488,7 +1488,7 @@ h5 {
 @media screen and (min-width: 1129px) {
   .b-protfolio_title__orange {
     text-align: center;
-    max-width: 170px;
+    max-width: 185px;
     position: absolute;
     left: 25px;
     top: 25px;
@@ -1497,7 +1497,7 @@ h5 {
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-protfolio_title__orange {
     text-align: center;
-    max-width: 170px;
+    max-width: 185px;
     position: absolute;
     left: 25px;
     top: 25px;
