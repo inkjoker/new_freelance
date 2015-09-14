@@ -1732,6 +1732,9 @@ h5 {
     -o-align-items: center;
     align-items: center;
   }
+  .b-protfolio .bx-wrapper img {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-protfolio .bx-wrapper img {
@@ -1842,6 +1845,9 @@ h5 {
 }
 .b-protfolio .b-table .b-table_row:last-child {
   font-size: 12px;
+}
+.b-protfolio__page {
+  max-width: 100%;
 }
 @media screen and (max-width: 529px) {
   .b-protfolio__page {
