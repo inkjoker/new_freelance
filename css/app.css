@@ -533,6 +533,7 @@ h5 {
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
+  letter-spacing: 1px;
 }
 @media screen and (min-width: 1129px) {
   .b-wrapper__about {
@@ -951,6 +952,7 @@ h5 {
   top: 0;
   bottom: 0;
   z-index: 5;
+  letter-spacing: 1px;
 }
 .b-navigation_fixed.overlay {
   background: rgba(0, 0, 0, 0.5);
@@ -1287,6 +1289,7 @@ h5 {
   line-height: 16px;
   color: white;
   margin: 24px 0;
+  letter-spacing: 1px;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-advantages_text {
@@ -1446,6 +1449,7 @@ h5 {
   margin: 0;
   position: relative;
   z-index: 1;
+  letter-spacing: 1px;
 }
 .b-protfolio_title__orange {
   color: #c2945e;
@@ -1532,6 +1536,7 @@ h5 {
   font-family: 'Circe-ExtraLight';
   font-size: 14px;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 .b-protfolio_list li {
   line-height: 22px;
@@ -1743,6 +1748,7 @@ h5 {
 .b-protfolio .b-table {
   background: white;
   text-align: right;
+  letter-spacing: 1px;
 }
 .b-protfolio .b-table_wrapper {
   position: relative;
@@ -1972,6 +1978,7 @@ h5 {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  letter-spacing: 1px;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-slider {
@@ -2579,6 +2586,7 @@ h5 {
   font-family: 'Circe-ExtraLight';
   font-weight: 600;
   font-size: 14px;
+  letter-spacing: 1px;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-user_comment {
