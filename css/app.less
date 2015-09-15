@@ -543,6 +543,7 @@ h1, h2, h3, h4, h5 {
     text-align: left;
     min-height: 307px;
     .flex(0 0 286px);
+    z-index: 6;
 
     &_fixed {
         .justify-content(center);
@@ -787,10 +788,20 @@ h1, h2, h3, h4, h5 {
             &:before,
             &:after {
                 top: 11px;
+                width: 52%;
             }
 
             .b-ui-icon__arrow {
                 top: 12px;
+                right: -45px;
+            }
+
+            &:before {
+                left: -55px;
+            }
+
+            &:after {
+                right: -45px;
             }
         }
 
@@ -803,11 +814,20 @@ h1, h2, h3, h4, h5 {
             &:before,
             &:after {
                 top: 38px;
-                width: 44%;
+                width: 52%;
             }
 
             .b-ui-icon__arrow {
                 top: 39px;
+                right: -45px;
+            }
+
+            &:before {
+                left: -55px;
+            }
+
+            &:after {
+                right: -45px;
             }
         }
 
@@ -860,7 +880,7 @@ h1, h2, h3, h4, h5 {
             max-width: 450px;
             width: 49%;
             float: left;
-            margin-left: 45px;
+            margin-left: 105px;
         }
 
         @media @desktop-xl {
@@ -870,7 +890,7 @@ h1, h2, h3, h4, h5 {
             max-width: 450px;
             width: 49%;
             float: left;
-            margin-left: 45px;
+            margin-left: 105px;
         }
 
         @media @tablet {
@@ -1106,22 +1126,21 @@ h1, h2, h3, h4, h5 {
     }
 
     .bx-wrapper {
+        max-height: 100%;
         
         .slider1 {
-            height: 100%;
-            .flex(1 0 100%);
-            .flex-direction(row);
             .display-flex;
-            .justify-content(center);
             .align-items(start);
         }
 
         .slide {
-            height: 100%;
-            text-align: center;
+            .display-flex;
+            .justify-content(center);
+            .align-items(center);
 
             img {
-                display: inline-block;
+                display: block;
+                .flex(1 0 100%);
             }
 
             @media @mobile {
@@ -1178,19 +1197,20 @@ h1, h2, h3, h4, h5 {
         letter-spacing: 1px;
 
         &_wrapper {
+            width: 380px;
             position: relative;
             z-index: 1;
-
-            @media @desktop {
-                position: absolute;
-                bottom: -45px;
-            	right: -45px;
-            }
 
             @media @desktop-xl {
                 position: absolute;
                 bottom: -45px;
-            	right: -45px;
+                right: -89px;
+            }
+
+            @media @desktop {
+                position: absolute;
+                bottom: -45px;
+                right: -89px;
             }
 
             @media @tablet {
@@ -1243,11 +1263,12 @@ h1, h2, h3, h4, h5 {
             text-transform: uppercase;
             font-size: 14px;
             line-height: 35px;
-            height: 35px;
+            height: 70px;
             position: relative;
 
             &:last-child {
-                width: 45px;
+                width: 80px;
+                text-align: center;
             }
 
             .b-ui-icon__sign-b {
@@ -2445,21 +2466,35 @@ h1, h2, h3, h4, h5 {
 
             &(1),
             &(2) {
-                
-                @media @desktop {
-                    padding-right: 50px;
-                }
+
 
                 @media @desktop-xl {
                     padding-right: 50px;
+                    min-height: 150px;
+                }
+
+                @media @desktop {
+                    padding-right: 50px;
+                    min-height: 150px;
                 }
 
                 @media @tablet {
                     padding-right: 50px;
+                    min-height: 120px;
                 }
             }
 
             &(4) {
+                
+                @media @desktop-xl {
+                    margin-left: 310px;
+                    width: 50%;
+                }
+
+                @media @desktop {
+                    margin-left: 310px;
+                    width: 50%;
+                }
 
                 @media @tablet {
                     margin-left: 50%;
