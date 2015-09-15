@@ -301,9 +301,15 @@ h1, h2, h3, h4, h5 {
         background: #61615c url('../images/self.jpg') no-repeat;
         background-size: cover;
         position: relative;
+        .display-flex;
+        .align-items(center);
+        .justify-content(center);
 
         @media @mobile {
             padding: 0;
+            .flex(1 0 100%);
+            .flex-column;
+            .align-items(stretch);
         }
     }
 
@@ -646,6 +652,22 @@ h1, h2, h3, h4, h5 {
         
         &.active {
             font-family: @font-bold;
+        }
+    }
+
+    &__standard {
+        .display-flex;
+        .flex(0 0 596px);
+        padding: 0;
+
+        @media @mobile {
+            display: block;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.27);
+            .flex(1 0 100%);
+            .flex-column;
+            .display-flex;
+            .justify-content(space-between);
+            .align-items(stretch);
         }
     }
 }

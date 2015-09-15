@@ -21,11 +21,11 @@ $(document).ready(function(){
 		this.overlay = overlay;
 
 		this.openWindow = function() {
-			this.overlay.addClass('visible').fadeIn();
+			this.overlay.addClass('visible');
 		};
 
 		this.closeWindow = function() {
-			this.overlay.removeClass('visible').fadeOut();
+			this.overlay.removeClass('visible');
 
 			if (this.el.hasClass("active")) {
 				this.el.toggleClass("active")
@@ -165,37 +165,15 @@ $(document).ready(function(){
 
         	$('#menuTop').removeClass('active');
 
-        	$('#menuWrapper').fadeOut();
-
-        	if (!$('#menuTop').hasClass('active')) {
-
-        		$("#navOverlay").addClass('visible');
-
-        	};
-
-        	$("#navOverlay").removeClass('overlay').addClass('disabled')
+        	$("#navOverlay").removeClass('visible');
 
         } else if (pos > 150) {
 
         	$('#menuWrapper').fadeIn();
 
-        	if (!$('#menuTop').hasClass('active')) {
-
-        		$("#navOverlay").addClass('overlay').removeClass('visible').removeClass('disabled');
-
-        	};
-
         } else {
 
         	$('#menuWrapper').fadeOut();
-
-        	if (!$('#menuTop').hasClass('active')) {
-
-        		$("#navOverlay").addClass('visible');
-
-        	};
-
-        	$("#navOverlay").removeClass('overlay').addClass('disabled')
 
         }
    	};

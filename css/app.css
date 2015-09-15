@@ -367,10 +367,72 @@ h5 {
   background: #61615c url('../images/self.jpg') no-repeat;
   background-size: cover;
   position: relative;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  -o-box-align: center;
+  box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
 }
 @media screen and (max-width: 529px) {
   .b-wrapper__nav {
     padding: 0;
+    -webkit-box-flex: 1 0 100%;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 100%;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 100%;
+    /* Chrome */
+    -ms-flex: 1 0 100%;
+    /* IE 10 */
+    flex: 1 0 100%;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -ms-box-align: stretch;
+    -o-box-align: stretch;
+    box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    -ms-align-items: stretch;
+    -o-align-items: stretch;
+    align-items: stretch;
   }
 }
 .b-wrapper__disn {
@@ -1117,6 +1179,82 @@ h5 {
 }
 .b-navigation_link.active {
   font-family: 'Circe-Bold';
+}
+.b-navigation__standard {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  -webkit-box-flex: 0 0 596px;
+  -moz-box-flex: 0 0 596px;
+  /* OLD - Firefox 19- */
+  -webkit-flex: 0 0 596px;
+  /* Chrome */
+  -ms-flex: 0 0 596px;
+  /* IE 10 */
+  flex: 0 0 596px;
+  padding: 0;
+}
+@media screen and (max-width: 529px) {
+  .b-navigation__standard {
+    display: block;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.27);
+    -webkit-box-flex: 1 0 100%;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 100%;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 100%;
+    /* Chrome */
+    -ms-flex: 1 0 100%;
+    /* IE 10 */
+    flex: 1 0 100%;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -ms-box-align: stretch;
+    -o-box-align: stretch;
+    box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    -ms-align-items: stretch;
+    -o-align-items: stretch;
+    align-items: stretch;
+  }
 }
 .b-advantages {
   padding: 30px;
