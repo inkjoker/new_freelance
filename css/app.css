@@ -1967,6 +1967,7 @@ h5 {
     bottom: 10px;
     left: 10px;
     right: 10px;
+    width: auto;
   }
 }
 .b-protfolio .b-table_wrapper__page {
