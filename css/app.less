@@ -398,13 +398,13 @@ h1, h2, h3, h4, h5 {
         }
 
         @media @mobile-xl {
-            padding: 5px 15px;
+            padding: 5px 28px;
             overflow: visible;
             .flex(1 0 100%);
         }
 
         @media @mobile {
-            padding: 5px 15px;
+            padding: 5px 28px;
             overflow: visible;
             .flex(1 0 100%);
         }
@@ -419,12 +419,14 @@ h1, h2, h3, h4, h5 {
 
 
         @media @mobile-xl {
-            padding: 5px 15px;
+            padding: 5px 10px;
+            .flex(1 0 auto);
         }
 
         @media @mobile {
-            padding: 5px 15px;
+            padding: 5px 10px;
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.27);
+            .flex(1 0 auto);
         }
     }
 
@@ -1415,6 +1417,17 @@ h1, h2, h3, h4, h5 {
                     }
                 }
 
+                &:last-child {
+
+                    @media @mobile-xl {
+                        width: 45px !important;
+                    }
+
+                    @media @mobile {
+                        width: 45px !important;
+                    }
+                }
+
                 &__ctrl {
                     text-align: center;
                 }
@@ -1509,7 +1522,31 @@ h1, h2, h3, h4, h5 {
         span {
             display: block;
             margin: 0 auto 0 40px;
-        }      
+
+            @media @mobile-xl {
+                margin: 0;
+            }   
+
+            @media @mobile {
+                margin: 0;
+            } 
+        }   
+
+        @media @mobile-xl {
+            position: relative;
+
+            br {
+                display: none;
+            }
+        }   
+
+        @media @mobile {
+            position: relative;
+
+            br {
+                display: none;
+            }
+        } 
     }
 }
 
@@ -1532,8 +1569,14 @@ h1, h2, h3, h4, h5 {
         max-width: 625px;
     }
 
+    @media @mobile-xl {
+        max-height: 533px;
+        width: 100%;
+    }
+
     @media @mobile {
         max-height: 533px;
+        width: 100%;
     }
 
     &_viewport {
@@ -1660,6 +1703,43 @@ h1, h2, h3, h4, h5 {
             }
         }
 
+        @media @mobile-xl {
+
+            .b-slider_unit {
+                .flex-column;
+            }
+
+            .b-slider_items {
+
+                &:nth-child {
+
+                    &(1) {
+                        order:2;
+                        margin-top: -85px;
+
+                        img {
+                            padding: 10px 10px 0;
+                            background: #edede6;
+                            width: 65%;
+                        }
+                    }
+
+                    &(2) {
+                        order:1;
+
+                        img {
+                            width: 90%;
+                        }
+                    }
+
+                    &(3) {
+                        order:3;
+                        display: none;
+                    }
+                }
+            }
+        }
+
         @media @mobile {
 
             .b-slider_unit {
@@ -1672,20 +1752,26 @@ h1, h2, h3, h4, h5 {
 
                     &(1) {
                         order:2;
-                        margin-top: -125px;
+                        margin-top: -85px;
 
                         img {
                             padding: 10px 10px 0;
                             background: #edede6;
+                            width: 65%;
                         }
                     }
 
                     &(2) {
                         order:1;
+
+                        img {
+                            width: 90%;
+                        }
                     }
 
                     &(3) {
                         order:3;
+                        display: none;
                     }
                 }
             }
@@ -1858,7 +1944,7 @@ h1, h2, h3, h4, h5 {
     }
 
     &_unit {
-        max-height: 350px;
+        max-height: 425px;
 
         @media @desktop {
 
@@ -2168,6 +2254,14 @@ h1, h2, h3, h4, h5 {
             position: absolute;
             right: 0;
             bottom: 0;
+        }
+
+        @media @mobile-xl {
+            padding-right: 33px;
+        }
+
+        @media @mobile {
+            padding-right: 33px;
         }
     }
 }
@@ -2535,6 +2629,14 @@ h1, h2, h3, h4, h5 {
 
     .b-page__about & {
         height: auto !important;
+
+        @media @mobile-xl {
+            height: 100% !important;
+        }
+
+        @media @mobile {
+            height: 100% !important;
+        }
     }
 
     &_title {
@@ -2588,6 +2690,19 @@ h1, h2, h3, h4, h5 {
 	    @media @mobile-xl {
 			font-size: 18px;
 	    }
+
+        .b-page__about & {
+
+            @media @mobile-xl {
+                line-height: 45px;
+                letter-spacing: 6px;
+            }
+
+            @media @mobile {
+                line-height: 45px;
+                letter-spacing: 6px;
+            }
+        }
     }
 
     &_list {
@@ -2633,6 +2748,17 @@ h1, h2, h3, h4, h5 {
 		    @media @mobile-xl {
 				font-size: 14px;
 		    }
+
+            .b-page__about & {
+
+                @media @mobile-xl {
+                    line-height: 24px;
+                }
+
+                @media @mobile {
+                    line-height: 24px;
+                }
+            }
         }
     }
 
@@ -2656,7 +2782,7 @@ h1, h2, h3, h4, h5 {
 
                 @media @tablet {
                     padding-right: 50px;
-                    min-height: 120px;
+                    min-height: 156px;
                 }
             }
 
@@ -2675,6 +2801,14 @@ h1, h2, h3, h4, h5 {
                 @media @tablet {
                     margin-left: 50%;
                 }
+
+                @media @mobile-xl {
+                    margin-left: 0;
+                }
+
+                @media @mobile {
+                    margin-left: 0;
+                }
             }
         }
         
@@ -2691,6 +2825,17 @@ h1, h2, h3, h4, h5 {
         @media @tablet {
             float: left;
             width: 50%;
+        }
+
+        .b-page__about & {
+
+            @media @mobile-xl {
+                margin-bottom: 30px;
+            }
+
+            @media @mobile {
+                margin-bottom: 30px;
+            }
         }
     }
 
