@@ -16,52 +16,33 @@ $(document).ready(function(){
 		}
 	});
 
-	function createMenu(el, overlay) {
-		this.el = el;
-		this.overlay = overlay;
+	var browser = function() {
+	    // Return cached result if avalible, else get result then cache it.
+	    if (browser.prototype._cachedResult)
+	        return browser.prototype._cachedResult;
 
-		this.openWindow = function() {
-			this.overlay.addClass('visible');
-		};
+	    var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+	    // Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
+	    var isFirefox = typeof InstallTrigger !== 'undefined';// Firefox 1.0+
+	    var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+	    // At least Safari 3+: "[object HTMLElementConstructor]"
+	    var isChrome = !!window.chrome && !isOpera;// Chrome 1+
+	    var isIE = /*@cc_on!@*/false || !!document.documentMode; // At least IE6
 
-		this.closeWindow = function() {
-			this.overlay.removeClass('visible');
-
-			if (this.el.hasClass("active")) {
-				this.el.toggleClass("active")
-			}
-		};
-
-		this.init = function() {
-			var scope = this;
-
-			scope.el.on('click', function(e) {
-				e.preventDefault();
-				e.stopPropagation();
-
-				$(this).toggleClass('active');
-
-				if ($(this).hasClass("active")) {
-
-					scope.openWindow();
-
-				} else {
-
-					scope.closeWindow();
-
-				};
-			});
-
-			scope.overlay.on('click', function(e) {
-				e.stopPropagation();
-
-				scope.closeWindow();
-			});
-		};
+	    return (browser.prototype._cachedResult =
+	        isOpera ? 'opera' :
+	        isFirefox ? 'firefox' :
+	        isSafari ? 'safari' :
+	        isChrome ? 'chrome' :
+	        isIE ? 'ie' :
+	       	'');
 	};
 
-	var menu = new createMenu($('#menuTop'), $('#navOverlay'));
 
+	$('body').addClass(browser())
+
+
+	var menu = new createMenu($('#menuTop'), $('#navOverlay'));
 	menu.init();
 
 	if (!!$('.slider1').length) {
@@ -154,6 +135,51 @@ $(document).ready(function(){
 
 		sendMail(sendTo, subject, text, user);
 	});
+
+	
+	function createMenu(el, overlay) {
+		this.el = el;
+		this.overlay = overlay;
+
+		this.openWindow = function() {
+			this.overlay.addClass('visible');
+		};
+
+		this.closeWindow = function() {
+			this.overlay.removeClass('visible');
+
+			if (this.el.hasClass("active")) {
+				this.el.toggleClass("active")
+			}
+		};
+
+		this.init = function() {
+			var scope = this;
+
+			scope.el.on('click', function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+
+				$(this).toggleClass('active');
+
+				if ($(this).hasClass("active")) {
+
+					scope.openWindow();
+
+				} else {
+
+					scope.closeWindow();
+
+				};
+			});
+
+			scope.overlay.on('click', function(e) {
+				e.stopPropagation();
+
+				scope.closeWindow();
+			});
+		};
+	};
 
     function checkScroll() {
 

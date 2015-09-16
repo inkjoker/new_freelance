@@ -95,12 +95,22 @@ body {
   height: 100%;
   box-sizing: border-box;
 }
+body.firefox,
+body.ie {
+  font-family: 'Calibri';
+  font-weight: 300;
+}
 a {
   color: black;
   text-decoration: none;
 }
 b {
   font-family: 'Circe-Bold';
+}
+.firefox b,
+.ie b {
+  font-family: 'Calibri';
+  font-weight: 600;
 }
 h1,
 h2,
@@ -296,6 +306,10 @@ h5 {
     height: 34px;
     line-height: 30px;
   }
+}
+.firefox .b-ui-ctrl__big,
+.ie .b-ui-ctrl__big {
+  line-height: 50px;
 }
 .b-ui-ctrl__white {
   position: relative;
@@ -1178,8 +1192,18 @@ h5 {
   line-height: 26px;
   font-weight: 600;
 }
+.firefox .b-navigation_link,
+.ie .b-navigation_link {
+  font-family: 'Calibri';
+  font-weight: 100;
+}
 .b-navigation_link.active {
   font-family: 'Circe-Bold';
+}
+.firefox .b-navigation_link.active,
+.ie .b-navigation_link.active {
+  font-family: 'Calibri';
+  font-weight: 600;
 }
 .b-navigation__standard {
   display: -webkit-box;
@@ -1284,6 +1308,11 @@ h5 {
   line-height: 25px;
   margin: 0;
 }
+.firefox .b-advantages_title,
+.ie .b-advantages_title {
+  font-family: 'Calibri';
+  font-weight: 600;
+}
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-advantages_title {
     font-size: 69px;
@@ -1324,6 +1353,11 @@ h5 {
     font-size: 20px;
     line-height: 25px;
     margin: 0;
+  }
+  .firefox .b-advantages_title,
+  .ie .b-advantages_title {
+    font-family: 'Calibri';
+    font-weight: 600;
   }
 }
 .b-advantages_white {
@@ -1445,6 +1479,11 @@ h5 {
   margin: 24px 0;
   letter-spacing: 1px;
 }
+.firefox .b-advantages_text,
+.ie .b-advantages_text {
+  font-family: 'Calibri';
+  font-weight: 100;
+}
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-advantages_text {
     font-size: 14px;
@@ -1495,6 +1534,12 @@ h5 {
   text-transform: uppercase;
   margin: 0 auto;
   height: 55px;
+}
+.firefox .b-advantages_link,
+.ie .b-advantages_link {
+  font-family: 'Calibri';
+  font-weight: 600;
+  line-height: 50px;
 }
 .b-advantages_link .b-ui-icon__sign-w {
   left: 14px;
@@ -1605,6 +1650,11 @@ h5 {
   z-index: 1;
   letter-spacing: 1px;
 }
+.firefox .b-protfolio_title,
+.ie .b-protfolio_title {
+  font-family: 'Calibri';
+  font-weight: 600;
+}
 .b-protfolio_title__orange {
   color: #c2945e;
   display: inline-block;
@@ -1692,12 +1742,22 @@ h5 {
   font-weight: 600;
   letter-spacing: 1px;
 }
+.firefox .b-protfolio_list,
+.ie .b-protfolio_list {
+  font-family: 'Calibri';
+  font-weight: 100;
+}
 .b-protfolio_list li {
   line-height: 22px;
 }
 .b-protfolio_list b {
   font-family: 'Circe-ExtraBold';
   font-size: 19px;
+}
+.firefox .b-protfolio_list b,
+.ie .b-protfolio_list b {
+  font-family: 'Calibri';
+  font-weight: bold;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-protfolio_list {
@@ -2159,6 +2219,11 @@ h5 {
   max-width: 350px;
   position: absolute;
 }
+.firefox .b-excl_title,
+.ie .b-excl_title {
+  font-family: 'Calibri';
+  font-weight: 600;
+}
 .b-excl_title span {
   display: block;
   margin: 0 auto 0 40px;
@@ -2386,15 +2451,30 @@ h5 {
   .b-slider_text {
     font-family: 'Circe-ExtraLight';
   }
+  .firefox .b-slider_text,
+  .ie .b-slider_text {
+    font-family: 'Calibri';
+    font-weight: 100;
+  }
 }
 @media screen and (min-width: 1129px) {
   .b-slider_text {
     font-family: 'Circe-ExtraLight';
   }
+  .firefox .b-slider_text,
+  .ie .b-slider_text {
+    font-family: 'Calibri';
+    font-weight: 100;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-slider_text {
     font-family: 'Circe-ExtraLight';
+  }
+  .firefox .b-slider_text,
+  .ie .b-slider_text {
+    font-family: 'Calibri';
+    font-weight: 100;
   }
 }
 @media screen and (max-width: 529px) {
@@ -2568,6 +2648,9 @@ h5 {
     flex-direction: column;
   }
 }
+.b-user_unit {
+  max-height: 350px;
+}
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-user_unit:first-child {
     max-width: 33%;
@@ -2672,6 +2755,11 @@ h5 {
   font-family: 'Circe-Bold';
   margin: 0;
 }
+.firefox .b-user_name,
+.ie .b-user_name {
+  font-family: 'Calibri';
+  font-weight: 600;
+}
 .b-user_name span {
   display: block;
 }
@@ -2730,6 +2818,11 @@ h5 {
   font-family: 'Circe-Light';
   font-size: 14px;
 }
+.firefox .b-user_prof,
+.ie .b-user_prof {
+  font-family: 'Calibri';
+  font-weight: 200;
+}
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-user_prof {
     font-size: 18px;
@@ -2777,6 +2870,11 @@ h5 {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
+}
+.firefox .b-user_comment,
+.ie .b-user_comment {
+  font-family: 'Calibri';
+  font-weight: 100;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-user_comment {
@@ -2882,6 +2980,11 @@ h5 {
   font-family: 'Circe-Bold';
   font-size: 36px;
   text-align: right;
+}
+.firefox .b-user_count,
+.ie .b-user_count {
+  font-family: 'Calibri';
+  font-weight: 600;
 }
 .b-user_count span {
   border: 1px solid black;
@@ -3167,6 +3270,11 @@ h5 {
   line-height: 1;
   margin: 23px 0;
 }
+.firefox .b-form_helper,
+.ie .b-form_helper {
+  font-family: 'Calibri';
+  font-weight: 200;
+}
 .b-company {
   margin: 0 auto;
 }
@@ -3192,6 +3300,11 @@ h5 {
   font-size: 15px;
   margin-bottom: 3px;
   line-height: 27px;
+}
+.firefox .b-company_address,
+.ie .b-company_address {
+  font-family: 'Calibri';
+  font-weight: 200;
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-company_address {
@@ -3224,6 +3337,11 @@ h5 {
   font-family: 'Circe-Bold';
   font-size: 18px;
 }
+.firefox .b-company_phone,
+.ie .b-company_phone {
+  font-family: 'Calibri';
+  font-weight: 600;
+}
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-company_phone {
     margin: 0 135px;
@@ -3251,6 +3369,11 @@ h5 {
   font-size: 18px;
   text-decoration: underline;
 }
+.firefox .b-company_email,
+.ie .b-company_email {
+  font-family: 'Calibri';
+  font-weight: 200;
+}
 @media screen and (max-width: 529px) {
   .b-company_email {
     line-height: 12px;
@@ -3265,6 +3388,11 @@ h5 {
   font-family: 'Circe-Light';
   line-height: 24px;
 }
+.firefox .b-company_copy,
+.ie .b-company_copy {
+  font-family: 'Calibri';
+  font-weight: 200;
+}
 .b-company_copy em {
   font-style: normal;
   position: relative;
@@ -3276,6 +3404,11 @@ h5 {
     text-align: center;
     display: block;
   }
+  .firefox .b-company_copy,
+  .ie .b-company_copy {
+    font-family: 'Calibri';
+    font-weight: 200;
+  }
 }
 @media screen and (min-width: 1129px) {
   .b-company_copy {
@@ -3283,10 +3416,20 @@ h5 {
     text-align: center;
     display: block;
   }
+  .firefox .b-company_copy,
+  .ie .b-company_copy {
+    font-family: 'Calibri';
+    font-weight: 200;
+  }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-company_copy {
     font-family: 'Circe-Thin';
+  }
+  .firefox .b-company_copy,
+  .ie .b-company_copy {
+    font-family: 'Calibri';
+    font-weight: 200;
   }
 }
 @media screen and (max-width: 529px) {
@@ -3334,6 +3477,11 @@ h5 {
     letter-spacing: 22px;
     line-height: 145px;
   }
+  .firefox .b-about_title,
+  .ie .b-about_title {
+    font-family: 'Calibri';
+    font-weight: 600;
+  }
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-about_title {
@@ -3341,6 +3489,11 @@ h5 {
     font-size: 49px;
     letter-spacing: 20px;
     line-height: 46px;
+  }
+  .firefox .b-about_title,
+  .ie .b-about_title {
+    font-family: 'Calibri';
+    font-weight: 600;
   }
   .b-about_title span:nth-child(1) {
     display: block;
@@ -3350,6 +3503,11 @@ h5 {
   .b-about_title {
     font-family: 'Circe-Bold';
     font-size: 29px;
+  }
+  .firefox .b-about_title,
+  .ie .b-about_title {
+    font-family: 'Calibri';
+    font-weight: 600;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
@@ -3365,12 +3523,22 @@ h5 {
   margin: 40px 0 75px;
   padding: 0 0 0 22px;
 }
+.firefox .b-about_list,
+.ie .b-about_list {
+  font-family: 'Calibri';
+  font-weight: bold;
+}
 .b-about_list h3 {
   color: white;
   font-family: 'Circe-Bold';
   text-transform: uppercase;
   font-size: 18px;
   margin: 0;
+}
+.firefox .b-about_list h3,
+.ie .b-about_list h3 {
+  font-family: 'Calibri';
+  font-weight: 600;
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-about_list h3 {
@@ -3381,6 +3549,11 @@ h5 {
   color: white;
   font-family: 'Circe-ExtraLight';
   font-size: 17px;
+}
+.firefox .b-about_list p,
+.ie .b-about_list p {
+  font-family: 'Calibri';
+  font-weight: 100;
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-about_list p {

@@ -19,6 +19,12 @@ body {
     min-height: 100%;
     height: 100%;
     box-sizing: border-box;
+
+
+    &.firefox ,
+    &.ie {
+        .font-calibri(300);
+    }
 }
 
 a {
@@ -28,6 +34,11 @@ a {
 
 b {
     font-family: @font-bold;
+
+    .firefox &,
+    .ie & {
+        .font-calibri(600);
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -240,6 +251,11 @@ h1, h2, h3, h4, h5 {
             @media @mobile {
 				height: 34px;
 				line-height: 30px;
+            }
+
+            .firefox &,
+            .ie & {
+                line-height: 50px;
             }
         }
 
@@ -651,8 +667,19 @@ h1, h2, h3, h4, h5 {
         line-height: 26px;
         font-weight: 600;
         
+
+        .firefox &,
+        .ie & {
+            .font-calibri(100);
+        }
+
         &.active {
             font-family: @font-bold;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(600);
+            }
         }
     }
 
@@ -697,6 +724,11 @@ h1, h2, h3, h4, h5 {
         font-size: 20px;
         line-height: 25px;
         margin: 0;
+
+        .firefox &,
+        .ie & {
+            .font-calibri(600);
+        }
     
         @media @desktop {
             font-size: 69px;
@@ -734,6 +766,11 @@ h1, h2, h3, h4, h5 {
 	        font-size: 20px;
 	        line-height: 25px;
 	        margin: 0;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(600);
+            }
         }
     }
 
@@ -872,6 +909,11 @@ h1, h2, h3, h4, h5 {
         margin: 24px 0;
         letter-spacing: 1px;
 
+        .firefox &,
+        .ie & {
+            .font-calibri(100);
+        }
+
     
         @media @desktop {
             font-size: 14px;
@@ -920,6 +962,12 @@ h1, h2, h3, h4, h5 {
         text-transform: uppercase;
         margin: 0 auto;
         height: 55px;
+
+        .firefox &,
+        .ie & {
+            .font-calibri(600);
+            line-height: 50px;
+        }
 
         .b-ui-icon__sign-w {
             left : 14px;
@@ -1011,6 +1059,11 @@ h1, h2, h3, h4, h5 {
         z-index: 1;
         letter-spacing: 1px;
 
+        .firefox &,
+        .ie & {
+            .font-calibri(600);
+        }
+
         &__orange {
             color: @color-orange;
             display: inline-block;
@@ -1096,6 +1149,11 @@ h1, h2, h3, h4, h5 {
         font-weight: 600;
         letter-spacing: 1px;
 
+        .firefox &,
+        .ie & {
+            .font-calibri(100);
+        }
+
         li {
             line-height: 22px;
         }
@@ -1103,6 +1161,11 @@ h1, h2, h3, h4, h5 {
         b {
             font-family: @font-ex-bold;
             font-size: 19px;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(bold);
+            }
         }
 
         @media @desktop {
@@ -1438,6 +1501,11 @@ h1, h2, h3, h4, h5 {
         max-width: 350px;
         position: absolute;
 
+        .firefox &,
+        .ie & {
+            .font-calibri(600);
+        }
+
         span {
             display: block;
             margin: 0 auto 0 40px;
@@ -1664,14 +1732,29 @@ h1, h2, h3, h4, h5 {
 
         @media @desktop {
             font-family: @font-ex-light;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(100);
+            }
         }
 
         @media @desktop-xl {
             font-family: @font-ex-light;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(100);
+            }
         }
 
         @media @tablet {
             font-family: @font-ex-light;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(100);
+            }
         }
 
         @media @mobile {
@@ -1775,6 +1858,7 @@ h1, h2, h3, h4, h5 {
     }
 
     &_unit {
+        max-height: 350px;
 
         @media @desktop {
 
@@ -1825,6 +1909,11 @@ h1, h2, h3, h4, h5 {
         color: @color-orange;
         font-family: @font-bold;
         margin: 0;
+
+        .firefox &,
+        .ie & {
+            .font-calibri(600);
+        }
 
         span {
             display: block;
@@ -1884,6 +1973,11 @@ h1, h2, h3, h4, h5 {
         font-family: @font-light;
         font-size: 14px;
 
+        .firefox &,
+        .ie & {
+            .font-calibri(200);
+        }
+
         @media @desktop {
             font-size: 18px;
         }
@@ -1929,6 +2023,11 @@ h1, h2, h3, h4, h5 {
         font-weight: 600;
         font-size: 14px;
         letter-spacing: 1px;
+
+        .firefox &,
+        .ie & {
+            .font-calibri(100);
+        }
 
         @media @desktop {
             margin-top: 15px;
@@ -2039,6 +2138,11 @@ h1, h2, h3, h4, h5 {
         font-family: @font-bold;
         font-size: 36px;
         text-align: right;
+
+        .firefox &,
+        .ie & {
+            .font-calibri(600);
+        }
 
         span {
             border: 1px solid @color;
@@ -2239,6 +2343,11 @@ h1, h2, h3, h4, h5 {
         font-size: 10px;
         line-height: 1;
         margin: 23px 0;
+
+        .firefox &,
+        .ie & {
+            .font-calibri(200);
+        }
     }
 }
 
@@ -2265,6 +2374,11 @@ h1, h2, h3, h4, h5 {
         font-size: 15px;
         margin-bottom: 3px;
         line-height: 27px;
+
+        .firefox &,
+        .ie & {
+            .font-calibri(200);
+        }
     
         @media @desktop {
             margin-bottom: 26px;
@@ -2300,6 +2414,12 @@ h1, h2, h3, h4, h5 {
         font-family: @font-bold;
         font-size: 18px;
 
+
+        .firefox &,
+        .ie & {
+            .font-calibri(600);
+        }
+
         @media @desktop {
             margin: 0 135px;   
         }
@@ -2324,6 +2444,11 @@ h1, h2, h3, h4, h5 {
         font-size: 18px;
         text-decoration: underline;
 
+        .firefox &,
+        .ie & {
+            .font-calibri(200);
+        }
+
 	    @media @mobile {
         	line-height: 12px;
         	font-size: 12px;
@@ -2340,6 +2465,11 @@ h1, h2, h3, h4, h5 {
         font-family: @font-light;
         line-height: 24px;
 
+        .firefox &,
+        .ie & {
+            .font-calibri(200);
+        }
+
         em {
             font-style: normal;
             position: relative;
@@ -2351,16 +2481,31 @@ h1, h2, h3, h4, h5 {
             font-family: @font-thin; 
             text-align: center;
             display: block;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(200);
+            }
         }
 
         @media @desktop-xl {
             font-family: @font-thin;    
             text-align: center; 
             display: block;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(200);
+            }
         }
 
         @media @tablet {
             font-family: @font-thin;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(200);
+            }
         }
 
 	    @media @mobile {
@@ -2407,6 +2552,11 @@ h1, h2, h3, h4, h5 {
             font-size: 69px;
             letter-spacing: 22px;
             line-height: 145px;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(600);
+            }
         }
 
         @media @desktop {
@@ -2414,6 +2564,11 @@ h1, h2, h3, h4, h5 {
             font-size: 49px;
             letter-spacing: 20px;
             line-height: 46px;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(600);
+            }
 
             span:nth-child(1) {
                 display: block;
@@ -2423,6 +2578,11 @@ h1, h2, h3, h4, h5 {
         @media @tablet {
             font-family: @font-bold;
             font-size: 29px;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(600);
+            }
         }
 
 	    @media @mobile-xl {
@@ -2438,12 +2598,22 @@ h1, h2, h3, h4, h5 {
         margin: 40px 0 75px;
         padding: 0 0 0 22px;
 
+        .firefox &,
+        .ie & {
+            .font-calibri(bold);
+        }
+
         h3 {
             color: #fff;
             font-family: @font-bold;
             text-transform: uppercase;
             font-size: 18px;
             margin: 0;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(600);
+            }
 
 		    @media @mobile-xl {
 				font-size: 16px;
@@ -2454,6 +2624,11 @@ h1, h2, h3, h4, h5 {
             color:#fff;
             font-family: @font-ex-light;
             font-size: 17px;
+
+            .firefox &,
+            .ie & {
+                .font-calibri(100);
+            }
 
 		    @media @mobile-xl {
 				font-size: 14px;
