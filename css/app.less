@@ -121,6 +121,10 @@ h1, h2, h3, h4, h5 {
 
     &__about {
 
+        @media @tablet {
+            height: auto;
+        }
+
         @media @mobile-xl {
             height: auto;
         }
@@ -356,6 +360,11 @@ h1, h2, h3, h4, h5 {
         .justify-content(center);
         padding: 0;
 
+        @media @tablet {
+            padding: 15px 0;
+            .flex(1 0 700px);
+        }
+
         @media @mobile-xl {
             padding: 5px 15px;
         }
@@ -428,6 +437,9 @@ h1, h2, h3, h4, h5 {
         .align-items(center);
         .flex-column;
 
+        @media @tablet {
+            .flex(1 0 auto);
+        }
 
         @media @mobile-xl {
             padding: 5px 10px;
@@ -1292,7 +1304,7 @@ h1, h2, h3, h4, h5 {
             @media @tablet {
                 position: absolute;
                 bottom: 0px;
-            	right: 0px;
+                right: -30px;
             }
 
 			@media @mobile{
@@ -1603,6 +1615,61 @@ h1, h2, h3, h4, h5 {
         	clear: both;
         }
 
+        @media @desktop-xl {
+
+            .b-slider_unit {
+                .flex-wrap(wrap);
+                .justify-content(start);
+            }
+
+            .b-slider_items {
+                position: relative;
+
+                &:nth-child {
+
+                    &(1) {
+                        margin-top: 115px;
+                        max-height: 120px;
+                        max-width: 50%;
+
+                        img {
+                            padding: 10px 10px 0 0;
+                            background: #edede6;
+                        }
+
+                        p {
+                            position: absolute;
+                            right: -157px;
+                            top: 194px;
+                        }
+                    }
+
+                    &(2) {
+                        max-width: 45%;
+                        margin-left: 69px;
+
+                        p {
+                            max-width: 300px;
+                            margin: 0 auto -25px;
+                        }
+
+                        img {
+                            margin-bottom: 155px;
+                        }
+                    }
+
+                    &(3) {
+                        margin-top: 35px;
+
+                        p {
+                            max-width: 330px;
+                            margin: -25px 40px 0;
+                        }
+                    }
+                }
+            }
+        }
+        
         @media @desktop {
 
             .b-slider_unit {
@@ -1658,10 +1725,11 @@ h1, h2, h3, h4, h5 {
                 }
             }
         }
-
-        @media @desktop-xl {
+        
+        @media @tablet {
 
             .b-slider_unit {
+                position: relative;
                 .flex-wrap(wrap);
                 .justify-content(start);
             }
@@ -2810,7 +2878,7 @@ h1, h2, h3, h4, h5 {
                 }
 
                 @media @tablet {
-                    margin-left: 50%;
+                    margin-left: 0;
                 }
 
                 @media @mobile-xl {
