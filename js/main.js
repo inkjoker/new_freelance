@@ -142,11 +142,11 @@ $(document).ready(function(){
 		this.overlay = overlay;
 
 		this.openWindow = function() {
-			this.overlay.addClass('visible');
+			this.overlay.fadeIn(200).addClass('visible');
 		};
 
 		this.closeWindow = function() {
-			this.overlay.removeClass('visible');
+			this.overlay.hide().removeClass('visible');
 
 			if (this.el.hasClass("active")) {
 				this.el.toggleClass("active")
