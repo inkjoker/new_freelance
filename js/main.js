@@ -146,18 +146,9 @@ $(document).ready(function(){
 		},
 
 		submitHandler: function(form, e) {
-			e.preventDefault();
 
-			var user = {
-					name : $('#user_name').val(),
-					email : $('#user_email').val(),
-					phone : $('#user_phone').val()
-				},
-				sendTo = $('#emailCompany').val().split(' ').join(''),
-				subject = $('#subject').val(),
-				text = $('#user_text').val();
-
-			sendMail(sendTo, subject, text, user);
+			forma.submit();
+			
 		}
 	});
 
@@ -250,13 +241,5 @@ $(document).ready(function(){
 		}
 
         e.preventDefault();
-	}
-
-	function sendMail(sendTo, subject, text, user) {
-		var link = 'mailto:' + sendTo 
-		         + "&subject=" + encodeURIComponent(subject)
-		         + "&body=" + encodeURIComponent('Комментарий от пользователя: ' + user.name + ', e-mail: ' + user.email + ', тел: ' + user.phone + '. ' + text)
-		;
-		window.open(link);
 	}
 });
