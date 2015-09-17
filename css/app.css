@@ -1073,7 +1073,7 @@ h5 {
   line-height: 23px;
   font-size: 13px;
   word-spacing: 4px;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
   letter-spacing: 3px;
   margin-bottom: 0;
   margin-top: 3px;
@@ -3988,14 +3988,14 @@ h5 {
 @media screen and (min-width: 1129px) {
   .b-about_unit:nth-child(1),
   .b-about_unit:nth-child(2) {
-    padding-right: 50px;
+    margin-right: 4px;
     min-height: 150px;
   }
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-about_unit:nth-child(1),
   .b-about_unit:nth-child(2) {
-    padding-right: 50px;
+    margin-right: 4px;
     min-height: 150px;
   }
 }
@@ -4009,13 +4009,13 @@ h5 {
 @media screen and (min-width: 1129px) {
   .b-about_unit:nth-child(4) {
     margin-left: 310px;
-    width: 50%;
+    width: 31%;
   }
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-about_unit:nth-child(4) {
     margin-left: 310px;
-    width: 50%;
+    width: 31%;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
