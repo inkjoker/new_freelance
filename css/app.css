@@ -1151,6 +1151,9 @@ h5 {
 .b-navigation_fixed.overlay {
   background: rgba(0, 0, 0, 0.5);
 }
+.b-navigation_fixed.overlay .b-logo {
+  height: 304px;
+}
 .b-navigation_fixed.visible {
   display: -webkit-box !important;
   display: -moz-box !important;
