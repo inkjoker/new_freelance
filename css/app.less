@@ -1941,34 +1941,49 @@ h1, h2, h3, h4, h5 {
         @media @mobile-xl {
 
             .b-slider_unit {
-                .flex-column;
+                position: relative;
+                .flex-wrap(wrap);
+                .justify-content(start);
             }
 
             .b-slider_items {
+                position: relative;
 
                 &:nth-child {
 
-                    &(1) {
-                        order:2;
-                        margin-top: -85px;
+                    &(1) {    
+                        margin-top: 115px;
+                        max-height: 120px;
+                        max-width: 30%;
+                        margin-left: 10px;
 
                         img {
-                            padding: 10px 10px 0;
+                            padding: 10px 10px 0 0;
                             background: #edede6;
-                            width: 65%;
+                        }
+
+                        p {
+                            position: absolute;
+                            right: -157px;
+                            top: 194px;
                         }
                     }
 
                     &(2) {
-                        order:1;
+                        max-width: 45%;
+                        margin-left: 69px;
+
+                        p {
+                            max-width: 300px;
+                            margin: 0 auto -25px;
+                        }
 
                         img {
-                            width: 90%;
+                            margin-bottom: 155px;
                         }
                     }
 
                     &(3) {
-                        order:3;
                         display: none;
                     }
                 }
