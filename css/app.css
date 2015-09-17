@@ -2466,7 +2466,7 @@ h5 {
   padding-left: 15px;
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0 auto 15px;
   letter-spacing: 1px;
 }
 @media screen and (min-width: 1129px) {
