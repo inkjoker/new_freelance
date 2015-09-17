@@ -793,7 +793,8 @@ h1, h2, h3, h4, h5 {
     }
 
     @media @tablet {
-        max-width: 625px;
+        max-width: 675px;
+        padding: 10px;
     }
 
     &_title {
@@ -833,23 +834,24 @@ h1, h2, h3, h4, h5 {
 			letter-spacing: 5px;
         }
 
-        @media @mobile {
-            text-align: justify;
-        }
-
 
         @media @mobile-xl {
-	        color: @color-orange;
-	        text-transform: uppercase;
-	        font-family: @font-bold;
-	        font-size: 20px;
-	        line-height: 25px;
-	        margin: 0;
+            color: @color-orange;
+            text-transform: uppercase;
+            font-family: @font-bold;
+            font-size: 20px;
+            line-height: 25px;
+            margin: 0;
 
             .firefox &,
             .ie & {
                 .font-calibri(600);
             }
+        }
+
+        @media @mobile {
+            text-align: justify;
+            word-spacing: 1rem;
         }
     }
 
@@ -869,6 +871,11 @@ h1, h2, h3, h4, h5 {
 
         @media @desktop {
             margin-top: 17px;
+        }
+
+
+        @media @mobile {
+            word-spacing: 0;
         }
     }
 
@@ -959,7 +966,7 @@ h1, h2, h3, h4, h5 {
         @media @tablet {
             word-spacing: normal;
             letter-spacing: normal;
-            width: 52%;
+            width: 64%;
             font-size: 17px;
             line-height: 53px;
             position: relative;
@@ -1133,7 +1140,7 @@ h1, h2, h3, h4, h5 {
     }
 
     @media @tablet {
-        max-width: 625px;
+        max-width: 665px;
         .flex(1 0 100%);
     }
 
@@ -1732,7 +1739,7 @@ h1, h2, h3, h4, h5 {
     }
 
     @media @tablet {
-        max-width: 625px;
+        max-width: 675px;
     }
 
     @media @mobile-xl {
@@ -2150,7 +2157,7 @@ h1, h2, h3, h4, h5 {
     }
 
     @media @tablet {
-        max-width: 625px;
+        max-width: 675px;
     }
 
     &_info {
@@ -2562,7 +2569,7 @@ h1, h2, h3, h4, h5 {
         .display-flex;
         .justify-content(space-between);
         .flex-wrap(wrap);
-        max-width: 662px;
+        max-width: 695px;
         padding: 0 10px;
 
         > div {
@@ -2599,7 +2606,7 @@ h1, h2, h3, h4, h5 {
 
         @media @tablet {
             margin-bottom: 5px;
-            max-width: 662px;
+            max-width: 675px;
 
             br {
                 display: none;

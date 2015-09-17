@@ -1414,7 +1414,8 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-advantages {
-    max-width: 625px;
+    max-width: 675px;
+    padding: 10px;
   }
 }
 .b-advantages_title {
@@ -1457,11 +1458,6 @@ h5 {
     letter-spacing: 5px;
   }
 }
-@media screen and (max-width: 529px) {
-  .b-advantages_title {
-    text-align: justify;
-  }
-}
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-advantages_title {
     color: #c2945e;
@@ -1475,6 +1471,12 @@ h5 {
   .ie .b-advantages_title {
     font-family: 'Calibri';
     font-weight: 600;
+  }
+}
+@media screen and (max-width: 529px) {
+  .b-advantages_title {
+    text-align: justify;
+    word-spacing: 1rem;
   }
 }
 .b-advantages_white {
@@ -1493,6 +1495,11 @@ h5 {
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-advantages_small {
     margin-top: 17px;
+  }
+}
+@media screen and (max-width: 529px) {
+  .b-advantages_small {
+    word-spacing: 0;
   }
 }
 .b-advantages_underlink {
@@ -1572,7 +1579,7 @@ h5 {
   .b-advantages_underlink {
     word-spacing: normal;
     letter-spacing: normal;
-    width: 52%;
+    width: 64%;
     font-size: 17px;
     line-height: 53px;
     position: relative;
@@ -1742,7 +1749,7 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-protfolio {
-    max-width: 625px;
+    max-width: 665px;
     -webkit-box-flex: 1 0 100%;
     /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 1 0 100%;
@@ -2481,7 +2488,7 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-slider {
-    max-width: 625px;
+    max-width: 675px;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
@@ -2947,7 +2954,7 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-user {
-    max-width: 625px;
+    max-width: 675px;
   }
 }
 .b-user_info {
@@ -3527,7 +3534,7 @@ h5 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -moz-flex-wrap: wrap;
-    max-width: 662px;
+    max-width: 695px;
     padding: 0 10px;
   }
   .b-form > div {
@@ -3574,7 +3581,7 @@ h5 {
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-form_title {
     margin-bottom: 5px;
-    max-width: 662px;
+    max-width: 675px;
   }
   .b-form_title br {
     display: none;
