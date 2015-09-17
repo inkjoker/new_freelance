@@ -121,19 +121,44 @@ $(document).ready(function(){
 		scrollToAnchor(this, e);
 	});
 
-	$('#sendEmail').click(function(e){
-		e.preventDefault();
 
-		var user = {
-				name : $('#user_name').val(),
-				email : $('#user_email').val(),
-				phone : $('#user_phone').val()
+	$('#formaSend').validate({
+
+		rules: {
+			// simple rule, converted to {required:true}
+			name: "required",
+			// compound rule
+			email: {
+				required: true,
+				email: true
 			},
-			sendTo = $('#emailCompany').val().split(' ').join(''),
-			subject = $('#subject').val(),
-			text = $('#user_text').val();
+			number: {
+				required: true,
+				number: true
+			},
+			comment: "required"
+		},
+		messages: {
+			name: "Поле обязательное для заполнения.",
+			email: "Поле не может быть пустым и должно быть в формате example@example.com",
+			number: "Введите номер телефона",
+			comment: "Введите текст сообщения"
+		},
 
-		sendMail(sendTo, subject, text, user);
+		submitHandler: function(form, e) {
+			e.preventDefault();
+
+			var user = {
+					name : $('#user_name').val(),
+					email : $('#user_email').val(),
+					phone : $('#user_phone').val()
+				},
+				sendTo = $('#emailCompany').val().split(' ').join(''),
+				subject = $('#subject').val(),
+				text = $('#user_text').val();
+
+			sendMail(sendTo, subject, text, user);
+		}
 	});
 
 	

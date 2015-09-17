@@ -8,6 +8,7 @@
 	<!--[if lt IE 10]><link rel="stylesheet" href="css/ie9.css"><![endif]-->
 	<script type="text/javascript" src="js/vendor/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/vendor/bxslider/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/vendor/validate/dist/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body class="b-page b-page__main">
@@ -254,24 +255,24 @@
 		<a name="h.opt4" class="g-absolute"></a>
 		<h3 class="b-form_title">Оставьте заявку на сотрудничество и <br> уже сегодня с вами свяжутся.</h3>
 
-		<form class="b-form" action="/" method="">
+		<form id="formaSend" class="b-form" action="/" method="">
 
 			<div>
 				<input type="hidden" id="emailCompany" value="info@ r-design.ru">
 				<input type="hidden" id="subject" value="Feed back.">
 				<fieldset class="b-form_unit">
 					<label class="b-form_label" for="user_name">Имя</label>
-					<input id="user_name" name="user_name" class="b-form_input" type="text" value="">
+					<input id="user_name" name="name" class="b-form_input" type="text" value="">
 				</fieldset>
 
 				<fieldset class="b-form_unit">
 					<label class="b-form_label" for="email">Электронная почта</label>
-					<input id="user_email" name="email" class="b-form_input" type="tel" value="">
+					<input id="user_email" name="email" class="b-form_input" type="email" value="">
 				</fieldset>
 
 				<fieldset class="b-form_unit">
 					<label class="b-form_label" for="userName">Телефон</label>
-					<input id="user_phone" class="b-form_input" type="tel" value="">
+					<input id="user_phone" class="b-form_input" name="number" type="text" value="">
 				</fieldset>
 				
 			</div>
