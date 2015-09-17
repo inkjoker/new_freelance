@@ -2493,13 +2493,11 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-slider {
-    max-height: 533px;
     width: 100%;
   }
 }
 @media screen and (max-width: 529px) {
   .b-slider {
-    max-height: 533px;
     width: 100%;
   }
 }
