@@ -1674,11 +1674,15 @@ h5 {
   margin: 0 auto;
   height: 66px;
 }
-.firefox .b-advantages_link,
 .ie .b-advantages_link {
   font-family: 'Calibri';
   font-weight: 600;
   line-height: 50px;
+}
+.firefox .b-advantages_link {
+  font-family: 'Calibri';
+  font-weight: 600;
+  line-height: 61px;
 }
 .b-advantages_link .b-ui-icon__sign-w {
   left: 14px;
