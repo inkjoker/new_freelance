@@ -1861,11 +1861,13 @@ h5 {
 }
 @media screen and (min-width: 1129px) {
   .b-protfolio_title {
+    letter-spacing: 1px;
     padding-left: 5px;
   }
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-protfolio_title {
+    letter-spacing: 1px;
     padding-left: 5px;
   }
 }
@@ -2260,13 +2262,13 @@ h5 {
 }
 @media screen and (min-width: 1129px) {
   .b-protfolio .b-table .b-table_row:first-child .b-table_td:first-child {
-    font-size: 18px;
+    font-size: 16px;
     height: 116px;
   }
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-protfolio .b-table .b-table_row:first-child .b-table_td:first-child {
-    font-size: 18px;
+    font-size: 16px;
     height: 116px;
   }
 }
