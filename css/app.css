@@ -1431,7 +1431,7 @@ h5 {
   font-family: 'Calibri';
   font-weight: 600;
 }
-@media screen and (min-width: 950px) and (max-width: 1128px) {
+@media screen and (min-width: 1129px) {
   .b-advantages_title {
     font-size: 69px;
     line-height: 115px;
@@ -1440,13 +1440,13 @@ h5 {
     letter-spacing: 23.3px;
   }
 }
-@media screen and (min-width: 1129px) {
+@media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-advantages_title {
     font-size: 69px;
     line-height: 115px;
     text-align: justify;
     word-spacing: 0;
-    letter-spacing: 23.3px;
+    letter-spacing: 20px;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
