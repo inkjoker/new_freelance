@@ -317,15 +317,21 @@ h5 {
   font-size: 19px;
   line-height: 54px;
 }
+.firefox .b-ui-ctrl__big,
+.ie .b-ui-ctrl__big {
+  line-height: 50px;
+}
+@media screen and (max-width: 529px) {
+  .firefox .b-ui-ctrl__big,
+  .ie .b-ui-ctrl__big {
+    line-height: 30px;
+  }
+}
 @media screen and (max-width: 529px) {
   .b-ui-ctrl__big {
     height: 34px;
     line-height: 30px;
   }
-}
-.firefox .b-ui-ctrl__big,
-.ie .b-ui-ctrl__big {
-  line-height: 50px;
 }
 .b-ui-ctrl__white {
   position: relative;
@@ -2507,6 +2513,9 @@ h5 {
   .b-slider {
     width: 100%;
   }
+  .b-slider .bx-viewport {
+    min-height: 410px;
+  }
 }
 @media screen and (max-width: 529px) {
   .b-slider {
@@ -3297,7 +3306,7 @@ h5 {
 }
 @media screen and (min-width: 1129px) {
   .b-user_arrow {
-    border-width: 00 68px 43px 0;
+    border-width: 0 68px 43px 0;
     border-color: transparent black transparent transparent;
     top: 46px;
     left: -68px;
@@ -3322,18 +3331,19 @@ h5 {
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-user_arrow {
-    border-width: 0 38px 53px 0;
+    border-width: 0 68px 43px 0;
     border-color: transparent black transparent transparent;
     top: 46px;
-    left: -22px;
+    left: -68px;
   }
   .b-user_arrow:before {
-    border-width: 0 24px 24px 0;
+    border-width: 0 61px 38px 0;
     border-color: transparent white transparent transparent;
     top: 2px;
-    left: 4px;
+    left: 7px;
   }
   .b-user_arrow__fr {
+    border-width: 0 38px 53px 0;
     top: 75px;
     left: -47px;
     transform: rotate(90deg);

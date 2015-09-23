@@ -264,14 +264,18 @@ h1, h2, h3, h4, h5 {
             font-size: 19px;
             line-height: 54px;
 
-            @media @mobile {
-				height: 34px;
-				line-height: 30px;
-            }
-
             .firefox &,
             .ie & {
                 line-height: 50px;
+
+                @media @mobile {
+                    line-height: 30px;
+                }
+            }
+
+            @media @mobile {
+				height: 34px;
+				line-height: 30px;
             }
         }
 
@@ -1757,6 +1761,10 @@ h1, h2, h3, h4, h5 {
 
     @media @mobile-xl {
         width: 100%;
+
+        .bx-viewport {
+            min-height: 410px;
+        }
     }
 
     @media @mobile {
@@ -2425,7 +2433,7 @@ h1, h2, h3, h4, h5 {
         }
 
         @media @desktop-xl {
-            border-width:  00 68px 43px 0;
+            border-width:  0 68px 43px 0;
             border-color: transparent #000 transparent transparent;
             top: 46px;
             left: -68px;
@@ -2453,19 +2461,20 @@ h1, h2, h3, h4, h5 {
 
 
         @media @desktop {
-            border-width:  0 38px 53px 0;
+            border-width:  0 68px 43px 0;
             border-color: transparent #000 transparent transparent;
             top: 46px;
-            left: -22px;
+            left: -68px;
 
             &:before {
-                border-width:  0 24px 24px 0;
+                border-width:  0 61px 38px 0;
                 border-color: transparent #fff transparent transparent;
                 top: 2px;
-                left: 4px;
+                left: 7px;
             }
 
             &__fr {    
+                border-width:  0 38px 53px 0;
                 top: 75px;
                 left: -47px;
                 transform: rotate(90deg); 
