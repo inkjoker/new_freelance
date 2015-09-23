@@ -1160,6 +1160,7 @@ h5 {
   display: -ms-flexbox !important;
   display: -webkit-flex !important;
   display: flex !important;
+  z-index: 7;
 }
 @media screen and (max-width: 529px) {
   .b-navigation_fixed {

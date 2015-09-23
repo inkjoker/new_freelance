@@ -201,12 +201,11 @@ $(document).ready(function(){
 
         pos = $(document).scrollTop();
 
-
         if (pos == 0) {
 
         	$('#menuTop').removeClass('active');
 
-        	$("#navOverlay").removeClass('visible');
+        	$("#navOverlay").hide().removeClass('visible');
 
         } else if (pos > 150) {
 
