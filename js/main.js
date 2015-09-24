@@ -104,6 +104,7 @@ $(document).ready(function(){
 		$(document).on('scroll', function(event){
 
 			checkScroll();
+			checkSlideScroll();
 
 		});
 	};
@@ -199,7 +200,7 @@ $(document).ready(function(){
 
     function checkScroll() {
 
-        pos = $(document).scrollTop();
+        var pos = $(document).scrollTop();
 
         if (pos == 0) {
 
@@ -216,6 +217,24 @@ $(document).ready(function(){
         	$('#menuWrapper').fadeOut();
 
         }
+   	};
+
+    function checkSlideScroll() {
+
+        var pos = $(document).scrollTop();
+        index = (pos/window.innerHeight) >> 0;
+
+        if (index != 0) {
+
+        	$('#nextScreen').show().attr('href', '#h.opt' + (index));
+
+        } else {
+
+
+        	$('#nextScreen').show().attr('href', '#h.opt0');
+
+        };
+
    	};
 
 	function scrollToAnchor(scope, e) {
