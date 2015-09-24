@@ -1514,6 +1514,7 @@ h5 {
     text-align: justify;
     word-spacing: 39px;
     letter-spacing: 5px;
+    padding-top: 20px;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
