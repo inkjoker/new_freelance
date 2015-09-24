@@ -535,6 +535,18 @@ h5 {
     min-height: 672px;
   }
 }
+@media screen and (min-width: 530px) and (max-width: 660px) {
+  .b-wrapper__disn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 529px) {
+  .b-wrapper__disn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 .b-wrapper__portf {
   background: #edede6;
   background-size: cover;
@@ -597,12 +609,12 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-wrapper__portf {
-    padding: 5px 15px;
+    padding: 20px 15px 40px;
   }
 }
 @media screen and (max-width: 529px) {
   .b-wrapper__portf {
-    padding: 5px 15px;
+    padding: 20px 15px 40px;
   }
 }
 .b-wrapper__portfolio {
@@ -733,7 +745,7 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-wrapper__excl {
-    padding: 5px 10px;
+    padding: 5px 10px 20px;
     -webkit-box-flex: 1 0 auto;
     /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 1 0 auto;
@@ -749,8 +761,7 @@ h5 {
 }
 @media screen and (max-width: 529px) {
   .b-wrapper__excl {
-    padding: 5px 10px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.27);
+    padding: 5px 10px 20px;
     -webkit-box-flex: 1 0 auto;
     /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 1 0 auto;
@@ -792,12 +803,12 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-wrapper__user {
-    padding: 5px 15px;
+    padding: 20px 15px;
   }
 }
 @media screen and (max-width: 529px) {
   .b-wrapper__user {
-    padding: 5px 15px;
+    padding: 20px 15px;
   }
 }
 .b-wrapper__about {
@@ -999,12 +1010,12 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-wrapper__form {
-    padding: 5px 15px;
+    padding: 20px 15px;
   }
 }
 @media screen and (max-width: 529px) {
   .b-wrapper__form {
-    padding: 5px 15px;
+    padding: 20px 15px;
   }
 }
 .b-wrapper__footer {
@@ -1036,12 +1047,12 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-wrapper__footer {
-    padding: 5px 15px;
+    padding: 20px 15px;
   }
 }
 @media screen and (max-width: 529px) {
   .b-wrapper__footer {
-    padding: 5px 15px;
+    padding: 20px 15px;
   }
 }
 .b-logo {
