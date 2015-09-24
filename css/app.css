@@ -1084,21 +1084,6 @@ h5 {
   margin-bottom: 0;
   margin-top: 3px;
 }
-@media screen and (min-width: 530px) and (max-width: 660px) {
-  .b-logo {
-    -webkit-box-flex: 0 0 20%;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-flex: 0 0 20%;
-    /* OLD - Firefox 19- */
-    -webkit-flex: 0 0 20%;
-    /* Chrome */
-    -ms-flex: 0 0 20%;
-    /* IE 10 */
-    flex: 0 0 20%;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  
-  }
-}
 @media screen and (max-width: 529px) {
   .b-logo {
     display: block;
@@ -1215,61 +1200,6 @@ h5 {
     -o-align-items: stretch;
     align-items: stretch;
     padding: 0;
-  }
-}
-@media screen and (min-width: 530px) and (max-width: 660px) {
-  .b-navigation {
-    display: block;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.27);
-    -webkit-box-flex: 1 0 70%;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-flex: 1 0 70%;
-    /* OLD - Firefox 19- */
-    -webkit-flex: 1 0 70%;
-    /* Chrome */
-    -ms-flex: 1 0 70%;
-    /* IE 10 */
-    flex: 1 0 70%;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  
-    display: -webkit-box;
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -ms-box-orient: vertical;
-    -o-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    -o-justify-content: space-between;
-    justify-content: space-between;
-    -webkit-box-align: start;
-    -moz-box-align: start;
-    -ms-box-align: start;
-    -o-box-align: start;
-    box-align: start;
-    -ms-flex-align: start;
-    -webkit-align-items: flex-start;
-    -moz-align-items: flex-start;
-    -ms-align-items: flex-start;
-    -o-align-items: flex-start;
-    align-items: flex-start;
-    padding-left: 25px;
   }
 }
 @media screen and (max-width: 529px) {
