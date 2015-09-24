@@ -1628,7 +1628,7 @@ h5 {
     right: -20px;
   }
   .b-advantages_underlink:before {
-    left: -45px;
+    left: -30px;
   }
   .b-advantages_underlink:after {
     right: -20px;
@@ -1648,13 +1648,13 @@ h5 {
   }
   .b-advantages_underlink .b-ui-icon__arrow {
     top: 39px;
-    right: -20px;
+    right: -35px;
   }
   .b-advantages_underlink:before {
     left: -45px;
   }
   .b-advantages_underlink:after {
-    right: -20px;
+    right: -35px;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
