@@ -87,6 +87,9 @@ html {
   box-sizing: border-box;
   height: 100%;
 }
+html.noScroll {
+  overflow: hidden;
+}
 body {
   font-family: 'Circe-Regular';
   color: black;
@@ -1870,26 +1873,16 @@ h5 {
   -moz-align-self: start;
   -ms-align-self: start;
   align-self: start;
+  background-color: rgba(0, 0, 0, 0.59);
+  padding: 3px 5px;
 }
 .b-protfolio_title__orange span {
   position: relative;
   z-index: 1;
 }
-.b-protfolio_title__orange:before {
-  content: '';
-  display: block;
-  background: rgba(0, 0, 0, 0.59);
-  position: absolute;
-  top: -3px;
-  bottom: -3px;
-  z-index: 0;
-  left: -3px;
-  right: -3px;
-}
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-protfolio_title__orange {
     text-align: center;
-    max-width: 185px;
     position: absolute;
     left: 25px;
     top: 25px;
@@ -1921,13 +1914,11 @@ h5 {
 @media screen and (min-width: 1129px) {
   .b-protfolio_title {
     letter-spacing: 1px;
-    padding-left: 5px;
   }
 }
 @media screen and (min-width: 950px) and (max-width: 1128px) {
   .b-protfolio_title {
     letter-spacing: 1px;
-    padding-left: 5px;
   }
 }
 @media screen and (min-width: 1129px) {

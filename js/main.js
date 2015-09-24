@@ -122,6 +122,19 @@ $(document).ready(function(){
 		scrollToAnchor(this, e);
 	});
 
+	$('#nextScreen').on('touchend', function(e){
+
+		++index;
+		$(this).attr('href', '#h.opt' + (index - 1));
+
+		if ((index - 1) == 4) {
+
+			$(this).hide();
+		};
+
+		scrollToAnchor(this, e);
+	});
+
 
 	$('#formaSend').validate({
 
@@ -161,14 +174,20 @@ $(document).ready(function(){
 
 		this.openWindow = function() {
 			this.overlay.fadeIn(200).addClass('visible');
+
+			$('html').addClass('noScroll');
 		};
 
 		this.closeWindow = function() {
 			this.overlay.hide().removeClass('visible');
 
 			if (this.el.hasClass("active")) {
+
 				this.el.toggleClass("active")
+
 			}
+
+			$('html').removeClass('noScroll');
 		};
 
 		this.init = function() {
@@ -244,16 +263,24 @@ $(document).ready(function(){
         var pos = $(document).scrollTop();
         index = (pos/window.innerHeight) >> 0;
 
-        if (index != 0) {
+        if ($(window).scrollTop() + $(window).height() - 150 == $(document).height() - 150) {
 
-        	$('#nextScreen').show().attr('href', '#h.opt' + (index));
+        	$('#nextScreen').hide();
 
         } else {
 
+	        if (index != 0) {
 
-        	$('#nextScreen').show().attr('href', '#h.opt0');
+	        	$('#nextScreen').show().attr('href', '#h.opt' + (index));
 
-        };
+	        } else {
+
+
+	        	$('#nextScreen').show().attr('href', '#h.opt0');
+
+	        };
+
+        }
 
    	};
 
