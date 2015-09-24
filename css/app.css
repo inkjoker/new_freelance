@@ -1435,6 +1435,36 @@ h5 {
     padding: 10px;
   }
 }
+@media screen and (min-width: 530px) and (max-width: 660px) {
+  .b-advantages {
+    -webkit-box-flex: 1 0 100%;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 100%;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 100%;
+    /* Chrome */
+    -ms-flex: 1 0 100%;
+    /* IE 10 */
+    flex: 1 0 100%;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  }
+}
+@media screen and (max-width: 529px) {
+  .b-advantages {
+    -webkit-box-flex: 1 0 100%;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 100%;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 100%;
+    /* Chrome */
+    -ms-flex: 1 0 100%;
+    /* IE 10 */
+    flex: 1 0 100%;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  }
+}
 .b-advantages_title {
   color: #c2945e;
   text-transform: uppercase;
@@ -3917,11 +3947,33 @@ h5 {
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-page__about .b-about {
     height: 100% !important;
+    -webkit-box-flex: 1 0 100%;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 100%;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 100%;
+    /* Chrome */
+    -ms-flex: 1 0 100%;
+    /* IE 10 */
+    flex: 1 0 100%;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
   }
 }
 @media screen and (max-width: 529px) {
   .b-page__about .b-about {
     height: 100% !important;
+    -webkit-box-flex: 1 0 100%;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 100%;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 100%;
+    /* Chrome */
+    -ms-flex: 1 0 100%;
+    /* IE 10 */
+    flex: 1 0 100%;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
   }
 }
 .b-about_title {

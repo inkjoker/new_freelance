@@ -814,6 +814,14 @@ h1, h2, h3, h4, h5 {
         padding: 10px;
     }
 
+    @media @mobile-xl {
+        .flex(1 0 100%);
+    }
+
+    @media @mobile {
+        .flex(1 0 100%);
+    }
+
     &_title {
         color: @color-orange;
         text-transform: uppercase;
@@ -2948,10 +2956,12 @@ h1, h2, h3, h4, h5 {
 
         @media @mobile-xl {
             height: 100% !important;
+            .flex(1 0 100%);
         }
 
         @media @mobile {
             height: 100% !important;
+            .flex(1 0 100%);
         }
     }
 

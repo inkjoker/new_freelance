@@ -157,6 +157,7 @@ $(document).ready(function(){
 	function createMenu(el, overlay) {
 		this.el = el;
 		this.overlay = overlay;
+		this.msSwipe = 0;
 
 		this.openWindow = function() {
 			this.overlay.fadeIn(200).addClass('visible');
@@ -188,6 +189,25 @@ $(document).ready(function(){
 					scope.closeWindow();
 
 				};
+			});
+
+			scope.el.on('touchstart', function(e) {
+
+				scope.msSwipe = Date.now();
+
+			});
+
+			scope.el.on('touchend', function(e) {
+
+				if ((Date.now() - scope.msSwipe) > 300) {
+
+					$(this).addClass('active');
+
+					scope.openWindow();
+
+				} else {
+
+				}
 			});
 
 			scope.overlay.on('click', function(e) {
