@@ -11,6 +11,8 @@ $(document).ready(function(){
 		slideMargin: 10,
 		pager : false,
 		controls : false,
+		swipeThreshold  : 150,
+		preventDefaultSwipeX : false,
 		onSlideAfter: function($slideElement, oldIndex, newIndex){
 			$('#currentSlide').text(sliderFirst.getCurrentSlide() + 1);
 		}
@@ -38,6 +40,9 @@ $(document).ready(function(){
 	       	'');
 	};
 
+	$(function() {
+	    FastClick.attach(document.body);
+	});
 
 	$('body').addClass(browser())
 
@@ -263,7 +268,10 @@ $(document).ready(function(){
         var pos = $(document).scrollTop();
         index = (pos/window.innerHeight) >> 0;
 
-        if ($(window).scrollTop() + $(window).height() - 150 == $(document).height() - 150) {
+        var t = $(window).scrollTop() + $(window).height(),
+        	d = $(document).height();
+
+        if (d - t < 250 ) {
 
         	$('#nextScreen').hide();
 
