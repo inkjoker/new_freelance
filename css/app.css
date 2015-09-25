@@ -485,6 +485,36 @@ h5 {
     align-items: stretch;
   }
 }
+@media screen and (min-width: 530px) and (max-width: 660px) {
+  .b-wrapper__nav {
+    -webkit-box-flex: 1 0 500px;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 500px;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 500px;
+    /* Chrome */
+    -ms-flex: 1 0 500px;
+    /* IE 10 */
+    flex: 1 0 500px;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  }
+}
+@media screen and (max-width: 529px) {
+  .b-wrapper__nav {
+    -webkit-box-flex: 1 0 500px;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 500px;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 500px;
+    /* Chrome */
+    -ms-flex: 1 0 500px;
+    /* IE 10 */
+    flex: 1 0 500px;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  }
+}
 .b-wrapper__disn {
   background: #61615c url('../images/blur.jpg') no-repeat;
   display: -webkit-box;
@@ -542,12 +572,53 @@ h5 {
   .b-wrapper__disn {
     padding-top: 20px;
     padding-bottom: 20px;
+    -webkit-box-flex: 1 0 auto;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 auto;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 auto;
+    /* Chrome */
+    -ms-flex: 1 0 auto;
+    /* IE 10 */
+    flex: 1 0 auto;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
   }
 }
 @media screen and (max-width: 529px) {
   .b-wrapper__disn {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 660px) {
+  .ie .b-wrapper__disn {
+    -webkit-box-flex: 1 0 480px;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 480px;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 480px;
+    /* Chrome */
+    -ms-flex: 1 0 480px;
+    /* IE 10 */
+    flex: 1 0 480px;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  }
+}
+@media screen and (max-width: 529px) {
+  .ie .b-wrapper__disn {
+    -webkit-box-flex: 1 0 480px;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 480px;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 480px;
+    /* Chrome */
+    -ms-flex: 1 0 480px;
+    /* IE 10 */
+    flex: 1 0 480px;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
   }
 }
 .b-wrapper__portf {
@@ -1119,6 +1190,36 @@ h5 {
     display: none;
   }
 }
+@media screen and (min-width: 530px) and (max-width: 660px) {
+  .ie .b-logo {
+    -webkit-box-flex: 0 0 27%;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 0 0 27%;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 0 0 27%;
+    /* Chrome */
+    -ms-flex: 0 0 27%;
+    /* IE 10 */
+    flex: 0 0 27%;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  }
+}
+@media screen and (max-width: 529px) {
+  .ie .b-logo {
+    -webkit-box-flex: 0 0 27%;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 0 0 27%;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 0 0 27%;
+    /* Chrome */
+    -ms-flex: 0 0 27%;
+    /* IE 10 */
+    flex: 0 0 27%;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  }
+}
 .b-navigation {
   display: inline-block;
   background: white;
@@ -1279,6 +1380,36 @@ h5 {
     -o-align-items: flex-start;
     align-items: flex-start;
     padding-left: 25px;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 660px) {
+  .ie .b-navigation {
+    -webkit-box-flex: 1 0 auto;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 auto;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 auto;
+    /* Chrome */
+    -ms-flex: 1 0 auto;
+    /* IE 10 */
+    flex: 1 0 auto;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  }
+}
+@media screen and (max-width: 529px) {
+  .ie .b-navigation {
+    -webkit-box-flex: 1 0 auto;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1 0 auto;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1 0 auto;
+    /* Chrome */
+    -ms-flex: 1 0 auto;
+    /* IE 10 */
+    flex: 1 0 auto;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
   }
 }
 .b-navigation:before {
@@ -1451,6 +1582,7 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-advantages {
+    max-width: 100%;
     -webkit-box-flex: 1 0 100%;
     /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 1 0 100%;
@@ -1466,6 +1598,7 @@ h5 {
 }
 @media screen and (max-width: 529px) {
   .b-advantages {
+    max-width: 100%;
     -webkit-box-flex: 1 0 100%;
     /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 1 0 100%;
@@ -1492,6 +1625,25 @@ h5 {
   font-family: 'Calibri';
   font-weight: 600;
 }
+.b-advantages_title > span:not(.b-advantages_small) {
+  display: block;
+  margin-bottom: 42px;
+}
+@media screen and (min-width: 530px) and (max-width: 949px) {
+  .b-advantages_title > span:not(.b-advantages_small) {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 660px) {
+  .b-advantages_title > span:not(.b-advantages_small) {
+    margin-bottom: 13px;
+  }
+}
+@media screen and (max-width: 529px) {
+  .b-advantages_title > span:not(.b-advantages_small) {
+    margin-bottom: 13px;
+  }
+}
 @media screen and (min-width: 1129px) {
   .b-advantages_title {
     font-size: 69px;
@@ -1512,12 +1664,12 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 949px) {
   .b-advantages_title {
-    font-size: 32px;
     line-height: 40px;
     text-align: justify;
     word-spacing: 39px;
     letter-spacing: 5px;
     padding-top: 20px;
+    font-size: 50px;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
@@ -1646,11 +1798,11 @@ h5 {
   .b-advantages_underlink {
     word-spacing: normal;
     letter-spacing: normal;
-    width: 70%;
+    width: 64%;
     font-size: 17px;
     line-height: 53px;
     position: relative;
-    top: -1px;
+    top: -6px;
   }
   .b-advantages_underlink:before,
   .b-advantages_underlink:after {
@@ -1663,6 +1815,7 @@ h5 {
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-advantages_underlink {
     top: 0px;
+    width: 68%;
   }
   .b-advantages_underlink:before,
   .b-advantages_underlink:after {
@@ -1670,6 +1823,11 @@ h5 {
   }
   .b-advantages_underlink .b-ui-icon__arrow {
     top: 27px;
+  }
+}
+@media screen and (max-width: 529px) {
+  .b-advantages_underlink {
+    width: 80%;
   }
 }
 .b-advantages_text {
@@ -1712,15 +1870,16 @@ h5 {
     font-size: 14px;
     line-height: 21px;
     margin-top: 0;
-    max-width: 360px;
     width: 56%;
     float: left;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-advantages_text {
-    margin-top: 0px;
-    width: 70%;
+    max-width: 100%;
+    float: none;
+    margin: 35px auto;
+    width: 100%;
   }
 }
 .b-advantages_link {
@@ -1739,7 +1898,7 @@ h5 {
 .ie .b-advantages_link {
   font-family: 'Calibri';
   font-weight: 600;
-  line-height: 50px;
+  line-height: 62px;
 }
 .firefox .b-advantages_link {
   font-family: 'Calibri';
@@ -1748,11 +1907,6 @@ h5 {
 }
 .b-advantages_link .b-ui-icon__sign-w {
   left: 14px;
-}
-@media screen and (min-width: 530px) and (max-width: 660px) {
-  .b-advantages_link .b-ui-icon__sign-w {
-    display: none;
-  }
 }
 .b-advantages_link:hover {
   background: rgba(255, 255, 255, 0.5);
@@ -1782,9 +1936,9 @@ h5 {
 }
 @media screen and (min-width: 530px) and (max-width: 660px) {
   .b-advantages_link {
-    margin-top: 50px;
-    font-size: 12px;
-    max-width: 133px;
+    display: block;
+    float: none;
+    margin: 10px auto;
   }
 }
 .b-protfolio {
@@ -3656,6 +3810,7 @@ h5 {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 14px;
+    max-width: 100%;
   }
   .b-form_title br {
     display: none;
@@ -3667,6 +3822,7 @@ h5 {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 14px;
+    max-width: 100%;
   }
   .b-form_title br {
     display: none;

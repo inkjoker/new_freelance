@@ -360,6 +360,14 @@ h1, h2, h3, h4, h5 {
             .flex-column;
             .align-items(stretch);
         }
+
+        @media @mobile-xl {
+            .flex(1 0 500px);
+        }
+
+        @media @mobile {
+            .flex(1 0 500px);
+        }
     }
 
     &__disn {
@@ -382,12 +390,25 @@ h1, h2, h3, h4, h5 {
 
             padding-top: 20px;
             padding-bottom: 20px;
+            .flex(1 0 auto);
         }
 
         @media @mobile {
 
             padding-top: 20px;
             padding-bottom: 20px;
+        }
+
+        .ie & {
+
+
+            @media @mobile-xl {
+                .flex(1 0 480px);
+            }
+
+            @media @mobile {
+                .flex(1 0 480px);
+            }
         }
     }
 
@@ -637,6 +658,20 @@ h1, h2, h3, h4, h5 {
             display: none;
         }
     }
+
+
+
+    .ie & {
+
+        @media @mobile-xl {
+            .flex(0 0 27%);
+        }
+
+        @media @mobile {
+            .flex(0 0 27%);
+        }
+
+    }
 }
 
 .b-navigation {
@@ -708,6 +743,20 @@ h1, h2, h3, h4, h5 {
         .justify-content(space-between);
         .align-items(start);
         padding-left: 25px;
+    }
+
+
+
+    .ie & {
+
+        @media @mobile-xl {
+            .flex(1 0 auto);
+        }
+
+        @media @mobile {
+            .flex(1 0 auto);
+        }
+
     }
 
     &:before {
@@ -829,10 +878,12 @@ h1, h2, h3, h4, h5 {
     }
 
     @media @mobile-xl {
+        max-width: 100%;
         .flex(1 0 100%);
     }
 
     @media @mobile {
+        max-width: 100%;
         .flex(1 0 100%);
     }
 
@@ -847,6 +898,24 @@ h1, h2, h3, h4, h5 {
         .firefox &,
         .ie & {
             .font-calibri(600);
+        }
+
+        > span:not(.b-advantages_small) {
+            display: block;
+            margin-bottom: 42px;
+        
+            @media @tablet {
+                font-size: 50px;
+            }
+
+
+            @media @mobile-xl {
+                margin-bottom: 13px;
+            }
+
+            @media @mobile {
+                margin-bottom: 13px;
+            }
         }
 
         @media @desktop-xl {
@@ -866,12 +935,12 @@ h1, h2, h3, h4, h5 {
         }
         
         @media @tablet {
-			font-size: 32px;
 			line-height: 40px;
 			text-align: justify;
 			word-spacing: 39px;
 			letter-spacing: 5px;
             padding-top: 20px;
+            font-size: 50px;
         }
 
 
@@ -1012,11 +1081,11 @@ h1, h2, h3, h4, h5 {
         @media @tablet {
             word-spacing: normal;
             letter-spacing: normal;
-            width: 70%;
+            width: 64%;
             font-size: 17px;
             line-height: 53px;
             position: relative;
-            top: -1px;
+            top: -6px;
 
             &:before,
             &:after {
@@ -1030,6 +1099,7 @@ h1, h2, h3, h4, h5 {
 
         @media @mobile-xl {
             top: 0px;
+            width: 68%;
 
             &:before,
             &:after {
@@ -1039,6 +1109,10 @@ h1, h2, h3, h4, h5 {
             .b-ui-icon__arrow {
                 top: 27px;
             }
+        }
+
+        @media @mobile {
+            width: 80%;
         }
     }
 
@@ -1080,14 +1154,15 @@ h1, h2, h3, h4, h5 {
 			font-size: 14px;
 			line-height: 21px;
 			margin-top: 0;
-			max-width: 360px;
 			width: 56%;
 			float: left;
         }
 
         @media @mobile-xl {
-			margin-top: 0px;
-			width: 70%;
+            max-width: 100%;
+            float: none;
+            margin: 35px auto;
+            width: 100%;
 		}
     }
 
@@ -1106,7 +1181,7 @@ h1, h2, h3, h4, h5 {
 
         .ie & {
             .font-calibri(600);
-            line-height: 50px;
+            line-height: 62px;
         }
 
         .firefox & {
@@ -1116,10 +1191,6 @@ h1, h2, h3, h4, h5 {
 
         .b-ui-icon__sign-w {
             left : 14px;
-
-	        @media @mobile-xl {
-				display: none;
-			}
         }
 
 
@@ -1148,12 +1219,11 @@ h1, h2, h3, h4, h5 {
             margin-top: 99px;
         }
 
-
         @media @mobile-xl {
-			margin-top: 50px;
-			font-size: 12px;
-			max-width: 133px;
-		}
+            display: block;
+            float: none;
+            margin: 10px auto;
+        }
     }
 }
 
@@ -2660,6 +2730,7 @@ h1, h2, h3, h4, h5 {
 			margin-bottom: 10px;
 			font-size: 14px;
 			line-height: 14px;
+            max-width: 100%;
 
             br {
                 display: none;
@@ -2671,6 +2742,7 @@ h1, h2, h3, h4, h5 {
 			margin-bottom: 10px;
 			font-size: 14px;
 			line-height: 14px;
+            max-width: 100%;
 
             br {
                 display: none;
