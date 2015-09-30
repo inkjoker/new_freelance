@@ -137,6 +137,10 @@ h1, h2, h3, h4, h5 {
         -webkit-user-select:none;    
     }
 
+    .noScroll & {
+        margin-left: -47px;
+    }
+
     @media @mobile-xl {
 		display: none !important;
     }
@@ -485,10 +489,12 @@ h1, h2, h3, h4, h5 {
 		}
 
 		@media @mobile-xl {
-			.flex-direction(row);
+            .flex-direction(column);
+            .flex(1 0 320px);
 		}
 
         @media @mobile {
+            .flex-direction(row);
             .display-flex;
         }
     }
@@ -1669,6 +1675,10 @@ h1, h2, h3, h4, h5 {
     &__page {
         max-width: 100%;
 
+        @media @mobile-xl {
+            .flex(1 0 320px);
+        }
+
         @media @mobile {
             .flex(1 0 100%);
         }
@@ -2166,7 +2176,7 @@ h1, h2, h3, h4, h5 {
                 &:nth-child {
 
                     &(1) {
-                        order:2;
+                        .flex-order(2);
                         margin-top: -85px;
 
                         img {
@@ -2177,7 +2187,7 @@ h1, h2, h3, h4, h5 {
                     }
 
                     &(2) {
-                        order:1;
+                        .flex-order(1);
 
                         img {
                             width: 90%;
@@ -2185,7 +2195,7 @@ h1, h2, h3, h4, h5 {
                     }
 
                     &(3) {
-                        order:3;
+                        .flex-order(3);
                         display: none;
                     }
                 }

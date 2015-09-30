@@ -1001,30 +1001,30 @@
 		 *  - DOM event object
 		 */
 		var onTouchMove = function(e){
-			var orig = e.originalEvent;
-			// if scrolling on y axis, do not prevent default
-			var xMovement = Math.abs(orig.changedTouches[0].pageX - slider.touch.start.x);
-			var yMovement = Math.abs(orig.changedTouches[0].pageY - slider.touch.start.y);
-			// x axis swipe
-			if((xMovement * 3) > yMovement && slider.settings.preventDefaultSwipeX){
-				e.preventDefault();
-			// y axis swipe
-			}else if((yMovement * 3) > xMovement && slider.settings.preventDefaultSwipeY){
-				e.preventDefault();
-			}
-			if(slider.settings.mode != 'fade' && slider.settings.oneToOneTouch){
-				var value = 0;
-				// if horizontal, drag along x axis
-				if(slider.settings.mode == 'horizontal'){
-					var change = orig.changedTouches[0].pageX - slider.touch.start.x;
-					value = slider.touch.originalPos.left + change;
-				// if vertical, drag along y axis
-				}else{
-					var change = orig.changedTouches[0].pageY - slider.touch.start.y;
-					value = slider.touch.originalPos.top + change;
-				}
-				setPositionProperty(value, 'reset', 0);
-			}
+	        if (slider.settings.mode != 'fade') {
+	            var orig = e.originalEvent;
+	            var value = 0;
+	            // if horizontal, drag along x axis
+	            if (slider.settings.mode == 'horizontal')
+	            {   
+	                var hchange = orig.changedTouches[0].pageX - slider.touch.start.x;
+	                var vchange = orig.changedTouches[0].pageY - slider.touch.start.y;
+
+	                if(Math.abs(hchange)>20 && Math.abs(hchange)>Math.abs(vchange))
+	                {   
+	                    value = slider.touch.originalPos.left + hchange;
+	                    setPositionProperty(value, 'reset', 0);
+	                    e.preventDefault();
+	                }
+	                // if vertical, drag along y axis
+	            } else{
+	                e.preventDefault();
+	                var change = orig.changedTouches[0].pageY - slider.touch.start.y;
+	                value = slider.touch.originalPos.top + change;
+	                setPositionProperty(value, 'reset', 0);
+	            }
+
+	        }
 		}
 
 		/**

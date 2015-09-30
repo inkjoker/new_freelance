@@ -11,8 +11,6 @@ $(document).ready(function(){
 		slideMargin: 10,
 		pager : false,
 		controls : false,
-		swipeThreshold  : 150,
-		preventDefaultSwipeX : false,
 		onSlideAfter: function($slideElement, oldIndex, newIndex){
 			$('#currentSlide').text(sliderFirst.getCurrentSlide() + 1);
 		}
