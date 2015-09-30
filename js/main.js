@@ -54,13 +54,17 @@ $(document).ready(function(){
 
 	};
 
-	$('#slider-prev').click(function(){
+	$('#slider-prev').click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
 		sliderFirst.goToPrevSlide();
 		$('#currentSlide').text(sliderFirst.getCurrentSlide() + 1);
 		return false;
 	});
 
-	$('#slider-next').click(function(){
+	$('#slider-next').click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
 		sliderFirst.goToNextSlide();
 		$('#currentSlide').text(sliderFirst.getCurrentSlide() + 1);
 		return false;
@@ -72,13 +76,17 @@ $(document).ready(function(){
 
 	});
 
-	$('#slider-m-prev').click(function(){
+	$('#slider-m-prev').click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
 		sliderFirst.goToPrevSlide();
 		$('#currentSlide').text(sliderFirst.getCurrentSlide() + 1);
 		return false;
 	});
 
-	$('#slider-m-next').click(function(){
+	$('#slider-m-next').click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
 		sliderFirst.goToNextSlide();
 		$('#currentSlide').text(sliderFirst.getCurrentSlide() + 1);
 		return false;
@@ -113,7 +121,8 @@ $(document).ready(function(){
 	};
 
 	$('#nextScreen').click(function(e){
-
+		e.preventDefault();
+		e.stopPropagation();
 		++index;
 		$(this).attr('href', '#h.opt' + (index - 1));
 
@@ -126,6 +135,8 @@ $(document).ready(function(){
 	});
 
 	$('#nextScreen').on('touchend', function(e){
+		e.preventDefault();
+		e.stopPropagation();
 
 		++index;
 		$(this).attr('href', '#h.opt' + (index - 1));
